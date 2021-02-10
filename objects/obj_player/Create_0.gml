@@ -1,5 +1,7 @@
-
+vel = 2.5; 
 velh = 0;
 velv = 0;
-vel= 2.5; 
 dir = 0;
+len = 0;
+
+aux=false;
