@@ -1,0 +1,1 @@
+global.salaAnterior = 0;

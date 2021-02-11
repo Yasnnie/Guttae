@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d295c344-b0da-458a-bb00-62753263ae14","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Elementos",
+    "path": "folders/Sprites/Elementos.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_chao",

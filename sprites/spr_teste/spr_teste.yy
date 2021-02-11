@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fd822d3e-45dc-4ad9-83e9-27dc7f19aae5","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Elementos",
+    "path": "folders/Sprites/Elementos.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_teste",

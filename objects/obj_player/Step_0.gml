@@ -3,14 +3,16 @@ key_down = keyboard_check(vk_down);
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 
+key_map = keyboard_check_released(ord("M"));
+key_map2 = keyboard_check_released(ord("E"));
 
-xaxis = (key_right-key_left);
-yaxis = (key_down-key_up);
 
 
+#region Movimentação
 if( key_up || key_down || key_right || key_left)
 {
-
+	xaxis = (key_right-key_left);
+	yaxis = (key_down-key_up);
 	dir = point_direction(0, 0, xaxis, yaxis);
 	
 	if (xaxis == 0) and (yaxis == 0)
@@ -26,7 +28,7 @@ if( key_up || key_down || key_right || key_left)
 	velv = lengthdir_y(len, dir);
 
 	
-	
+	//MUDANÇA DE SPRITE HORIZONTAL
 	if (velh < 0){
 	sprite_index = spr_GuilhermeAndandoE;
 	aux = true;
@@ -35,7 +37,7 @@ if( key_up || key_down || key_right || key_left)
 	aux = false;
 	}
 	
-	
+	//MUDANÇA DE SPRITE VERTICAL
 	if (velv!=0 && aux == true)
 	{
 	sprite_index = spr_GuilhermeAndandoE;
@@ -78,3 +80,18 @@ sprite_index = spr_GuilhermeParadoE;
 
 }
 
+#endregion
+
+if(key_map2){
+	show_debug_message(room);
+}
+
+if (key_map){
+	if(room == 0) {
+		room_goto(global.salaAnterior);
+		show_debug_message(global.salaAnterior);
+	} else {
+		global.salaAnterior = room;
+		room_goto(rm_mapa);	
+	}
+} 
