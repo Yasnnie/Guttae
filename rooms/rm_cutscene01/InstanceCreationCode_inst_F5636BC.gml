@@ -1,0 +1,2 @@
+strings[0] = "Então pessoal, a proposta e a seguinte, vocês devem desenvolver um projeto para de ajudar a corrigir alguma problemática do dia-a-dia.\nO objetivo aqui é pensar em como nós podemos ajudar a nossa comunidade. O que nós podemos fazer enquanto discentes e cidadãos para contribuir\ncom o bem de todos?";
+strings[1] = "Nós enquanto instituição temos a responsabilidade de promover essas iniciativas e desenvolver novas tecnologias, e esse é o trabalho de\nvocês para o semestre.";

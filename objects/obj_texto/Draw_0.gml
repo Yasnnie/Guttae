@@ -1,9 +1,9 @@
 // Desenhando meu texto
 
-var m = room_width*0.02
 
-draw_sprite(spr_boxDialog,-1, 0+m/2,room_height -100);
-draw_text(0+m + 2,room_height-100,texto);
+
+draw_sprite_ext(spr_boxDialog,-1,0,room_height-100,0.65,5,0,c_white,1);
+draw_text_ext(10,room_height-95,texto,30,700-10);
 
 
 

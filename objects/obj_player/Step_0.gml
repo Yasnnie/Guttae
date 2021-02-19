@@ -82,6 +82,7 @@ sprite_index = spr_GuilhermeParadoE;
 
 #endregion
 
+#region Mapa
 if(key_map2){
 	show_debug_message(room);
 }
@@ -95,3 +96,22 @@ if (key_map){
 		room_goto(rm_mapa);	
 	}
 } 
+
+#endregion
+
+#region Colisão Exit Room
+	
+	//Sair Horizontal
+	if place_meeting(x+velh,y,obj_exitRoom)
+	{
+		global.salaAnterior = room;
+		room_goto(rm_mapa);	 
+	}
+	//Sair Vertical
+	if place_meeting(x,y+velv,obj_exitRoom)
+	{
+		global.salaAnterior = room;
+		room_goto(rm_mapa);	 
+	}
+	
+#endregion
