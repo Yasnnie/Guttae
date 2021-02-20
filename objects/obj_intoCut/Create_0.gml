@@ -1,4 +1,5 @@
 
+
 //FADE CONTROLS
 alpha=1;
 fadeout=0;
@@ -8,8 +9,16 @@ texto_cutscene = "";
 print= "";
 
 l=0;
-next = 0;
 
-holdspace = 0;
 
-strings[0] = ""
+strings[0] = "";
+
+
+//Sprite
+
+senq_img_dialog[0] = noone;
+img_dialog = noone;
+
+//Próxima Sala
+
+next_room = noone;

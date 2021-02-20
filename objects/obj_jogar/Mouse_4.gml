@@ -1,1 +1,1 @@
-room_goto(rm_labLuis);
+room_goto(rm_cutscene01);

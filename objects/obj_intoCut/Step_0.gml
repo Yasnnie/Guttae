@@ -1,4 +1,5 @@
-
+key_skip = keyboard_check_released(vk_space);
+key_map2 = keyboard_check_released(ord("E"));
 
 //FADE:
 if(!fadeout) 
@@ -11,21 +12,37 @@ alpha = min(alpha+0.005,1);
 }
 
 
-
+// DIALOG:
 l+=0.25;
-
 print =  string_copy(texto_cutscene,1,l);
-if(l>string_length(texto_cutscene)+80 && next< array_length_1d(strings)-1)
+
+// PASSAR COM ESPAÇO
+if(key_skip)
 {
 	l=0;
-	next ++;
-	if(next == array_length_1d(strings)-1)
-	{
-		holdspace++;
-	}
+	global.next ++;
 }
 
-texto_cutscene = strings[next];
+if(global.next < array_length_1d(strings))
+{
+	texto_cutscene = strings[global.next];
+	img_dialog = senq_img_dialog[global.next];
+}
+
+
+
+if(key_map2){
+	show_debug_message(room);
+}
+
+
+if(global.next == array_length_1d(strings))
+{
+	room_goto(next_room);
+	global.next = 0;
+}
+
+
 
 
 
