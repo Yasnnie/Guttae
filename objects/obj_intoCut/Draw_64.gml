@@ -2,7 +2,7 @@
 draw_sprite_ext(spr_boxDialog,-1, 0,room_height+270,2,2,0,c_white,1);
 
 
-
+draw_set_font(fnt_dialogos);
 draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

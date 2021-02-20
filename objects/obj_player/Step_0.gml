@@ -93,7 +93,7 @@ if (key_map){
 		show_debug_message(global.salaAnterior);
 	} else {
 		global.salaAnterior = room;
-		room_goto(rm_mapa);	
+		room_goto(rm_mapaexecutavel);	
 	}
 } 
 
@@ -101,17 +101,26 @@ if (key_map){
 
 #region Colisão Exit Room
 	
+	
+	if (place_meeting(x+velh,y,obj_exitRoom) && global.quest == 3)
+	{
+		room_goto(rm_cutscene03);
+		
+	}else{
+	
 	//Sair Horizontal
 	if place_meeting(x+velh,y,obj_exitRoom)
 	{
 		global.salaAnterior = room;
-		room_goto(rm_mapa);	 
+		room_goto(rm_mapaexecutavel);	 
 	}
 	//Sair Vertical
 	if place_meeting(x,y+velv,obj_exitRoom)
 	{
 		global.salaAnterior = room;
-		room_goto(rm_mapa);	 
+		room_goto(rm_mapaexecutavel);
 	}
+	
+}
 	
 #endregion

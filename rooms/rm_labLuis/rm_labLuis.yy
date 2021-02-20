@@ -116,8 +116,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Mapas",
-    "path": "folders/Rooms/Mapas.yy",
+    "name": "Salas",
+    "path": "folders/Rooms/Salas.yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_labLuis",
