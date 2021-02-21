@@ -1,7 +1,8 @@
 key_skip = keyboard_check_released(vk_space);
 key_map2 = keyboard_check_released(ord("E"));
 
-//FADE:
+
+#region FADE
 if(!fadeout) 
 {
 alpha = max(alpha-0.005,0.25);
@@ -10,18 +11,63 @@ else
 {
 alpha = min(alpha+0.005,1);
 }
+#endregion
+
+#region TIMERS 
+
+if(global.quest == 0 && global.next == 2)
+{
+global.canRead = false;
+
+	if (timer<200)
+	{
+		timer ++;
+	}
+	
+	if (timer == 200)
+	{
+	global.canRead = true;
+
+	}
+}
+
+if (global.quest==4 && global.next == 0)
+{
+	global.canRead = false;
+	
+	if (timer<290)
+	{
+		timer ++;
+	}
+	
+	if (timer == 290)
+	{
+	global.canRead = true;
+
+	}
+
+}
+
+#endregion
 
 
-// DIALOG:
+
+#region DIALOGO
+if (global.canRead == true){ 
 l+=0.25;
 print =  string_copy(texto_cutscene,1,l);
 
-// PASSAR COM ESPAÇO
+
 if(key_skip)
 {
 	l=0;
 	global.next ++;
 }
+
+
+
+// PASSAR COM ESPAÇO
+
 
 if(global.next < array_length_1d(strings))
 {
@@ -41,6 +87,10 @@ if(global.next == array_length_1d(strings))
 	room_goto(next_room);
 	global.next = 0;
 }
+
+}
+
+#endregion
 
 
 

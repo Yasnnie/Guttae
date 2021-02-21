@@ -82,18 +82,40 @@ sprite_index = spr_GuilhermeParadoE;
 
 #endregion
 
+// NÃO CONSEGUIR ANDAR NOS MAPAS (OBS: COLOCAR A CABEÇA DO PERSONAGEM)
+if (room == 8 || room == 0)
+{
+	vel=0;
+	
+	// Colocar no if para aparecer em lugares especificos de acordo com a sala no mapa!!
+	if(global.quest == 3)
+	{
+	x=543;
+	y=160;
+	}
+
+}else {
+
+	vel = 2;
+}
+
 #region Mapa
-if(key_map2){
+
+if (key_map2)
+{
 	show_debug_message(room);
+
 }
 
 if (key_map){
-	if(room == 0) {
+	if(room == 8) {
+		
 		room_goto(global.salaAnterior);
-		show_debug_message(global.salaAnterior);
+		
 	} else {
+		
 		global.salaAnterior = room;
-		room_goto(rm_mapaexecutavel);	
+		room_goto(rm_mapa);	
 	}
 } 
 

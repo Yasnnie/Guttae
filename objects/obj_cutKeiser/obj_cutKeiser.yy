@@ -20,10 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_cutLeo","path":"objects/obj_cutLeo/obj_cutLeo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_cutLeo","path":"objects/obj_cutLeo/obj_cutLeo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +28,7 @@
     "path": "folders/Objects/Cutscene.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_cutLeo",
+  "name": "obj_cutKeiser",
   "tags": [],
   "resourceType": "GMObject",
 }

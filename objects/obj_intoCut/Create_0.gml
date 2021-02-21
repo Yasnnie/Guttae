@@ -13,7 +13,7 @@ l=0;
 
 strings[0] = "";
 
-
+timer = 0;
 //Sprite
 
 senq_img_dialog[0] = noone;
