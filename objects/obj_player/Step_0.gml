@@ -30,19 +30,19 @@ if( key_up || key_down || key_right || key_left)
 	
 	//MUDANÇA DE SPRITE HORIZONTAL
 	if (velh < 0){
-	sprite_index = spr_GuilhermeAndandoE;
+	sprite_index = spr_MatheusAndandoE;
 	aux = true;
 	} else if (velh > 0){
-	sprite_index = spr_GuilhermeAndando;
+	sprite_index = spr_MatheusAndando;
 	aux = false;
 	}
 	
 	//MUDANÇA DE SPRITE VERTICAL
 	if (velv!=0 && aux == true)
 	{
-	sprite_index = spr_GuilhermeAndandoE;
+	sprite_index = spr_MatheusAndandoE;
 	}else if (velv!=0 && aux == false){
-	sprite_index = spr_GuilhermeAndando;
+	sprite_index = spr_MatheusAndando;
 	}
 	
 //Colisão Horizontal
@@ -72,10 +72,10 @@ if place_meeting(x,y+velv,obj_block)
 	
 if(aux == false)
 {
-sprite_index = spr_GuilhermeParado;
+sprite_index = spr_MatheusParado;
 }else if(aux == true)
 {
-sprite_index = spr_GuilhermeParadoE;
+sprite_index = spr_MatheusParadoE;
 }
 
 }
@@ -83,7 +83,7 @@ sprite_index = spr_GuilhermeParadoE;
 #endregion
 
 // NÃO CONSEGUIR ANDAR NOS MAPAS (OBS: COLOCAR A CABEÇA DO PERSONAGEM)
-if (room == 8 || room == 0)
+if (room == 9 || room == 0)
 {
 	vel=0;
 	
@@ -108,7 +108,7 @@ if (key_map2)
 }
 
 if (key_map){
-	if(room == 8) {
+	if(room == 9) {
 		
 		room_goto(global.salaAnterior);
 		
