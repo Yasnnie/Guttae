@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7ae1a01e-c27d-413f-aa67-29944a358077","path":"sprites/spr_canoReto/spr_canoReto.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7ae1a01e-c27d-413f-aa67-29944a358077","path":"sprites/spr_canoReto/spr_canoReto.yy",},"LayerId":{"name":"d4f83d00-bf52-4d54-820c-d6e894532084","path":"sprites/spr_canoReto/spr_canoReto.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_canoReto","path":"sprites/spr_canoReto/spr_canoReto.yy",},"resourceVersion":"1.0","name":"7ae1a01e-c27d-413f-aa67-29944a358077","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7ae1a01e-c27d-413f-aa67-29944a358077","path":"sprites/spr_canoRetoA/spr_canoRetoA.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7ae1a01e-c27d-413f-aa67-29944a358077","path":"sprites/spr_canoRetoA/spr_canoRetoA.yy",},"LayerId":{"name":"d4f83d00-bf52-4d54-820c-d6e894532084","path":"sprites/spr_canoRetoA/spr_canoRetoA.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_canoRetoA","path":"sprites/spr_canoRetoA/spr_canoRetoA.yy",},"resourceVersion":"1.0","name":"7ae1a01e-c27d-413f-aa67-29944a358077","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_canoReto","path":"sprites/spr_canoReto/spr_canoReto.yy",},
+    "spriteId": {"name":"spr_canoRetoA","path":"sprites/spr_canoRetoA/spr_canoRetoA.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 3.0,
+    "playbackSpeed": 30.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fb8891f1-46d9-424f-bb8e-b6897f963751","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7ae1a01e-c27d-413f-aa67-29944a358077","path":"sprites/spr_canoReto/spr_canoReto.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"73cf0d11-2b93-4192-b2a1-f2255f41450c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7ae1a01e-c27d-413f-aa67-29944a358077","path":"sprites/spr_canoRetoA/spr_canoRetoA.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_canoReto","path":"sprites/spr_canoReto/spr_canoReto.yy",},
+    "parent": {"name":"spr_canoRetoA","path":"sprites/spr_canoRetoA/spr_canoRetoA.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_canoReto",
+    "name": "spr_canoRetoA",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -68,11 +68,11 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d4f83d00-bf52-4d54-820c-d6e894532084","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "canos normais",
-    "path": "folders/Sprites/Missões/Missão 1/canos normais.yy",
+    "name": "canos com água",
+    "path": "folders/Sprites/Missões/Missão 1/canos com água.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_canoReto",
+  "name": "spr_canoRetoA",
   "tags": [],
   "resourceType": "GMSprite",
 }

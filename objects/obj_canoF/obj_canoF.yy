@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_canoFim",
+    "path": "sprites/spr_canoFim/spr_canoFim.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

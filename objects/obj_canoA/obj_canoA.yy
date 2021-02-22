@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_canoRetoA",
+    "path": "sprites/spr_canoRetoA/spr_canoRetoA.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

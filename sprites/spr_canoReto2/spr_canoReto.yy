@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d4f83d00-bf52-4d54-820c-d6e894532084","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "canos normais",
-    "path": "folders/Sprites/Missões/Missão 1/canos normais.yy",
+    "name": "Missão 1",
+    "path": "folders/Sprites/Missões/Missão 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_canoReto",
