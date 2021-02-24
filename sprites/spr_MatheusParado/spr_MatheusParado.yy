@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"153218f8-4a93-4c71-89a1-fc43bb3efc0c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Personagens",
-    "path": "folders/Sprites/Personagens.yy",
+    "name": "Matheus",
+    "path": "folders/Sprites/Personagens/Matheus.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_MatheusParado",

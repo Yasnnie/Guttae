@@ -3,9 +3,9 @@
 if(global.quest == 0 && global.next == 2)
 {	
 	
-	sprite_index = spr_GuilhermeParadoE;
+	sprite_index = spr_YasminParadoE;
 	if (timer2 < 150) timer2++;
-	if (timer2 == 150) sprite_index = spr_GuilhermeParado;
+	if (timer2 == 150) sprite_index = spr_YasminParado;
 
 }
 
@@ -13,13 +13,13 @@ if (global.quest == 4)
 {
 	if (global.next == 0){
 		if (timer2 < 290) timer2++;
-		if (timer2 == 290) sprite_index = spr_GuilhermeParadoE;
+		if (timer2 == 290) sprite_index = spr_YasminParadoE;
 		
 	}
 	
 	if (global.next == 1)
 	{
-	sprite_index = spr_GuilhermeParado;
+	sprite_index = spr_YasminParado;
 	}
 
 }

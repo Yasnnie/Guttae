@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7f55e38a-d2e6-4b85-aaca-a491a6da4dee","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Personagens",
-    "path": "folders/Sprites/Personagens.yy",
+    "name": "Guilherme",
+    "path": "folders/Sprites/Personagens/Guilherme.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_GuilhermeAndandoE",

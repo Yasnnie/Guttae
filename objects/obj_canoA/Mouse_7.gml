@@ -1,53 +1,33 @@
+
 if(!confirm_start)
 {
-//CANOS RETOS
-if(sprA == spr_canoReto2A)
-{
-	sprA = spr_canoRetoA;
-	
-}else if(sprA == spr_canoRetoA)
-{
+switch(sprA){
+//CANOS RETOS COM ÁGUA
+case spr_canoRetoA:
 	sprA = spr_canoReto2A;
-	
-}
+break;
 
-//CANOS T
+case spr_canoReto2A:
+	sprA = spr_canoRetoA;
+break;
 
-if(sprA == spr_canoTA){
-	
-	sprA = spr_canoT3A;
-	
-}else if(sprA == spr_canoT3A)
-{
-	sprA = spr_canoT2A;
-	
-}else if(sprA == spr_canoT2A)
-{
-	sprA = spr_canoT1A;
-	
-}else if(sprA == spr_canoT1A)
-{
-	sprA = spr_canoTA;
-	
-}
 
-//CANOS L
-
-if(sprA == spr_canoLA){
-	
+//CANOS L COM ÁGUA
+case spr_canoLA:
 	sprA = spr_canoL1A;
-	
-}else if(sprA == spr_canoL1A){
-	
+break;
+
+case spr_canoL1A:
 	sprA = spr_canoL3A;
-	
-}else if(sprA == spr_canoL3A){
-	
+break;
+
+case spr_canoL3A:
 	sprA = spr_canoL2A;
-	
-}else if(sprA == spr_canoL2A){
-	
+break;
+
+case spr_canoL2A:
 	sprA = spr_canoLA;
-	
+break;
+
 }
 }

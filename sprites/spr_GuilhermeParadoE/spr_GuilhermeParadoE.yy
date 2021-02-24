@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2335a8ce-af87-452c-b207-dd3b258f3d0d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Personagens",
-    "path": "folders/Sprites/Personagens.yy",
+    "name": "Guilherme",
+    "path": "folders/Sprites/Personagens/Guilherme.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_GuilhermeParadoE",

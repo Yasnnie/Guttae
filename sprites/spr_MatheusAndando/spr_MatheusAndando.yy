@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"de6b0e5f-dbfb-4e30-8b9f-aab3e0d7ba2a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Personagens",
-    "path": "folders/Sprites/Personagens.yy",
+    "name": "Matheus",
+    "path": "folders/Sprites/Personagens/Matheus.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_MatheusAndando",

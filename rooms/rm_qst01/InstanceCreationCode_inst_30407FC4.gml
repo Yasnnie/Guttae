@@ -1,1 +1,3 @@
-spr = spr_canoReto2;
+spr = spr_canoL1;
+
+

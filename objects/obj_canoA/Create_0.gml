@@ -1,4 +1,18 @@
-sprA = noone;
+//passagem de parametros essenciais 
 
-cano_antigo = noone;
+sprA = noone;
+cano_velho = noone;
+eu = noone;
+
+// Auxiliar do inicial
 confirm_start = false;
+
+//auxiliares do FOR/ARRAY
+tamanho_array = 0;
+aux_index= 0;
+aux_confirm= false;
+
+
+
+
+

@@ -1,1 +1,1 @@
-spr = spr_canoT1;
+spr = spr_canoL2;
