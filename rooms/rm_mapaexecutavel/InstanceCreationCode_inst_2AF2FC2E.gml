@@ -1,1 +1,1 @@
-sala = teste;
+sala = rm_labKeiser;

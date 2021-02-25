@@ -10,7 +10,7 @@ if place_meeting(x-1,y,obj_canoA) || place_meeting(x+1,y,obj_canoA) || place_mee
 			cano_novo = instance_create_layer(x,y,layer,obj_canoA);
 			cano_novo.sprA = spr_canoRetoA;
 			cano_novo.eu = cano_novo;
-			//global.canos[array_length_1d(global.canos)] = cano_novo;
+			
 			ds_list_add(global.canos,cano_novo);
 			
 			instance_destroy(self);
@@ -20,7 +20,7 @@ if place_meeting(x-1,y,obj_canoA) || place_meeting(x+1,y,obj_canoA) || place_mee
 			cano_novo = instance_create_layer(x,y,layer,obj_canoA);
 			cano_novo.sprA = spr_canoReto2A;
 			cano_novo.eu = cano_novo;
-			//global.canos[array_length_1d(global.canos)] = cano_novo;
+			
 			ds_list_add(global.canos,cano_novo);
 			instance_destroy(self);
 		break;

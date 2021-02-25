@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_LuisParado",
+    "path": "sprites/spr_LuisParado/spr_LuisParado.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -17,18 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_NPC","path":"objects/obj_NPC/obj_NPC.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_NPC","path":"objects/obj_NPC/obj_NPC.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "dialogo",
-    "path": "folders/Objects/dialogo.yy",
+    "name": "Cutscene",
+    "path": "folders/Objects/Cutscene.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_NPC",
+  "name": "obj_cutLuix",
   "tags": [],
   "resourceType": "GMObject",
 }

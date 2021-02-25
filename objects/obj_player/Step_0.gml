@@ -4,7 +4,7 @@ key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 
 key_map = keyboard_check_released(ord("M"));
-key_map2 = keyboard_check_released(ord("E"));
+
 
 
 
@@ -101,11 +101,7 @@ if (room == 9 || room == 0)
 
 #region Mapa
 
-if (key_map2)
-{
-	show_debug_message(room);
 
-}
 
 if (key_map){
 	if(room == 9) {
