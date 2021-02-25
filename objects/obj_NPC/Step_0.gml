@@ -8,11 +8,18 @@ sprite_index = npc_spr;
 switch(npc_spr)
 {
  case spr_LuisParado:
-	if (colid_left)
+	
+	if (colid_left || colid_up || colid_right)
 	{
+		if(!aux_setas){
+		e_cabeca = instance_create_layer(201,42,layer-1, obj_setas);
+		e_cabeca.sprites = spr_setaE;
+		aux_setas = true;
+		}
 		sprite_index = spr_LuisParadoE;
 		if(key_e)
 		{
+			instance_destroy(e_cabeca);
 			if (meu_texto == noone)
 			{
 				meu_texto = instance_create_layer(x,y,layer, obj_texto);
@@ -24,24 +31,10 @@ switch(npc_spr)
 				meu_texto = noone;
 			}          
 		}
-	}else if(colid_up)
+	}else if(!colid_left || !colid_up || !colid_right)
 	{
-		sprite_index = spr_LuisParado;
-		if(key_e)
-		{
-			if (meu_texto == noone)
-			{
-				meu_texto = instance_create_layer(x,y,layer, obj_texto);
-				meu_texto.texto = texto;
-			}
-			else
-			{
-				instance_destroy(meu_texto);
-				meu_texto = noone;
-			}          
-		}
-	}else if(!colid_left)
-	{
+		instance_destroy(e_cabeca);
+		aux_setas = false;
 		if (meu_texto != noone)
 			{
 				instance_destroy(meu_texto);

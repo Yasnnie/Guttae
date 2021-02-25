@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_GuilhermeParado",
-    "path": "sprites/spr_GuilhermeParado/spr_GuilhermeParado.yy",
+    "name": "spr_KaiserParado",
+    "path": "sprites/spr_KaiserParado/spr_KaiserParado.yy",
   },
   "solid": false,
   "visible": true,

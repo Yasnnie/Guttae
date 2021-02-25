@@ -1,4 +1,4 @@
-next_room = rm_qst01;
+next_room = rm_labLuis;
 
 strings[0] = "Bom dia, professor Luis!";
 strings[1] = "Bom dia personas! Como vão?";
