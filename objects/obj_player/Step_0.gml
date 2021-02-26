@@ -4,6 +4,7 @@ key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 
 key_map = keyboard_check_released(ord("M"));
+key_map2 = keyboard_check_released(ord("H"));
 
 
 
@@ -83,7 +84,7 @@ sprite_index = spr_MatheusParadoE;
 #endregion
 
 // NÃO CONSEGUIR ANDAR NOS MAPAS (OBS: COLOCAR A CABEÇA DO PERSONAGEM)
-if (room == 9 || room == 0)
+if (room == 12 || room == 0)
 {
 	vel=0;
 	
@@ -100,16 +101,21 @@ if (room == 9 || room == 0)
 }
 
 #region Mapa
-
+if(key_map2)
+{
+show_debug_message(room)
+}
 
 
 if (key_map){
-	if(room == 9) {
-		
+	if(room == 12) {
+		global.create_aux = false;
 		room_goto(global.salaAnterior);
 		
 	} else {
-		
+		global.map_aux = true;
+		global.map_x = x;
+		global.map_y = y;
 		global.salaAnterior = room;
 		room_goto(rm_mapa);	
 	}
