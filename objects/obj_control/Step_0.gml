@@ -1,6 +1,6 @@
 //IF COM VAR MAP_AUX É A FUNCIONALIDADE DO MAPA
 
-
+//MAPA "M" TUTORIAL
 if(global.tutorial_aux == true && global.map_aux == true)
 {
 		if(butao_intro == noone && box_intro == noone){
@@ -8,6 +8,29 @@ if(global.tutorial_aux == true && global.map_aux == true)
 			{
 			butao_intro = instance_create_layer(576,570,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(317,60,layer,obj_explicacoes);
+			box_intro.texto_explicacao = "";
+			global.create_expli = true;
+			}
+		}
+		else
+		{
+			if(global.click_expli==true)
+			{
+			instance_destroy(butao_intro);
+			instance_destroy(box_intro);
+		
+			global.tutorial_aux = false;
+			}
+		}
+}
+//QUEST TUTORIAL
+if(global.tutorial_aux == true && global.quest01_aux == true)
+{
+		if(butao_intro == noone && box_intro == noone){
+			if(global.create_expli==false)
+			{
+			butao_intro = instance_create_layer(220,room_height-80,layer-1,obj_botaoEntendi);
+			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
 			box_intro.texto_explicacao = "";
 			global.create_expli = true;
 			}
