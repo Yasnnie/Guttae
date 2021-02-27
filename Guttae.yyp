@@ -53,7 +53,6 @@
     {"id":{"name":"rm_qst01","path":"rooms/rm_qst01/rm_qst01.yy",},"order":1,},
     {"id":{"name":"spr_setaUpS","path":"sprites/spr_setaUpS/spr_setaUpS.yy",},"order":13,},
     {"id":{"name":"obj_texto","path":"objects/obj_texto/obj_texto.yy",},"order":1,},
-    {"id":{"name":"rm_cut","path":"rooms/rm_cut/rm_cut.yy",},"order":4,},
     {"id":{"name":"spr_GuilhermeParadoE","path":"sprites/spr_GuilhermeParadoE/spr_GuilhermeParadoE.yy",},"order":3,},
     {"id":{"name":"spr_testeMapa","path":"sprites/spr_testeMapa/spr_testeMapa.yy",},"order":1,},
     {"id":{"name":"spr_MatheusAndando","path":"sprites/spr_MatheusAndando/spr_MatheusAndando.yy",},"order":0,},
@@ -150,7 +149,6 @@
     {"roomId":{"name":"rm_cutscene04","path":"rooms/rm_cutscene04/rm_cutscene04.yy",},},
     {"roomId":{"name":"rm_qst01","path":"rooms/rm_qst01/rm_qst01.yy",},},
     {"roomId":{"name":"rm_teste","path":"rooms/rm_teste/rm_teste.yy",},},
-    {"roomId":{"name":"rm_cut","path":"rooms/rm_cut/rm_cut.yy",},},
     {"roomId":{"name":"rm_labLuis","path":"rooms/rm_labLuis/rm_labLuis.yy",},},
   ],
   "Folders": [

@@ -36,6 +36,10 @@ if(global.quest == 4){
 	draw_sprite(img_dialog,-1,50, room_height+205);
 }
 
+if(global.quest == 5){
+	draw_sprite(img_dialog,-1,50, room_height+205);
+}
+
 
 #endregion
 

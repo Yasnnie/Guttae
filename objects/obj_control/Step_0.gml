@@ -81,22 +81,26 @@ if(global.map_aux)
 	show_debug_message("Caso 5")
 	if(!global.create_aux)
 	{
+		
 		yasminzinha = instance_create_layer(192,190,layer,obj_cutYasmin);
 		leozinho = instance_create_layer(319,190,layer,obj_cutLeo);
 		guilherminho = instance_create_layer(127,190,layer,obj_cutGuilherme);
 		player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 		global.create_aux = true;
+		
 	}
 
 }else if (!global.map_aux)
 {
 	if(!global.create_aux)
 	{
+		
 		yasminzinha = instance_create_layer(192,190,layer,obj_cutYasmin);
 		leozinho = instance_create_layer(319,190,layer,obj_cutLeo);
 		guilherminho = instance_create_layer(127,190,layer,obj_cutGuilherme);
 		player = instance_create_layer (256,192,layer,obj_player);
 		global.create_aux = true;
+		
 	}
 
 }
