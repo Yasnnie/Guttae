@@ -1,6 +1,7 @@
 //IF COM VAR MAP_AUX É A FUNCIONALIDADE DO MAPA
-
+#region DESCRIÇÃO DO TUTORIA
 //MAPA "M" TUTORIAL
+
 if(global.tutorial_aux == true && global.map_aux == true)
 {
 		if(butao_intro == noone && box_intro == noone){
@@ -47,7 +48,9 @@ if(global.tutorial_aux == true && global.quest01_aux == true)
 		}
 }
 
-
+#endregion
+ 
+#region CRIAÇÃO INSTANCIA
 switch(global.quest)
 {
 	
@@ -82,9 +85,9 @@ if(global.map_aux)
 	if(!global.create_aux)
 	{
 		
-		yasminzinha = instance_create_layer(192,190,layer,obj_cutYasmin);
-		leozinho = instance_create_layer(319,190,layer,obj_cutLeo);
-		guilherminho = instance_create_layer(127,190,layer,obj_cutGuilherme);
+		yasminzinha = instance_create_layer(192,190,layer_get_id("enter_e_seta"),obj_cutYasmin);
+		leozinho = instance_create_layer(319,190,layer_get_id("enter_e_seta"),obj_cutLeo);
+		guilherminho = instance_create_layer(127,190,layer_get_id("enter_e_seta"),obj_cutGuilherme);
 		player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 		global.create_aux = true;
 		
@@ -94,10 +97,10 @@ if(global.map_aux)
 {
 	if(!global.create_aux)
 	{
-		
-		yasminzinha = instance_create_layer(192,190,layer,obj_cutYasmin);
-		leozinho = instance_create_layer(319,190,layer,obj_cutLeo);
-		guilherminho = instance_create_layer(127,190,layer,obj_cutGuilherme);
+
+		yasminzinha = instance_create_layer(192,190,layer_get_id("enter_e_seta"),obj_cutYasmin);
+		leozinho = instance_create_layer(319,190,layer_get_id("enter_e_seta"),obj_cutLeo);
+		guilherminho = instance_create_layer(127,190,layer_get_id("enter_e_seta"),obj_cutGuilherme);
 		player = instance_create_layer (256,192,layer,obj_player);
 		global.create_aux = true;
 		
@@ -119,3 +122,42 @@ case 6:
 	}
 break;
 }
+#endregion
+
+#region LAYERS DEPTH
+switch(room)
+{
+	
+case rm_labLuis:
+var id_cadeira = layer_get_id("cadeira");
+var id_cadeira2 = layer_get_id("cadeira2");
+var id_cadeira3 = layer_get_id("cadeira3");
+
+if(player.y<204)
+{
+    show_debug_message("função 1");
+    layer_depth(id_cadeira,300);
+    layer_depth(id_cadeira2,300);
+    layer_depth(id_cadeira3,300);
+}else if(204<player.y && player.y<254)
+{
+    show_debug_message("função 2");
+    layer_depth(id_cadeira,500);
+    layer_depth(id_cadeira2,300);
+    layer_depth(id_cadeira3,300);
+}else if(254<player.y && player.y<300)
+{
+	layer_depth(id_cadeira2,500);
+	layer_depth(id_cadeira3,300);
+}else if(player.y>300)
+{
+	layer_depth(id_cadeira3,500);
+}
+
+break;
+
+
+
+}
+
+#endregion
