@@ -1,4 +1,5 @@
-
+eu_dialogo[0] ="";
+nome_personagem = "";
 
 //FADE CONTROLS
 alpha=1;

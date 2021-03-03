@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5762a74d-7262-45c7-bb6b-a231fd0c03f7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Missões",
-    "path": "folders/Sprites/Missões.yy",
+    "name": "cel",
+    "path": "folders/Sprites/Missões/cel.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_CelularMatheus",

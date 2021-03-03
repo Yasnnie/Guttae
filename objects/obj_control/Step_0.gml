@@ -78,7 +78,7 @@ break;
 case 5: 
 if(global.map_aux)
 {
-	show_debug_message("Caso 5")
+	
 	if(!global.create_aux)
 	{
 		

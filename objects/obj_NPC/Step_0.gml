@@ -42,6 +42,7 @@ switch(npc_spr)
 			}
 	}
  break;
+ 
  case spr_YasminParado:
  if(room == rm_tutorial){
  if (colid_left || colid_up)

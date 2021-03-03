@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_jogar",
-    "path": "sprites/spr_jogar/spr_jogar.yy",
+    "name": "spr_jogar2",
+    "path": "sprites/spr_jogar2/spr_jogar2.yy",
   },
   "solid": false,
   "visible": true,

@@ -46,7 +46,7 @@ if( key_up || key_down || key_right || key_left)
 	sprite_index = spr_MatheusAndando;
 	}
 	
-//Colisão Horizontal
+//Colisão Horizontal block
 if place_meeting(x+velh,y,obj_block)
 	{
 		while !place_meeting(x+velh,y,obj_block)
@@ -55,9 +55,10 @@ if place_meeting(x+velh,y,obj_block)
 		}
 		velh = 0;
 	}
+	
 	x+= velh;
 
-//Colisão Vertical	
+//Colisão Vertical	block
 if place_meeting(x,y+velv,obj_block)
 	{
 		while !place_meeting(x,y+velv,obj_block)
@@ -67,6 +68,7 @@ if place_meeting(x,y+velv,obj_block)
 		
 		velv = 0; 
 	}
+
 	y+= velv;
 
 }else {

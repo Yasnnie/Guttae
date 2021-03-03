@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"78c598d8-1122-4ea4-8616-028055004e5a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Missões",
-    "path": "folders/Sprites/Missões.yy",
+    "name": "cel",
+    "path": "folders/Sprites/Missões/cel.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bQuest",

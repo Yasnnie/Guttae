@@ -58,6 +58,8 @@ l+=0.25;
 print =  string_copy(texto_cutscene,1,l);
 
 
+
+
 if(key_skip)
 {
 	l=0;
@@ -73,6 +75,7 @@ if(global.next < array_length_1d(strings))
 {
 	texto_cutscene = strings[global.next];
 	img_dialog = senq_img_dialog[global.next];
+	nome_personagem = eu_dialogo[global.next];
 }
 
 

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e5a797c1-270e-45a6-a0e0-8f2cbf9ab2e9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Missões",
-    "path": "folders/Sprites/Missões.yy",
+    "name": "cel",
+    "path": "folders/Sprites/Missões/cel.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_CelularYasmin",
