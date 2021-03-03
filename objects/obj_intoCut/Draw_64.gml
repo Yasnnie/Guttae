@@ -6,7 +6,7 @@ if(global.canRead == true){
 
 
 
- draw_sprite_ext(spr_boxDialog,-1, 0,room_height+220,2,2,0,c_white,1);
+draw_sprite_ext(spr_boxDialog,-1, 0,room_height+220,2,2,0,c_white,1);
 
 
 

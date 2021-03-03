@@ -9,7 +9,7 @@ if(global.tutorial_aux == true && global.map_aux == true)
 			{
 			butao_intro = instance_create_layer(576,570,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(317,60,layer,obj_explicacoes);
-			box_intro.texto_explicacao = "";
+			box_intro.texto_explicacao = "Olá amiguinho(a)!!! Ao apertar a tecla M você vai ser direcionado para o mapa, esse mapa ele é estável, ele só ira mostrar onde está as suas missões, que sera representado por um ponto de exclamação(!), e onde está cada personagem, incluindo você.\n\n\n\n\nCaso você queira se locomover procure a seta no chão de sua sala, ela estará indicando a saída, ao sair da sala você entrará no mapa onde você poderá se locomover.";
 			global.create_expli = true;
 			}
 		}

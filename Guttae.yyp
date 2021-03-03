@@ -62,6 +62,7 @@
     {"id":{"name":"spr_setaM","path":"sprites/spr_setaM/spr_setaM.yy",},"order":8,},
     {"id":{"name":"spr_setaE","path":"sprites/spr_setaE/spr_setaE.yy",},"order":14,},
     {"id":{"name":"spr_MatheusParado","path":"sprites/spr_MatheusParado/spr_MatheusParado.yy",},"order":2,},
+    {"id":{"name":"fnt_introducao","path":"fonts/fnt_introducao/fnt_introducao.yy",},"order":3,},
     {"id":{"name":"spr_canoL3A","path":"sprites/spr_canoL3A/spr_canoL3A.yy",},"order":4,},
     {"id":{"name":"ts_paredes","path":"tilesets/ts_paredes/ts_paredes.yy",},"order":2,},
     {"id":{"name":"spr_setaLeftS","path":"sprites/spr_setaLeftS/spr_setaLeftS.yy",},"order":11,},
