@@ -79,45 +79,59 @@ if(global.map_aux)
 break;
 
 case 5: 
-if(global.map_aux)
-{
+
+	switch(room)
+	{
+	#region Sala de Luis
+case rm_labLuis:
+	if(global.map_aux)
+	{
 	
-	if(!global.create_aux)
+		if(!global.create_aux)
+		{
+		
+			yasminzinha = instance_create_layer(192,190,layer_get_id("enter_e_seta"),obj_cutYasmin);
+			leozinho = instance_create_layer(319,190,layer_get_id("enter_e_seta"),obj_cutLeo);
+			guilherminho = instance_create_layer(127,190,layer_get_id("enter_e_seta"),obj_cutGuilherme);
+			quest[0] = instance_create_layer(462,239,layer_get_id("enter_e_seta"), obj_enter);
+			quest[1] = instance_create_layer(462,272,layer_get_id("enter_e_seta"), obj_enter);
+			quest[0].my_enter = 1;
+			quest[1].my_enter = 1;
+			player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+			global.create_aux = true;
+		
+		}
+
+	}else if (!global.map_aux)
 	{
+		if(!global.create_aux)
+		{
+
+			yasminzinha = instance_create_layer(192,190,layer_get_id("enter_e_seta"),obj_cutYasmin);
+			leozinho = instance_create_layer(319,190,layer_get_id("enter_e_seta"),obj_cutLeo);
+			guilherminho = instance_create_layer(127,190,layer_get_id("enter_e_seta"),obj_cutGuilherme);
+			quest[0] = instance_create_layer(463,240,layer_get_id("enter_e_seta"), obj_enter);
+			quest[1] = instance_create_layer(463,272,layer_get_id("enter_e_seta"), obj_enter);
+			quest[0].my_enter = 1;
+			quest[1].my_enter = 1;
+			player = instance_create_layer (256,192,layer,obj_player);
+			global.create_aux = true;
 		
-		yasminzinha = instance_create_layer(192,190,layer_get_id("enter_e_seta"),obj_cutYasmin);
-		leozinho = instance_create_layer(319,190,layer_get_id("enter_e_seta"),obj_cutLeo);
-		guilherminho = instance_create_layer(127,190,layer_get_id("enter_e_seta"),obj_cutGuilherme);
-		player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
-		global.create_aux = true;
-		
+		}
+
 	}
-
-}else if (!global.map_aux)
-{
-	if(!global.create_aux)
-	{
-
-		yasminzinha = instance_create_layer(192,190,layer_get_id("enter_e_seta"),obj_cutYasmin);
-		leozinho = instance_create_layer(319,190,layer_get_id("enter_e_seta"),obj_cutLeo);
-		guilherminho = instance_create_layer(127,190,layer_get_id("enter_e_seta"),obj_cutGuilherme);
-		player = instance_create_layer (256,192,layer,obj_player);
-		global.create_aux = true;
-		
+break;
+#endregion
 	}
-
-}
 
 break;
 
 case 6:
-	instance_destroy(yasminzinha);
-	instance_destroy(leozinho);
-	instance_destroy(guilherminho);
-	instance_destroy(player);
+
 	if(!global.create_aux)
 	{
-		instance_create_layer(44,336,layer,obj_player);
+		
+		player = instance_create_layer(431,256,layer,obj_player);
 		global.create_aux = true;
 	}
 break;

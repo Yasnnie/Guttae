@@ -7,6 +7,9 @@ global.map_aux = false;// SABER SE MAPA FOI ABERTO
 global.tutorial_aux = false;//mapa tutorial
 global.click_expli= false;
 
+//RESPOSTAS:
+global.click_resposta = false;
+
 //TEMPO DO GAME
 global.quest= 0;
 

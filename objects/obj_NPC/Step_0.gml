@@ -5,12 +5,19 @@ colid_down = place_meeting(x,y+1,obj_player);
 colid_up = place_meeting(x,y-1,obj_player);
 
 
+
 sprite_index = npc_spr;
 
 switch(npc_spr)
 {
+#region LUIX
  case spr_LuisParado:
-	
+	if(global.quest==7)
+	{
+		texto = "Fale com o professor Kaiser, ele pode ter alguma dica sobre a próxima peça.";
+		respostas[0] ="Certo. Até mais!!";
+		respostas[1] = "";
+	}
 	if (colid_left || colid_up || colid_right)
 	{
 		if(!aux_setas){
@@ -19,6 +26,7 @@ switch(npc_spr)
 		aux_setas = true;
 		}
 		sprite_index = spr_LuisParadoE;
+		if(!global.click_resposta){
 		if(key_e)
 		{
 		
@@ -49,27 +57,49 @@ switch(npc_spr)
 					}
 				instance_destroy(meu_texto);
 				meu_texto = noone;
-			}          
-		}
-	}else if(!colid_left || !colid_up || !colid_right)
-	{
-			
-		instance_destroy(e_cabeca);
-		aux_setas = false;
-		if (meu_texto != noone)
-			{
-				var k = 0;
-				while(array_length_1d(respostas) > k)
-					{
-						instance_destroy(e_resposta[k]);
-						k++;
-					}
-				instance_destroy(meu_texto);
-				meu_texto = noone;
+				}          
 			}
+		}
+		else if(global.click_resposta)
+		{
+			instance_destroy(e_cabeca);
+			aux_setas = false;
+			if (meu_texto != noone)
+				{
+					var k = 0;
+					while(array_length_1d(respostas) > k)
+						{
+							instance_destroy(e_resposta[k]);
+							k++;
+						}
+					instance_destroy(meu_texto);
+					meu_texto = noone;
+					global.click_resposta = false;
+				}
+			
+		}
+	}else
+	{
+	instance_destroy(e_cabeca);
+			aux_setas = false;
+			if (meu_texto != noone)
+				{
+					var k = 0;
+					while(array_length_1d(respostas) > k)
+						{
+							instance_destroy(e_resposta[k]);
+							k++;
+						}
+					instance_destroy(meu_texto);
+					meu_texto = noone;
+					global.click_resposta = false;
+				}
 	}
+	
  break;
+ #endregion
  
+ #region Yasmin
  case spr_YasminParado:
  if(room == rm_tutorial){
  if (colid_left || colid_up)
@@ -106,7 +136,7 @@ switch(npc_spr)
 	}
  }
  break;
-
+#endregion
 }
 
 

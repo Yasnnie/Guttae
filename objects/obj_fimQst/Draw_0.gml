@@ -1,4 +1,4 @@
- draw_text(x-40,y-250,"MISSÃO CONCLUIDA");
+draw_text(x-30,y-250,"MISSÃO CONCLUIDA");
 
 
 
