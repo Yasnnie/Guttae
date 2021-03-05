@@ -135,13 +135,13 @@ var id_cadeira3 = layer_get_id("cadeira3");
 
 if(player.y<204)
 {
-    show_debug_message("função 1");
+  
     layer_depth(id_cadeira,300);
     layer_depth(id_cadeira2,300);
     layer_depth(id_cadeira3,300);
 }else if(204<player.y && player.y<254)
 {
-    show_debug_message("função 2");
+    
     layer_depth(id_cadeira,500);
     layer_depth(id_cadeira2,300);
     layer_depth(id_cadeira3,300);
