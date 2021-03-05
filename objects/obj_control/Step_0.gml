@@ -19,6 +19,8 @@ if(global.tutorial_aux == true && global.map_aux == true)
 			{
 			instance_destroy(butao_intro);
 			instance_destroy(box_intro);
+			butao_intro = noone;
+			box_intro = noone;
 		
 			global.tutorial_aux = false;
 			}
@@ -132,6 +134,14 @@ case 6:
 	{
 		
 		player = instance_create_layer(431,256,layer,obj_player);
+		global.create_aux = true;
+	}
+break;
+
+case 7:
+	if(!global.create_aux)
+	{
+		player = instance_create_layer(30,335,layer,obj_player);
 		global.create_aux = true;
 	}
 break;

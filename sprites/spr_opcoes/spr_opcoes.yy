@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"08cf27f8-722d-43bb-887f-a2f2bcceee20","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Menu",
-    "path": "folders/Sprites/Menu.yy",
+    "name": "inicio",
+    "path": "folders/Sprites/Menu/inicio.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_opcoes",

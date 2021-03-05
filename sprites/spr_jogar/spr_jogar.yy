@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"db909037-1ffd-41cf-a6bd-1880a0dcb6b4","path":"sprites/spr_jogar/spr_jogar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"db909037-1ffd-41cf-a6bd-1880a0dcb6b4","path":"sprites/spr_jogar/spr_jogar.yy",},"LayerId":{"name":"828b490d-9f2d-438f-9534-1aff4d8d9acf","path":"sprites/spr_jogar/spr_jogar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"db909037-1ffd-41cf-a6bd-1880a0dcb6b4","path":"sprites/spr_jogar/spr_jogar.yy",},"LayerId":{"name":"a6d0852d-7a15-4486-bfcf-7efb5afe8451","path":"sprites/spr_jogar/spr_jogar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_jogar","path":"sprites/spr_jogar/spr_jogar.yy",},"resourceVersion":"1.0","name":"db909037-1ffd-41cf-a6bd-1880a0dcb6b4","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -69,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"828b490d-9f2d-438f-9534-1aff4d8d9acf","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Menu",
-    "path": "folders/Sprites/Menu.yy",
+    "name": "inicio",
+    "path": "folders/Sprites/Menu/inicio.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_jogar",
