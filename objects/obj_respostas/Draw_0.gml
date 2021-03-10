@@ -1,13 +1,18 @@
 
 var mouse_sobre = position_meeting(mouse_x,mouse_y,self);
 
+draw_set_color(c_white);
 if(mouse_sobre)
 {
-draw_text_color(10,y,resposta,c_green,c_blue,c_green,c_green,1);
+draw_sprite(spr_optionDialogOver,0,x,y-1);
+draw_text(10,y,resposta);
+
 }
 else 
 {
-draw_text_color(10,y,resposta,c_black,c_black,c_black,c_black,1);
+	
+draw_sprite(spr_optionDialog,0,x,y-1);
+draw_text(10,y,resposta);
 }
 
 

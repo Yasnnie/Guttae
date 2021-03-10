@@ -10,7 +10,7 @@ break;
 case 6: 
 texto = "Boa, você conseguiu!! Pode utilizar deste arduino para o seu projeto. Fale com o professor Kaiser, ele pode ter alguma dica sobre a próxima peça.";
 respostas[0] ="Espere um pouco professor, ainda falta algo.";
-respostas[1] ="Obrigado professor. Nós iremos fazer bom proveito disso. Até mais.";
+respostas[1] ="Obrigado professor. Nós iremos fazer um bom proveito disso. Até mais.";
 break;
 
 case 7:

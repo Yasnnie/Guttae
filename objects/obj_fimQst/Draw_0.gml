@@ -1,4 +1,4 @@
-draw_text(x-30,y-250,"MISSÃO CONCLUIDA");
+draw_sprite(spr_tituloMissao,0,96,32);
 
 
 
@@ -6,11 +6,13 @@ var mouse_sobre = position_meeting(mouse_x,mouse_y,self);
 
 if(mouse_sobre)
 {
-draw_text_color(x,y,"VOLTAR A SALA",c_blue,c_blue,c_blue,c_blue,1);
+draw_sprite(spr_botaoVoltarS_pressed,0,x,y);
+
 }
 else
 {
-draw_text_color(x,y,"VOLTAR A SALA",c_white,c_white,c_white,c_white,1);
+draw_sprite(spr_botaoVoltarS,0,x,y);
+
 
 }
 

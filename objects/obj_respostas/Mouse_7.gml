@@ -12,7 +12,7 @@ case rm_labLuis:
 		case 6:
 			switch(resposta)
 			{
-				case "Obrigado professor. Nós iremos fazer bom proveito disso. Até mais.":
+				case "Obrigado professor. Nós iremos fazer um bom proveito disso. Até mais.":
 				show_debug_message("Resposta sim");
 				global.quest = 7;
 				global.click_resposta = true;

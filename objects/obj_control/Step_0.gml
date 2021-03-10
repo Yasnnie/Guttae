@@ -2,50 +2,60 @@
 #region DESCRIÇÃO DO TUTORIA
 //MAPA "M" TUTORIAL
 
-if(global.tutorial_aux == true && global.map_aux == true)
+if(global.map_aux == true)
 {
+show_debug_message("Mapa criado");	
 		if(butao_intro == noone && box_intro == noone){
-			if(global.create_expli==false)
+			show_debug_message("Mapa box vazio");	
+			if(global.create_expli[0]==false)
 			{
+			show_debug_message("Mapa box criado");	
 			butao_intro = instance_create_layer(576,570,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(317,60,layer,obj_explicacoes);
 			box_intro.texto_explicacao = "Olá amiguinho(a)!!! Ao apertar a tecla M você vai ser direcionado para o mapa, esse mapa ele é estável, ele só ira mostrar onde está as suas missões, que sera representado por um ponto de exclamação(!), e onde está cada personagem, incluindo você.\n\n\n\n\nCaso você queira se locomover procure a seta no chão de sua sala, ela estará indicando a saída, ao sair da sala você entrará no mapa onde você poderá se locomover.";
-			global.create_expli = true;
+			global.create_expli[0] = true;
 			}
 		}
 		else
 		{
 			if(global.click_expli==true)
 			{
+			show_debug_message("Mapa destruido");	
 			instance_destroy(butao_intro);
 			instance_destroy(box_intro);
 			butao_intro = noone;
 			box_intro = noone;
+			global.map_aux = false;
 		
-			global.tutorial_aux = false;
 			}
 		}
 }
 //QUEST TUTORIAL
-if(global.tutorial_aux == true && global.quest01_aux == true)
+if(global.quest01_aux == true)
 {
+	show_debug_message("Quest criada");
 		if(butao_intro == noone && box_intro == noone){
-			if(global.create_expli==false)
+			show_debug_message("Quest box vazia");
+			if(global.create_expli[1]==false)
 			{
+			show_debug_message("Quest box criada");
 			butao_intro = instance_create_layer(220,room_height-80,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
 			box_intro.texto_explicacao = "";
-			global.create_expli = true;
+			global.create_expli[1] = true;
 			}
 		}
 		else
 		{
 			if(global.click_expli==true)
 			{
+				show_debug_message("Quest destruido");	
 			instance_destroy(butao_intro);
 			instance_destroy(box_intro);
-		
-			global.tutorial_aux = false;
+			butao_intro = noone;
+			box_intro = noone;
+			global.quest01_aux = false;
+			
 			}
 		}
 }
@@ -130,20 +140,53 @@ break;
 
 case 6:
 
+if(global.map_aux)
+{
+	
 	if(!global.create_aux)
 	{
-		
+		player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+		global.create_aux = true;
+	
+	}
+
+}else if (!global.map_aux)
+{
+	
+	if(!global.create_aux)
+	{
 		player = instance_create_layer(431,256,layer,obj_player);
 		global.create_aux = true;
 	}
+
+}
+
+
 break;
 
 case 7:
+
+if(global.map_aux)
+{
+	
 	if(!global.create_aux)
 	{
-		player = instance_create_layer(30,335,layer,obj_player);
+		player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+		global.create_aux = true;
+	
+	}
+
+}else if (!global.map_aux)
+{
+	
+	if(!global.create_aux)
+	{
+		player = instance_create_layer(22,335,layer,obj_player);
 		global.create_aux = true;
 	}
+
+}
+
 break;
 }
 #endregion

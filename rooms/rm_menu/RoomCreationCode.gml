@@ -4,8 +4,8 @@ global.map_x = 0; // PEGAR X DA SALA ANTERIOR
 global.map_y = 0; // PEGAR Y DA SALA ANTERIOR
 global.map_aux = false;// SABER SE MAPA FOI ABERTO
 
-global.tutorial_aux = false;//mapa tutorial
-global.click_expli= false;
+
+global.click_expli = false;
 
 //RESPOSTAS:
 global.click_resposta = false;
@@ -19,7 +19,9 @@ global.canRead = true;
 
 // INSTANCIA DE CRIAÇÃO
 global.create_aux = false;
-global.create_expli = false;
+global.create_expli[0] = false;
+global.create_expli[1] = false;
+
 
 //QUEST:
 global.quest01_aux = false;

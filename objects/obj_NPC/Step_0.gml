@@ -12,12 +12,7 @@ switch(npc_spr)
 {
 #region LUIX
  case spr_LuisParado:
-	if(global.quest==7)
-	{
-		texto = "Fale com o professor Kaiser, ele pode ter alguma dica sobre a próxima peça.";
-		respostas[0] ="Certo. Até mais!!";
-		respostas[1] = "";
-	}
+
 	if (colid_left || colid_up || colid_right)
 	{
 		if(!aux_setas){
@@ -39,9 +34,11 @@ switch(npc_spr)
 				var i = 0;
 					while(array_length_1d(respostas) > i)
 					{
+						
 						e_resposta[i] = instance_create_layer(0,room_height-15-(15*i),layer-5,obj_respostas);
 						e_resposta[i].resposta = respostas[i];
 						i++;
+						
 					}
 			
 				meu_texto = instance_create_layer(x,y,layer-2, obj_texto);
