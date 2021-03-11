@@ -4,12 +4,12 @@
 
 if(global.map_aux == true)
 {
-show_debug_message("Mapa criado");	
+
 		if(butao_intro == noone && box_intro == noone){
-			show_debug_message("Mapa box vazio");	
+				
 			if(global.create_expli[0]==false)
 			{
-			show_debug_message("Mapa box criado");	
+		
 			butao_intro = instance_create_layer(576,570,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(317,60,layer,obj_explicacoes);
 			box_intro.texto_explicacao = "Olá amiguinho(a)!!! Ao apertar a tecla M você vai ser direcionado para o mapa, esse mapa ele é estável, ele só ira mostrar onde está as suas missões, que sera representado por um ponto de exclamação(!), e onde está cada personagem, incluindo você.\n\n\n\n\nCaso você queira se locomover procure a seta no chão de sua sala, ela estará indicando a saída, ao sair da sala você entrará no mapa onde você poderá se locomover.";
@@ -20,7 +20,7 @@ show_debug_message("Mapa criado");
 		{
 			if(global.click_expli==true)
 			{
-			show_debug_message("Mapa destruido");	
+		
 			instance_destroy(butao_intro);
 			instance_destroy(box_intro);
 			butao_intro = noone;
@@ -33,12 +33,12 @@ show_debug_message("Mapa criado");
 //QUEST TUTORIAL
 if(global.quest01_aux == true)
 {
-	show_debug_message("Quest criada");
+	
 		if(butao_intro == noone && box_intro == noone){
-			show_debug_message("Quest box vazia");
+		
 			if(global.create_expli[1]==false)
 			{
-			show_debug_message("Quest box criada");
+			
 			butao_intro = instance_create_layer(220,room_height-80,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
 			box_intro.texto_explicacao = "";
@@ -49,7 +49,7 @@ if(global.quest01_aux == true)
 		{
 			if(global.click_expli==true)
 			{
-				show_debug_message("Quest destruido");	
+		
 			instance_destroy(butao_intro);
 			instance_destroy(box_intro);
 			butao_intro = noone;
@@ -197,6 +197,141 @@ if(player.y<204)
 
 
 #endregion
+break;
+
+case rm_labKaiser:
+switch (global.quest)
+{
+#region 5
+	case 5: 
+		if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+		
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				global.create_aux = true;
+			
+			}
+
+		}else if (!global.map_aux)
+		{
+			if(!global.create_aux)
+			{
+
+				player = instance_create_layer (30,335,layer,obj_player);
+				global.create_aux = true;
+		
+			}
+
+		}
+break; 
+#endregion
+
+#region 6
+	case 6:
+
+	if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+		
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				global.create_aux = true;
+			
+			}
+
+		}else if (!global.map_aux)
+		{
+			if(!global.create_aux)
+			{
+
+				player = instance_create_layer (30,335,layer,obj_player);
+				global.create_aux = true;
+		
+			}
+
+		}
+break;
+#endregion
+
+#region 7
+	case 7:
+
+		if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				global.create_aux = true;
+	
+			}
+
+		}else if (!global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+				player = instance_create_layer(22,335,layer,obj_player);
+				global.create_aux = true;
+			}
+
+		}
+
+break;
+#endregion
+}
+
+
+var id_mesa = layer_get_id("mesa_meio");
+var id_mesa2 = layer_get_id("mesa_meio2");
+var id_mesa3 = layer_get_id("mesa_baixo");
+
+var id_elementos = layer_get_id("equipamentos02");
+var id_elementos2 = layer_get_id("equipamentos03");
+var id_elementos3 = layer_get_id("equipamentos04");
+
+
+if(player.y<159)
+{
+	//MESAS
+    layer_depth(id_mesa,300);
+    //ELEMENTOS
+	layer_depth(id_elementos,200);
+   
+}else if(176<player.y && player.y<239)
+{
+	//MESAS
+    layer_depth(id_mesa,600);
+    layer_depth(id_mesa2,300);
+	//ELEMENTOS
+	layer_depth(id_elementos,500);
+	layer_depth(id_elementos2,200);
+
+}else if(239<player.y && player.y<302)
+{
+	//MESAS
+	layer_depth(id_mesa,600);
+	layer_depth(id_mesa2,600);
+	layer_depth(id_mesa3,300);
+	//ELEMENTOS
+	layer_depth(id_elementos,500);
+	layer_depth(id_elementos2,500);
+	layer_depth(id_elementos3,200);
+}else if(player.y>302)
+{
+	//MESAS
+	layer_depth(id_mesa,600);
+	layer_depth(id_mesa2,600);
+	layer_depth(id_mesa3,600);
+	//ELEMENTOS
+	layer_depth(id_elementos,500);
+	layer_depth(id_elementos2,500);
+	layer_depth(id_elementos3,500);
+}
 
 break;
 

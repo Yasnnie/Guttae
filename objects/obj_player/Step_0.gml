@@ -86,7 +86,7 @@ sprite_index = spr_MatheusParadoE;
 #endregion
 
 // NÃO CONSEGUIR ANDAR NOS MAPAS (OBS: COLOCAR A CABEÇA DO PERSONAGEM)
-if (room == 12 || room == 0)
+if (room == rm_mapa)
 {
 	vel=0;
 	
@@ -110,7 +110,7 @@ show_debug_message(room)
 
 
 if (key_map){
-	if(room == 12) {
+	if(room == rm_mapa) {
 		global.create_aux = false;
 		room_goto(global.salaAnterior);
 		

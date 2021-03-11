@@ -1,2 +1,2 @@
 map_spr = spr_testeMapa;
-sala = rm_labKeiser;
+sala = rm_labKaiser;
