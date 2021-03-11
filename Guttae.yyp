@@ -39,7 +39,7 @@
     {"id":{"name":"ts_quadro","path":"tilesets/ts_quadro/ts_quadro.yy",},"order":3,},
     {"id":{"name":"spr_canoRetoA","path":"sprites/spr_canoRetoA/spr_canoRetoA.yy",},"order":0,},
     {"id":{"name":"spr_cut_face_Leo","path":"sprites/spr_cut_face_Leo/spr_cut_face_Leo.yy",},"order":1,},
-    {"id":{"name":"obj_setas","path":"objects/obj_setas/obj_setas.yy",},"order":5,},
+    {"id":{"name":"obj_animadas","path":"objects/obj_animadas/obj_animadas.yy",},"order":5,},
     {"id":{"name":"ts_objetos","path":"tilesets/ts_objetos/ts_objetos.yy",},"order":1,},
     {"id":{"name":"spr_setaRight","path":"sprites/spr_setaRight/spr_setaRight.yy",},"order":6,},
     {"id":{"name":"spr_cut_face_Coordenador","path":"sprites/spr_cut_face_Coordenador/spr_cut_face_Coordenador.yy",},"order":4,},

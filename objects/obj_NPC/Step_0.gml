@@ -16,7 +16,7 @@ switch(npc_spr)
 	if (colid_left || colid_up || colid_right)
 	{
 		if(!aux_setas){
-		e_cabeca = instance_create_layer(201,42,layer-2, obj_setas);
+		e_cabeca = instance_create_layer(201,42,layer-2, obj_animadas);
 		e_cabeca.sprites = spr_setaE;
 		aux_setas = true;
 		}
@@ -102,7 +102,7 @@ switch(npc_spr)
  if (colid_left || colid_up)
 	{
 		if(!aux_setas){
-		e_cabeca = instance_create_layer(360,42,layer-2, obj_setas);
+		e_cabeca = instance_create_layer(360,42,layer-2, obj_animadas);
 		e_cabeca.sprites = spr_setaE;
 		aux_setas = true;
 		}

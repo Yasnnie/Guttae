@@ -1,0 +1,1 @@
+sprites = spr_rojao2; 
