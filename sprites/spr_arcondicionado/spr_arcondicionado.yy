@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 19,
-  "bbox_right": 31,
-  "bbox_top": 1,
-  "bbox_bottom": 30,
+  "bbox_left": 35,
+  "bbox_right": 63,
+  "bbox_top": 2,
+  "bbox_bottom": 62,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
-  "height": 32,
+  "width": 64,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"035398cc-5b78-4a84-a65a-1f30e0ef6c9b","path":"sprites/spr_arcondicionado/spr_arcondicionado.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"035398cc-5b78-4a84-a65a-1f30e0ef6c9b","path":"sprites/spr_arcondicionado/spr_arcondicionado.yy",},"LayerId":{"name":"5b13f088-3335-4426-8e41-9202ccaee64a","path":"sprites/spr_arcondicionado/spr_arcondicionado.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_arcondicionado","path":"sprites/spr_arcondicionado/spr_arcondicionado.yy",},"resourceVersion":"1.0","name":"035398cc-5b78-4a84-a65a-1f30e0ef6c9b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"37d98b4c-b01f-4640-a22c-fe31bb6cda73","path":"sprites/spr_arcondicionado/spr_arcondicionado.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"37d98b4c-b01f-4640-a22c-fe31bb6cda73","path":"sprites/spr_arcondicionado/spr_arcondicionado.yy",},"LayerId":{"name":"15bbdfe1-7d5b-4c73-ad68-8a36bc5b48de","path":"sprites/spr_arcondicionado/spr_arcondicionado.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_arcondicionado","path":"sprites/spr_arcondicionado/spr_arcondicionado.yy",},"resourceVersion":"1.0","name":"37d98b4c-b01f-4640-a22c-fe31bb6cda73","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_arcondicionado","path":"sprites/spr_arcondicionado/spr_arcondicionado.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"831ae337-5ea6-45fd-80f1-48bd98458f3d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"035398cc-5b78-4a84-a65a-1f30e0ef6c9b","path":"sprites/spr_arcondicionado/spr_arcondicionado.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0f32c6df-99cf-4d0b-9502-a618b84535f5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"37d98b4c-b01f-4640-a22c-fe31bb6cda73","path":"sprites/spr_arcondicionado/spr_arcondicionado.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5b13f088-3335-4426-8e41-9202ccaee64a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"15bbdfe1-7d5b-4c73-ad68-8a36bc5b48de","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Elementos",

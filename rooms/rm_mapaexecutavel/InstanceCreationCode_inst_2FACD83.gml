@@ -1,2 +1,2 @@
-map_spr = spr_testeMapa;
-sala = rm_orta;
+map_spr = spr_horta;
+sala = rm_horta;

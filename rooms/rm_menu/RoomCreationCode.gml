@@ -1,3 +1,4 @@
+
 //MAPA
 global.salaAnterior = 0;//PEGAR A SALA ANTIGA
 global.map_x = 0; // PEGAR X DA SALA ANTERIOR

@@ -1,2 +1,2 @@
-map_spr = spr_bloco;
+map_spr = spr_blocoPrincipal;
 sala = rm_labLuis;

@@ -83,8 +83,8 @@ switch (global.quest)
 				yasminzinha = instance_create_layer(192,192,layer_get_id("enter_e_seta"),obj_cutYasmin);
 				leozinho = instance_create_layer(320,192,layer_get_id("enter_e_seta"),obj_cutLeo);
 				guilherminho = instance_create_layer(127,192,layer_get_id("enter_e_seta"),obj_cutGuilherme);
-				quest[0] = instance_create_layer(462,239,layer_get_id("enter_e_seta"), obj_enter);
-				quest[1] = instance_create_layer(462,272,layer_get_id("enter_e_seta"), obj_enter);
+				quest[0] = instance_create_layer(462,239,layer_get_id("enter"), obj_enter);
+				quest[1] = instance_create_layer(462,272,layer_get_id("enter"), obj_enter);
 				quest[0].my_enter = 1;
 				quest[1].my_enter = 1;
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
@@ -100,8 +100,8 @@ switch (global.quest)
 				yasminzinha = instance_create_layer(192,192,layer_get_id("enter_e_seta"),obj_cutYasmin);
 				leozinho = instance_create_layer(320,192,layer_get_id("enter_e_seta"),obj_cutLeo);
 				guilherminho = instance_create_layer(127,192,layer_get_id("enter_e_seta"),obj_cutGuilherme);
-				quest[0] = instance_create_layer(463,240,layer_get_id("enter_e_seta"), obj_enter);
-				quest[1] = instance_create_layer(463,272,layer_get_id("enter_e_seta"), obj_enter);
+				quest[0] = instance_create_layer(463,240,layer_get_id("enter"), obj_enter);
+				quest[1] = instance_create_layer(463,272,layer_get_id("enter"), obj_enter);
 				quest[0].my_enter = 1;
 				quest[1].my_enter = 1;
 				player = instance_create_layer (256,192,layer,obj_player);
@@ -295,7 +295,7 @@ var id_elementos2 = layer_get_id("equipamentos03");
 var id_elementos3 = layer_get_id("equipamentos04");
 
 
-if(player.y<159)
+if(player.y<176)
 {
 	//MESAS
     layer_depth(id_mesa,300);
