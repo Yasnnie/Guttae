@@ -7,7 +7,7 @@
 		{
 		
 			var number = choose(1,2,3,4,5,6,7,8,9);
-		
+			global.list_percorrer = 0;
 			//ADD ARRAY LIST COM SORTEI DE NÚMEROS
 			ds_list_add(global.numList,number);
 			
@@ -23,7 +23,7 @@
 				
 				
 				var number2 = choose(1,2,3,4,5,6,7,8,9);
-				
+				global.list_percorrer = 0;
 				//ADD ARRAY LIST COM SORTEI DE NÚMEROS
 				ds_list_add(global.numList,number2);
 				
@@ -37,7 +37,7 @@
 		if(!global.add_list_aux)
 			{
 				 
-			
+				global.list_percorrer = 0;
 				var number3 = choose(1,2,3,4,5,6,7,8,9);
 				//ADD ARRAY LIST COM SORTEI DE NÚMEROS
 				ds_list_add(global.numList,number3);
@@ -51,7 +51,7 @@
 		if(!global.add_list_aux)
 			{
 				
-				
+				global.list_percorrer = 0;
 				var number4 = choose(1,2,3,4,5,6,7,8,9);
 				//ADD ARRAY LIST COM SORTEI DE NÚMEROS
 				ds_list_add(global.numList,number4);
@@ -60,7 +60,32 @@
 				global.add_list_aux = true;
 			}
 	break;
-	
+	case 4:
+		if(!global.add_list_aux)
+			{
+				
+				global.list_percorrer = 0;
+				var number4 = choose(1,2,3,4,5,6,7,8,9);
+				//ADD ARRAY LIST COM SORTEI DE NÚMEROS
+				ds_list_add(global.numList,number4);
+				
+				
+				global.add_list_aux = true;
+			}
+	break;
+	case 6:
+		if(!global.add_list_aux)
+			{
+				
+				global.list_percorrer = 0;
+				var number4 = choose(1,2,3,4,5,6,7,8,9);
+				//ADD ARRAY LIST COM SORTEI DE NÚMEROS
+				ds_list_add(global.numList,number4);
+				
+				
+				global.add_list_aux = true;
+			}
+	break;
 
  }
  

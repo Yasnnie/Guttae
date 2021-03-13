@@ -11,7 +11,9 @@ global.click_count = 0;
 global.timer_peca = 0;
 global.timer_peca2=0;
 
-global.resetTimer= false;
+global.list_percorrer = 0;
+
+
 
 // ROUNDS ATÉ 6
 global.nRound = 0;
