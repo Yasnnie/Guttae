@@ -22,10 +22,12 @@ global.canRead = true;
 global.create_aux = false;
 global.create_expli[0] = false;
 global.create_expli[1] = false;
+global.create_expli[2] = false;
 
 
 //QUEST:
 global.quest01_aux = false;
+global.quest02_aux = false;
 //ARRAY LIST
 global.canos = ds_list_create(); //QST01
 

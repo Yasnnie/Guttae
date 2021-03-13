@@ -9,8 +9,9 @@ else
 sprite_index = spr_butaoEntendi;
 }
 
-if(room == rm_qst01)
+if(room == rm_qst01 || room == rm_qst02)
 {
 image_xscale = 0.5;
 image_yscale = 0.5;
 }
+

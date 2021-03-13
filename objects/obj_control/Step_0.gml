@@ -1,7 +1,7 @@
 //IF COM VAR MAP_AUX É A FUNCIONALIDADE DO MAPA
 #region DESCRIÇÃO DO TUTORIAL
-//MAPA "M" TUTORIAL
 
+#region MAPA
 if(global.map_aux == true)
 {
 
@@ -30,7 +30,10 @@ if(global.map_aux == true)
 			}
 		}
 }
-//QUEST TUTORIAL
+
+#endregion
+
+#region QUEST 01
 if(global.quest01_aux == true)
 {
 	
@@ -59,6 +62,41 @@ if(global.quest01_aux == true)
 			}
 		}
 }
+#endregion
+
+
+#region QUEST 02
+if(global.quest02_aux == true)
+{
+	
+		if(butao_intro == noone && box_intro == noone)
+		{
+		
+		if(global.create_expli[2]==false)
+			{
+			
+			butao_intro = instance_create_layer(220,room_height-90,layer-1,obj_botaoEntendi);
+			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
+			box_intro.texto_explicacao = "";
+			global.create_expli[2] = true;
+			}
+		}
+		else
+		{
+			if(global.click_expli==true)
+			{
+		
+			instance_destroy(butao_intro);
+			instance_destroy(box_intro);
+			butao_intro = noone;
+			box_intro = noone;
+			global.quest02_aux = false;
+			
+			}
+		}
+}
+#endregion
+
 
 #endregion
 
