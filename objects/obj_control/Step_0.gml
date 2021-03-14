@@ -44,7 +44,7 @@ if(global.quest01_aux == true)
 			
 			butao_intro = instance_create_layer(220,room_height-80,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
-			box_intro.texto_explicacao = "";
+			box_intro.texto_explicacao = "Vamos lá, visando aproveitar a água gerada pelo ar condicionado você deve construir o encanamento que a leva até o reservatório. É muito fácil, você só precisa girar os canos até que forme o caminho certo para levar a água até o depósito. Você consegue!";
 			global.create_expli[1] = true;
 			}
 		}
@@ -77,7 +77,7 @@ if(global.quest02_aux == true)
 			
 			butao_intro = instance_create_layer(220,room_height-90,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
-			box_intro.texto_explicacao = "";
+			box_intro.texto_explicacao = "Ah não! As plantinhas da horta do Roldão irão morrer! Não o deixe na mão, ajude-o a regar as divisões, siga a sequência correta da irrigação que irá aparecer em sua tela, caso erre você deverá iniciar tudo de novo, então seja rápido(a) e boa sorte!";
 			global.create_expli[2] = true;
 			}
 		}
@@ -120,9 +120,9 @@ switch (global.quest)
 		
 				yasminzinha = instance_create_layer(192,192,layer_get_id("enter_e_seta"),obj_cutYasmin);
 				leozinho = instance_create_layer(320,192,layer_get_id("enter_e_seta"),obj_cutLeo);
-				guilherminho = instance_create_layer(127,192,layer_get_id("enter_e_seta"),obj_cutGuilherme);
-				quest[0] = instance_create_layer(462,239,layer_get_id("enter"), obj_enter);
-				quest[1] = instance_create_layer(462,272,layer_get_id("enter"), obj_enter);
+				guilherminho = instance_create_layer(128,192,layer_get_id("enter_e_seta"),obj_cutGuilherme);
+				quest[0] = instance_create_layer(462,206,layer_get_id("enter"), obj_enter);
+				quest[1] = instance_create_layer(462,238,layer_get_id("enter"), obj_enter);
 				quest[0].my_enter = 1;
 				quest[1].my_enter = 1;
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
@@ -137,9 +137,9 @@ switch (global.quest)
 
 				yasminzinha = instance_create_layer(192,192,layer_get_id("enter_e_seta"),obj_cutYasmin);
 				leozinho = instance_create_layer(320,192,layer_get_id("enter_e_seta"),obj_cutLeo);
-				guilherminho = instance_create_layer(127,192,layer_get_id("enter_e_seta"),obj_cutGuilherme);
-				quest[0] = instance_create_layer(463,240,layer_get_id("enter"), obj_enter);
-				quest[1] = instance_create_layer(463,272,layer_get_id("enter"), obj_enter);
+				guilherminho = instance_create_layer(128,192,layer_get_id("enter_e_seta"),obj_cutGuilherme);
+				quest[0] = instance_create_layer(463,206,layer_get_id("enter"), obj_enter);
+				quest[1] = instance_create_layer(463,238,layer_get_id("enter"), obj_enter);
 				quest[0].my_enter = 1;
 				quest[1].my_enter = 1;
 				player = instance_create_layer (256,192,layer,obj_player);
@@ -304,6 +304,9 @@ break;
 			if(!global.create_aux)
 			{
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				leozinho = instance_create_layer(63,160,layer,obj_cutLeo);
+				yasminzinha = instance_create_layer(414,190,layer,obj_cutYasmin);
+				guilherminho = instance_create_layer(414,224,layer,obj_cutGuilherme);
 				global.create_aux = true;
 	
 			}
@@ -314,11 +317,43 @@ break;
 			if(!global.create_aux)
 			{
 				player = instance_create_layer(22,335,layer,obj_player);
+				leozinho = instance_create_layer(63,160,layer,obj_cutLeo);
+				yasminzinha = instance_create_layer(414,190,layer,obj_cutYasmin);
+				guilherminho = instance_create_layer(414,224,layer,obj_cutGuilherme);
 				global.create_aux = true;
 			}
 
 		}
 
+break;
+
+
+#endregion
+
+#region 8
+case 8:
+	if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+		
+				player = instance_create_layer (global.map_x,global.map_y,layer-1,obj_player);
+				global.create_aux = true;
+			
+			}
+
+		}else if (!global.map_aux)
+		{
+			if(!global.create_aux)
+			{
+
+				player = instance_create_layer (350,224,layer-1,obj_player);
+				global.create_aux = true;
+		
+			}
+
+		}
 break;
 #endregion
 }

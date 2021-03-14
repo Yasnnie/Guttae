@@ -48,6 +48,22 @@ if (global.quest==4 && global.next == 0)
 
 }
 
+if(global.quest == 8)
+{
+	global.canRead = false;
+	
+		if (timer<240)
+		{
+			timer ++;
+		}
+	
+		if (timer == 240)
+		{
+			global.canRead = true;
+
+		}
+}
+
 #endregion
 
 

@@ -149,6 +149,7 @@
     {"id":{"name":"spr_canoL1A","path":"sprites/spr_canoL1A/spr_canoL1A.yy",},"order":2,},
     {"id":{"name":"rm_comemoracao","path":"rooms/rm_comemoracao/rm_comemoracao.yy",},"order":2,},
     {"id":{"name":"obj_bQuest","path":"objects/obj_bQuest/obj_bQuest.yy",},"order":0,},
+    {"id":{"name":"rm_cutscene05","path":"rooms/rm_cutscene05/rm_cutscene05.yy",},"order":4,},
     {"id":{"name":"spr_butaoEntendi_pressed","path":"sprites/spr_butaoEntendi_pressed/spr_butaoEntendi_pressed.yy",},"order":4,},
     {"id":{"name":"spr_CelularGuilherme","path":"sprites/spr_CelularGuilherme/spr_CelularGuilherme.yy",},"order":1,},
     {"id":{"name":"fnt_tutorial","path":"fonts/fnt_tutorial/fnt_tutorial.yy",},"order":0,},
@@ -221,6 +222,7 @@
     {"name":"rm_biblioteca","path":"rooms/rm_biblioteca/rm_biblioteca.yy",},
     {"name":"rm_deposito","path":"rooms/rm_deposito/rm_deposito.yy",},
     {"name":"rm_qst02","path":"rooms/rm_qst02/rm_qst02.yy",},
+    {"name":"rm_cutscene05","path":"rooms/rm_cutscene05/rm_cutscene05.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":13,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
