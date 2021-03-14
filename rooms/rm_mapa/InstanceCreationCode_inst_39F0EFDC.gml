@@ -1,0 +1,1 @@
+map_spr2 = spr_horta;

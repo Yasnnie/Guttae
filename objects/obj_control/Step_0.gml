@@ -378,32 +378,32 @@ if(player.y<176)
 }else if(176<player.y && player.y<239)
 {
 	//MESAS
-    layer_depth(id_mesa,600);
+    layer_depth(id_mesa,700);
     layer_depth(id_mesa2,300);
 	//ELEMENTOS
-	layer_depth(id_elementos,500);
+	layer_depth(id_elementos,600);
 	layer_depth(id_elementos2,200);
 
 }else if(239<player.y && player.y<302)
 {
 	//MESAS
-	layer_depth(id_mesa,600);
-	layer_depth(id_mesa2,600);
+	layer_depth(id_mesa,700);
+	layer_depth(id_mesa2,700);
 	layer_depth(id_mesa3,300);
 	//ELEMENTOS
-	layer_depth(id_elementos,500);
-	layer_depth(id_elementos2,500);
+	layer_depth(id_elementos,600);
+	layer_depth(id_elementos2,600);
 	layer_depth(id_elementos3,200);
 }else if(player.y>302)
 {
 	//MESAS
-	layer_depth(id_mesa,600);
-	layer_depth(id_mesa2,600);
-	layer_depth(id_mesa3,600);
+	layer_depth(id_mesa,700);
+	layer_depth(id_mesa2,700);
+	layer_depth(id_mesa3,700);
 	//ELEMENTOS
-	layer_depth(id_elementos,500);
-	layer_depth(id_elementos2,500);
-	layer_depth(id_elementos3,500);
+	layer_depth(id_elementos,600);
+	layer_depth(id_elementos2,600);
+	layer_depth(id_elementos3,600);
 }
 
 break;

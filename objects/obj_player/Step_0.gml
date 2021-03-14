@@ -177,20 +177,41 @@ if(global.quest>=8)
 if (room == rm_mapa)
 {
 	vel=0;
-	
-	// Colocar no if para aparecer em lugares especificos de acordo com a sala no mapa!!
-	if(global.quest == 3)
+	switch(global.salaAnterior)
 	{
-	x=543;
-	y=160;
+	case 1:
+		x= 574;
+		y= 498;
+		sprite_index = spr_cabecaMatheus;
+		image_xscale = 2;
+		image_yscale = 2;
+	break;
+	
+	case 2:
+		x= 574;
+		y= 498;
+		sprite_index = spr_cabecaMatheus;
+		image_xscale = 2;
+		image_yscale = 2;
+	break;
+	
+	case 5:
+		x= 436;
+		y= 648;
+		sprite_index = spr_cabecaMatheus;
+		image_xscale = 2;
+		image_yscale = 2;
+	break;
 	}
+	// Colocar no if para aparecer em lugares especificos de acordo com a sala no mapa!!
+	
 
 }else {
-
+	
 	vel = 2;
 }
 
-#region Mapa
+ #region Mapa
 if(key_map2)
 {
 show_debug_message(room)
