@@ -77,13 +77,15 @@ case rm_horta:
 		case 5:
 		case 6:
 		case 7:
+		case 9:
+		case 10:
 			global.click_resposta = true;
 		break;
 
 		case 8:
 			switch(resposta)
 			{
-				case "Olá Roldão, precisamos de sua ajuda.":
+				case "Olá Roldão, está tudo bem?":
 				
 				global.quest = 9;
 				global.click_resposta = true;

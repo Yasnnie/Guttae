@@ -74,7 +74,7 @@ if(global.quest02_aux == true)
 		
 		if(global.create_expli[2]==false)
 			{
-			
+				show_debug_message("oi");
 			butao_intro = instance_create_layer(220,room_height-90,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
 			box_intro.texto_explicacao = "Ah não! As plantinhas da horta do Roldão irão morrer! Não o deixe na mão, ajude-o a regar as divisões, siga a sequência correta da irrigação que irá aparecer em sua tela, caso erre você deverá iniciar tudo de novo, então seja rápido(a) e boa sorte!";
@@ -453,6 +453,60 @@ case rm_horta:
 				if(!global.create_aux)
 				{
 					player = instance_create_layer(22,332,layer,obj_player);
+					global.create_aux = true;
+				}
+
+			}
+		break;
+		
+		case 9:
+		if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					quest[0] = instance_create_layer(462,206,layer_get_id("seta"), obj_enter);
+					quest[1] = instance_create_layer(462,238,layer_get_id("seta"), obj_enter);
+					quest[0].my_enter = 2;
+					quest[1].my_enter = 2;
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					quest[0] = instance_create_layer(462,206,layer_get_id("seta"), obj_enter);
+					quest[1] = instance_create_layer(462,238,layer_get_id("seta"), obj_enter);
+					quest[0].my_enter = 2;
+					quest[1].my_enter = 2;
+					player = instance_create_layer(288,160,layer,obj_player);
+					global.create_aux = true;
+				}
+
+			}
+		break;
+		
+		case 10:
+			if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(462,238,layer,obj_player);
 					global.create_aux = true;
 				}
 

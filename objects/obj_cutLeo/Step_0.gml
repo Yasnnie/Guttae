@@ -20,11 +20,26 @@ break;
 case 8:
 	if(y<215)
 	{
-	y+=velcut2;
-	sprite_index = spr_LeoAndando;
+		y+=velcut2;
+		sprite_index = spr_LeoAndando;
 	}else if(x<206)
 	{
 		x+=velcut2;
+		sprite_index = spr_LeoAndando;
+	}else
+	{
+		sprite_index = spr_LeoParado;
+	}
+break;
+
+case 9:
+	if(x<384)
+	{
+		x+=velcut2;
+		sprite_index = spr_LeoAndando;
+	}else if(y>160)
+	{
+		y-=velcut2;
 		sprite_index = spr_LeoAndando;
 	}else
 	{

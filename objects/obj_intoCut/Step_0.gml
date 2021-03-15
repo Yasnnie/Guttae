@@ -52,12 +52,28 @@ if(global.quest == 8)
 {
 	global.canRead = false;
 	
-		if (timer<240)
+		if (timer<200)
 		{
 			timer ++;
 		}
 	
-		if (timer == 240)
+		if (timer == 200)
+		{
+			global.canRead = true;
+
+		}
+}
+
+if(global.quest == 9)
+{
+	global.canRead = false;
+	
+		if (timer<600)
+		{
+			timer ++;
+		}
+	
+		if (timer == 600)
 		{
 			global.canRead = true;
 

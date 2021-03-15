@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_MatheusParado",
-    "path": "sprites/spr_MatheusParado/spr_MatheusParado.yy",
+    "name": "spr_LeoParado",
+    "path": "sprites/spr_LeoParado/spr_LeoParado.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,10 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_cutMatheus","path":"objects/obj_cutMatheus/obj_cutMatheus.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_cutMatheus","path":"objects/obj_cutMatheus/obj_cutMatheus.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +28,7 @@
     "path": "folders/Objects/Cutscene.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_cutMatheus",
+  "name": "obj_roldao",
   "tags": [],
   "resourceType": "GMObject",
 }
