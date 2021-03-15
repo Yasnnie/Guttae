@@ -118,9 +118,9 @@ switch (global.quest)
 			if(!global.create_aux)
 			{
 		
-				yasminzinha = instance_create_layer(192,192,layer_get_id("enter_e_seta"),obj_cutYasmin);
-				leozinho = instance_create_layer(320,192,layer_get_id("enter_e_seta"),obj_cutLeo);
-				guilherminho = instance_create_layer(128,192,layer_get_id("enter_e_seta"),obj_cutGuilherme);
+				yasminzinha = instance_create_layer(192,192,layer_get_id("luix"),obj_cutYasmin);
+				leozinho = instance_create_layer(320,192,layer_get_id("luix"),obj_cutLeo);
+				guilherminho = instance_create_layer(128,192,layer_get_id("luix"),obj_cutGuilherme);
 				quest[0] = instance_create_layer(462,206,layer_get_id("enter"), obj_enter);
 				quest[1] = instance_create_layer(462,238,layer_get_id("enter"), obj_enter);
 				quest[0].my_enter = 1;
@@ -135,9 +135,9 @@ switch (global.quest)
 			if(!global.create_aux)
 			{
 
-				yasminzinha = instance_create_layer(192,192,layer_get_id("enter_e_seta"),obj_cutYasmin);
-				leozinho = instance_create_layer(320,192,layer_get_id("enter_e_seta"),obj_cutLeo);
-				guilherminho = instance_create_layer(128,192,layer_get_id("enter_e_seta"),obj_cutGuilherme);
+				yasminzinha = instance_create_layer(144,176,layer_get_id("enter_e_seta"),obj_cutYasmin);
+				leozinho = instance_create_layer(320,144,layer_get_id("enter_e_seta"),obj_cutLeo);
+				guilherminho = instance_create_layer(112,144,layer_get_id("enter_e_seta"),obj_cutGuilherme);
 				quest[0] = instance_create_layer(463,206,layer_get_id("enter"), obj_enter);
 				quest[1] = instance_create_layer(463,238,layer_get_id("enter"), obj_enter);
 				quest[0].my_enter = 1;
@@ -177,8 +177,11 @@ break;
 break;
 #endregion
 
-#region 7
+#region 7,8,9 e 10
 	case 7:
+	case 8:
+	case 9:
+	case 10:
 
 		if(global.map_aux)
 		{
@@ -203,12 +206,24 @@ break;
 
 break;
 #endregion
+
 }
 
 #region LAYERS DEPTH
 var id_cadeira = layer_get_id("cadeira");
 var id_cadeira2 = layer_get_id("cadeira2");
 var id_cadeira3 = layer_get_id("cadeira3");
+var id_mesa_luix = layer_get_id("mesa_luix");
+
+if(player.y<132)
+{
+	
+	 layer_depth(id_mesa_luix,-50);
+}else if(player.y>132)
+{
+	 
+	 layer_depth(id_mesa_luix,400);
+}
 
 if(player.y<204)
 {
@@ -238,10 +253,12 @@ if(player.y<204)
 break;
 
 case rm_labKaiser:
+#region LAB KAISER
 switch (global.quest)
 {
-#region 5
+#region 5 e 6
 	case 5: 
+	case 6:
 		if(global.map_aux)
 		{
 	
@@ -267,34 +284,6 @@ switch (global.quest)
 break; 
 #endregion
 
-#region 6
-	case 6:
-
-	if(global.map_aux)
-		{
-	
-			if(!global.create_aux)
-			{
-		
-				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
-				global.create_aux = true;
-			
-			}
-
-		}else if (!global.map_aux)
-		{
-			if(!global.create_aux)
-			{
-
-				player = instance_create_layer (30,335,layer,obj_player);
-				global.create_aux = true;
-		
-			}
-
-		}
-break;
-#endregion
-
 #region 7
 	case 7:
 
@@ -306,7 +295,7 @@ break;
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				leozinho = instance_create_layer(63,160,layer,obj_cutLeo);
 				yasminzinha = instance_create_layer(414,190,layer,obj_cutYasmin);
-				guilherminho = instance_create_layer(414,224,layer,obj_cutGuilherme);
+				guilherminho = instance_create_layer(414,224,layer-1,obj_cutGuilherme);
 				global.create_aux = true;
 	
 			}
@@ -319,15 +308,13 @@ break;
 				player = instance_create_layer(22,335,layer,obj_player);
 				leozinho = instance_create_layer(63,160,layer,obj_cutLeo);
 				yasminzinha = instance_create_layer(414,190,layer,obj_cutYasmin);
-				guilherminho = instance_create_layer(414,224,layer,obj_cutGuilherme);
+				guilherminho = instance_create_layer(414,224,layer-1,obj_cutGuilherme);
 				global.create_aux = true;
 			}
 
 		}
 
 break;
-
-
 #endregion
 
 #region 8
@@ -358,7 +345,7 @@ break;
 #endregion
 }
 
-
+#region DEPTH
 var id_mesa = layer_get_id("mesa_meio");
 var id_mesa2 = layer_get_id("mesa_meio2");
 var id_mesa3 = layer_get_id("mesa_baixo");
@@ -405,10 +392,12 @@ if(player.y<176)
 	layer_depth(id_elementos2,600);
 	layer_depth(id_elementos3,600);
 }
-
+#endregion
+#endregion
 break;
 
 case rm_tutorial:
+#region TUTORIAL
 	switch(global.quest)
 	{
 		case 3: 
@@ -416,7 +405,7 @@ case rm_tutorial:
 		{
 			if(!global.create_aux)
 			{
-				show_debug_message("ola");
+				
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
 	
@@ -435,6 +424,140 @@ case rm_tutorial:
 		break;
 	
 	}
+#endregion
+break;
+
+case rm_horta:
+	#region HORTA
+	#region QST
+	switch(global.quest)
+	{
+		#region 5,6 e 7
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+			if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(22,332,layer,obj_player);
+					global.create_aux = true;
+				}
+
+			}
+		break;
+		#endregion
+		
+	}
+	#endregion
+	
+	#region DEPTH
+	var id_graminha = layer_get_id("graminha");
+	var id_graminha2 = layer_get_id("graminha2");
+	var id_graminha3 = layer_get_id("graminha3");
+	var id_graminha4 = layer_get_id("graminha4");
+	var id_graminha5 = layer_get_id("graminha5");
+	var id_graminha6 = layer_get_id("graminha6");
+	var id_graminha7 = layer_get_id("graminha7");
+	var id_graminha8 = layer_get_id("graminha8");
+	var id_graminha9 = layer_get_id("graminha9");
+	
+
+	
+
+
+if(player.y<128)
+{
+	
+    layer_depth(id_graminha,1000);
+    layer_depth(id_graminha2,1300);
+  
+   
+}else if(128<player.y && player.y<160)
+{
+	 layer_depth(id_graminha,1300);
+	 layer_depth(id_graminha2,1000);
+ 
+}else if(160<player.y && player.y<192)
+{
+	 layer_depth(id_graminha,1300);
+	 layer_depth(id_graminha2,1300);
+	 layer_depth(id_graminha3,1000);
+	
+}else if(192<player.y && player.y<224)
+{
+	 layer_depth(id_graminha,1300);
+	 layer_depth(id_graminha2,1300);
+	 layer_depth(id_graminha3,1300);
+	 layer_depth(id_graminha4,1000);
+
+}else if(224<player.y && player.y<256)
+{
+	 layer_depth(id_graminha,1300);
+	 layer_depth(id_graminha2,1300);
+	 layer_depth(id_graminha3,1300);
+	 layer_depth(id_graminha4,1300);
+	 layer_depth(id_graminha5,1000);
+
+}else if(256<player.y && player.y<288)
+{
+	 layer_depth(id_graminha,1300);
+	 layer_depth(id_graminha2,1300);
+	 layer_depth(id_graminha3,1300);
+	 layer_depth(id_graminha4,1300);
+	 layer_depth(id_graminha5,1300);
+	 layer_depth(id_graminha6,1000);
+
+}
+else if(288<player.y && player.y<320)
+{
+	 layer_depth(id_graminha,1300);
+	 layer_depth(id_graminha2,1300);
+	 layer_depth(id_graminha3,1300);
+	 layer_depth(id_graminha4,1300);
+	 layer_depth(id_graminha5,1300);
+	 layer_depth(id_graminha6,1300);
+	 layer_depth(id_graminha7,1000);
+
+}else if(320<player.y && player.y<352)
+{
+	 layer_depth(id_graminha,1300);
+	 layer_depth(id_graminha2,1300);
+	 layer_depth(id_graminha3,1300);
+	 layer_depth(id_graminha4,1300);
+	 layer_depth(id_graminha5,1300);
+	 layer_depth(id_graminha6,1300);
+	 layer_depth(id_graminha7,1300);
+	 layer_depth(id_graminha8,1000);
+
+}else if(352<player.y)
+{
+	 layer_depth(id_graminha,1300);
+	 layer_depth(id_graminha2,1300);
+	 layer_depth(id_graminha3,1300);
+	 layer_depth(id_graminha4,1300);
+	 layer_depth(id_graminha5,1300);
+	 layer_depth(id_graminha6,1300);
+	 layer_depth(id_graminha7,1300);
+	 layer_depth(id_graminha8,1300);
+	 layer_depth(id_graminha9,1000);
+
+}
+	
+	#endregion
+	#endregion
 break;
 
 }

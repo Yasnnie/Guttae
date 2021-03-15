@@ -35,20 +35,18 @@ case rm_labLuis:
 break;
 
 case rm_labKaiser:
+	#region KAISER
 	switch(global.quest)
 	{
 		case 5:
-		
-		global.click_resposta = true;
-		
-		break;
-		
 		case 6:
-		
+		case 8:
 		global.click_resposta = true;
 		
 		break;
 		
+	
+
 		
 		case 7:
 			switch(resposta)
@@ -64,19 +62,44 @@ case rm_labKaiser:
 				show_debug_message("Resposta não");
 				global.click_resposta = true;
 				break;
-		}
+			}
 		break;
 		
-		case 8:
 		
-		global.click_resposta = true;
-		
-		break;
 
 	}
-
+	#endregion
 break;
 
+case rm_horta:
+	switch(global.quest)
+	{
+		case 5:
+		case 6:
+		case 7:
+			global.click_resposta = true;
+		break;
+
+		case 8:
+			switch(resposta)
+			{
+				case "Olá Roldão, precisamos de sua ajuda.":
+				
+				global.quest = 9;
+				global.click_resposta = true;
+				room_goto(rm_cutscene06);
+				
+				break;
+		
+				case "Olá Roldão, estou só de passagem.":
+				
+				global.click_resposta = true;
+				break;
+			}
+		break;
+
+}
+break;
 }
 
 

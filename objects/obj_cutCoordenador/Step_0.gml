@@ -4,7 +4,7 @@ if (global.quest == 0)
 	{
 		
 		x-= velcut;
-		sprite_index = spr_GuilhermeAndandoE;
+		sprite_index = spr_ElenilsonAndandoE;
 		
 	}
 }
