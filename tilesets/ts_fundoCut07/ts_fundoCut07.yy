@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_pedra",
-    "path": "sprites/spr_pedra/spr_pedra.yy",
+    "name": "spr_fundo_cut07",
+    "path": "sprites/spr_fundo_cut07/spr_fundo_cut07.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
@@ -52,7 +52,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ts_pedra",
+  "name": "ts_fundoCut07",
   "tags": [],
   "resourceType": "GMTileSet",
 }

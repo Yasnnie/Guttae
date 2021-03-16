@@ -241,21 +241,22 @@ if (key_map){
 	{
 		room_goto(rm_cutscene03);
 		
-	}else{
-	
-	//Sair Horizontal
-	if place_meeting(x+velh,y,obj_exitRoom)
+	}else if(place_meeting(x+velh,y,obj_exitRoom) && global.quest == 11)
 	{
+		room_goto(rm_cutscene07);
+		
+	}else if place_meeting(x+velh,y,obj_exitRoom)
+	{
+		//Sair Horizontal
 		global.salaAnterior = room;
 		room_goto(rm_mapaexecutavel);	 
-	}
-	//Sair Vertical
-	if place_meeting(x,y+velv,obj_exitRoom)
+	}else if place_meeting(x,y+velv,obj_exitRoom)
 	{
+			//Sair Vertical
 		global.salaAnterior = room;
 		room_goto(rm_mapaexecutavel);
 	}
 	
-}
+
 	
 #endregion

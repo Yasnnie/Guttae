@@ -259,6 +259,8 @@ switch (global.quest)
 #region 5 e 6
 	case 5: 
 	case 6:
+	case 9:
+	case 10:
 		if(global.map_aux)
 		{
 	

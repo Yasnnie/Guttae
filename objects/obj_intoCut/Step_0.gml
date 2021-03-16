@@ -5,7 +5,7 @@ key_map2 = keyboard_check_released(ord("E"));
 #region FADE
 if(!fadeout) 
 {
-alpha = max(alpha-0.005,0.25);
+alpha = max(alpha-0.005,0);
 } 
 else 
 {

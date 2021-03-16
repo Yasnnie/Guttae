@@ -21,6 +21,12 @@ case 9:
 	respostas[0] ="Ainda não.";
 break;
 
+case 10:
+	texto = "Obrigado pela ajuda! Sem vocês elas iriam morrer! O que você precisava ?";
+	respostas[0] = "Não era nada...";
+	respostas[1] ="De nada!! Poxa… nós viemos aqui a procura de um gotejador, tem algum por aqui?";
+break;
+
 case 11:
 	texto = "Boa sorte no projeto!!";
 	respostas[0] ="Obrigado Roldão! Valeu!";

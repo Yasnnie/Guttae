@@ -3,7 +3,7 @@ npc_spr = spr_LuisParado;
 switch(global.quest)
 {
 case 5:
-texto = "Ola persona! Já conseguiu resolver o problema do ar-condicionado? Quando terminar fale comigo.";
+texto = "Olá persona! Já conseguiu resolver o problema do ar-condicionado? Quando terminar fale comigo.";
 respostas[0] ="Ok!";
 break;
 
@@ -18,4 +18,10 @@ case 7:
 	respostas[0] ="Certo. Até mais!!";
 break;
 
+case 8:
+case 9:
+case 10:
+	texto = "Olá persona! Como vai o projeto de vocês ?";
+	respostas[0] ="Estamos progredindo. Estou em uma missão agora, até mais professor!";
+break;
 }

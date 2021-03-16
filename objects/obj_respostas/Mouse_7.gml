@@ -5,6 +5,11 @@ case rm_labLuis:
 	switch(global.quest)
 	{
 		case 5:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+		case 11:
 		
 		global.click_resposta = true;
 	
@@ -26,9 +31,7 @@ case rm_labLuis:
 		}
 		break;
 		
-		case 7:
-		global.click_resposta = true;
-		break;
+	
 
 	}
 #endregion
@@ -41,6 +44,9 @@ case rm_labKaiser:
 		case 5:
 		case 6:
 		case 8:
+		case 9:
+		case 10:
+		case 11:
 		global.click_resposta = true;
 		
 		break;
@@ -78,7 +84,6 @@ case rm_horta:
 		case 6:
 		case 7:
 		case 9:
-		case 10:
 			global.click_resposta = true;
 		break;
 
@@ -94,6 +99,23 @@ case rm_horta:
 				break;
 		
 				case "Olá Roldão, estou só de passagem.":
+				
+				global.click_resposta = true;
+				break;
+			}
+		break;
+		
+		case 10:
+			switch(resposta)
+			{
+				case "De nada!! Poxa… nós viemos aqui a procura de um gotejador, tem algum por aqui?":
+				
+				global.quest = 11;
+				global.click_resposta = true;
+				
+				break;
+		
+				case "Não era nada...":
 				
 				global.click_resposta = true;
 				break;

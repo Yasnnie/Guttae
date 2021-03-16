@@ -21,6 +21,8 @@ case 7:
 break;
 
 case 8:
+case 9:
+case 10:
 	texto = "Já falou com Roldão na horta? Ele ajudara você com o gotejador!";
 	respostas[0] ="Estou indo falar agora. Até!";
 break;
