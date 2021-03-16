@@ -1,5 +1,8 @@
+alpha=1;
+fadeout=0;
+fadeout2=0;
 
-
+time1 = false;
 
 
 count = 0;

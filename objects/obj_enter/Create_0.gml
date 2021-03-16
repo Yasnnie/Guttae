@@ -1,4 +1,4 @@
-my_enter = 0;
+ my_enter = 0;
 
 
 e_enter = noone;

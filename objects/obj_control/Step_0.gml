@@ -616,6 +616,123 @@ else if(288<player.y && player.y<320)
 	#endregion
 break;
 
+case rm_biblioteca:
+	#region BIBLIOTECA
+		#region QST
+		switch (global.quest)
+		{
+		case 5:
+		case 6:
+		case 7:
+		case 8: 
+		case 9:
+				if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(448,320,layer,obj_player);
+					global.create_aux = true;
+				}
+
+			}
+		break;
+		
+		case 11:
+			if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					matheuszinho = instance_create_layer(334,128,layer,obj_cutMatheus);
+					leozinho = instance_create_layer(360,128,layer,obj_cutLeo);
+					guilherminho = instance_create_layer(46,352,layer,obj_cutGuilherme);
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					quest[0] = instance_create_layer(112,132,layer,obj_enter);
+					quest[0].my_enter = 3;
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					matheuszinho = instance_create_layer(334,128,layer,obj_cutMatheus);
+					leozinho = instance_create_layer(360,128,layer,obj_cutLeo);
+					guilherminho = instance_create_layer(46,352,layer,obj_cutGuilherme);
+					quest[0] = instance_create_depth(112,132,500,obj_enter);
+					quest[0].my_enter = 3;
+					player = instance_create_layer(448,320,layer,obj_player);
+					global.create_aux = true;
+				}
+
+			}
+		break;
+		
+		case 12:
+			if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(126,166,layer,obj_player);
+					global.create_aux = true;
+				}
+
+			}
+		break;
+		}
+		
+		
+	
+		
+		#endregion
+		
+		#region	DEPTH
+		var id_estante = layer_get_id("estante");
+		var id_estante2 = layer_get_id("estante1");
+	
+		
+
+		if(player.y>232)
+		{
+	
+			layer_depth(id_estante,300);
+			layer_depth(id_estante2,300);
+		}else if(player.y<232 && player.y>96)
+		{
+	 
+			layer_depth(id_estante,-50);
+			layer_depth(id_estante2,300);
+		}
+
+		
+
+		#endregion
+	#endregion
+break;
 }
 
 #endregion
