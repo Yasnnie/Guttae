@@ -124,6 +124,15 @@ case rm_horta:
 
 }
 break;
+
+case rm_biblioteca:
+	switch(global.quest)
+	{
+		case 12:
+			global.click_resposta = true;
+		break;
+	}
+break;
 }
 
 

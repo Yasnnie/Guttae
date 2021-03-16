@@ -1,6 +1,8 @@
 box_intro = noone;
 butao_intro = noone;
 
+amostra_create = noone;
+amostra2_create = noone;
 
 quest[0] = noone;
 

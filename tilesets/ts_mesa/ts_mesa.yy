@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite11",
-    "path": "sprites/Sprite11/Sprite11.yy",
+    "name": "spr_mesaLuis",
+    "path": "sprites/spr_mesaLuis/spr_mesaLuis.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
