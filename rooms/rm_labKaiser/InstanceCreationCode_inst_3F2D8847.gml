@@ -26,4 +26,9 @@ case 10:
 	texto = "Já falou com Roldão na horta? Ele ajudara você com o gotejador!";
 	respostas[0] ="Estou indo falar agora. Até!";
 break;
+
+case 11:
+	texto = "Olá criança!";
+	respostas[0] ="Olá professor!";
+break;
 }

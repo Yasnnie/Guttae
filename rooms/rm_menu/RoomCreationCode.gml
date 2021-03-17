@@ -5,6 +5,7 @@ global.map_x = 0; // PEGAR X DA SALA ANTERIOR
 global.map_y = 0; // PEGAR Y DA SALA ANTERIOR
 global.map_aux = false;// SABER SE MAPA FOI ABERTO
 
+global.amostras = 0;
 
 global.click_expli = false;
 

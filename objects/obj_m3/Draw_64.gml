@@ -4,13 +4,14 @@ case 1:
 
 	draw_set_color(c_black);
 	draw_set_font(fnt_dialogos);
+	draw_set_halign(fa_left);
 
 	draw_text_ext(x+20,y+12,my_text,25,520);
 break;
 
 case 2:
 	
-	
+	draw_set_halign(fa_left);
 	draw_set_color(c_black);
 	draw_set_font(fnt_dialogos);
 	draw_text_ext(x+57,y+12,my_text1,25,520);

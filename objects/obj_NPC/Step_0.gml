@@ -160,13 +160,13 @@ switch(npc_spr)
 					while(array_length_1d(respostas) > i)
 					{
 						
-						e_resposta[i] = instance_create_layer(0,room_height-15-(15*i),layer-2,obj_respostas);
+						e_resposta[i] = instance_create_depth(0,room_height-15-(15*i),layer-100,obj_respostas);
 						e_resposta[i].resposta = respostas[i];
 						i++;
 						
 					}
 			
-				meu_texto = instance_create_layer(x,y,layer-2, obj_texto);
+				meu_texto = instance_create_depth(x,y,layer-50, obj_texto);
 				meu_texto.texto = texto;
 			}
 			else
@@ -221,8 +221,9 @@ switch(npc_spr)
  #endregion
  
  //LEMBRAR DE TROCAR O CASO PARA A SPR DE ROLDÃO
- #region ROLDÃO
- case spr_LeoParado:
+ #region ERASMO
+ case spr_Erasmo:
+ case spr_ErasmoRaiva:
 	if ( colid_up || colid_right || colid_left)
 	{
 		

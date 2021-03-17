@@ -10,6 +10,10 @@ case rm_labLuis:
 		case 9:
 		case 10:
 		case 11:
+		case 12:
+		case 13:
+		case 14:
+		case 15:
 		
 		global.click_resposta = true;
 	
@@ -28,10 +32,24 @@ case rm_labLuis:
 				show_debug_message("Resposta não");
 				global.click_resposta = true;
 				break;
-		}
+			}
 		break;
 		
-	
+		case 16:
+			switch(resposta)
+			{
+				case "Sim! Vamos começar.":
+
+				room_goto(rm_cutscene10);
+				global.click_resposta = true;
+				break;
+		
+				case "Agora tenho que resolver algumas coisas. Pode ser depois ?":
+			
+				global.click_resposta = true;
+				break;
+			}
+		break;
 
 	}
 #endregion
@@ -90,7 +108,7 @@ case rm_horta:
 		case 8:
 			switch(resposta)
 			{
-				case "Olá Roldão, está tudo bem?":
+				case "Olá Erasmo, está tudo bem?":
 				
 				global.quest = 9;
 				global.click_resposta = true;
@@ -98,7 +116,7 @@ case rm_horta:
 				
 				break;
 		
-				case "Olá Roldão, estou só de passagem.":
+				case "Olá Erasmo, estou só de passagem.":
 				
 				global.click_resposta = true;
 				break;

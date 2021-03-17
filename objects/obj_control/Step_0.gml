@@ -118,9 +118,9 @@ switch (global.quest)
 			if(!global.create_aux)
 			{
 		
-				yasminzinha = instance_create_layer(192,192,layer_get_id("luix"),obj_cutYasmin);
-				leozinho = instance_create_layer(320,192,layer_get_id("luix"),obj_cutLeo);
-				guilherminho = instance_create_layer(128,192,layer_get_id("luix"),obj_cutGuilherme);
+				yasminzinha = instance_create_layer(144,176,layer_get_id("enter_e_seta"),obj_cutYasmin);
+				leozinho = instance_create_layer(320,144,layer_get_id("enter_e_seta"),obj_cutLeo);
+				guilherminho = instance_create_layer(112,144,layer_get_id("enter_e_seta"),obj_cutGuilherme);
 				quest[0] = instance_create_layer(462,206,layer_get_id("enter"), obj_enter);
 				quest[1] = instance_create_layer(462,238,layer_get_id("enter"), obj_enter);
 				quest[0].my_enter = 1;
@@ -177,6 +177,66 @@ break;
 break;
 #endregion
 
+#region 16
+case 16:
+	if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+		
+				yasminzinha = instance_create_layer(144,176,layer_get_id("luix"),obj_cutYasmin);
+				matheuszinho = instance_create_layer(320,144,layer_get_id("luix"),obj_cutMatheus);
+				guilherminho = instance_create_layer(128,192,layer_get_id("luix"),obj_cutGuilherme);
+				
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				global.create_aux = true;
+			
+			}
+
+		}else if (!global.map_aux)
+		{
+			if(!global.create_aux)
+			{
+
+				yasminzinha = instance_create_layer(114,176,layer_get_id("luix"),obj_cutYasmin);
+				matheuszinho = instance_create_layer(320,144,layer_get_id("luix"),obj_cutMatheus);
+				guilherminho = instance_create_layer(128,192,layer_get_id("luix"),obj_cutGuilherme);
+				
+				player = instance_create_layer(22,335,layer,obj_player);
+				global.create_aux = true;
+		
+			}
+
+		}
+break;
+#endregion
+
+#region 17
+case 17:
+if(global.map_aux)
+	{
+	
+		if(!global.create_aux)
+		{
+			player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+			global.create_aux = true;
+	
+		}
+
+	}else if (!global.map_aux)
+	{
+	
+		if(!global.create_aux)
+		{
+			player = instance_create_layer(256,192,layer,obj_player);
+			global.create_aux = true;
+		}
+
+	}
+break;
+#endregion
+
 #region 7 a 14
 	case 7:
 	case 8:
@@ -186,6 +246,7 @@ break;
 	case 12:
 	case 13:
 	case 14:
+	case 15:
 
 		if(global.map_aux)
 		{
@@ -267,6 +328,7 @@ switch (global.quest)
 	case 10:
 	case 11:
 	case 12:
+	case 16:
 	
 
 		if(global.map_aux)
@@ -572,7 +634,7 @@ case rm_horta:
 					}
 					if(!global.create_amostras[1])
 					{
-						amostra2_create  = instance_create_layer(382,352,layer,obj_amostra);
+						amostra2_create  = instance_create_layer(382,332,layer,obj_amostra);
 						amostra2_create.index_amostra = 1;
 					}
 					global.create_aux = true;
@@ -715,6 +777,8 @@ case rm_biblioteca:
 		case 8: 
 		case 9:
 		case 11:
+		case 15:
+		case 16:
 			if(global.map_aux)
 			{
 	
@@ -844,6 +908,8 @@ case rm_deposito:
 	case 11:
 	case 12:
 	case 13:
+	case 15:
+	case 16:
 		if(global.map_aux)
 			{
 	
@@ -875,7 +941,7 @@ case rm_deposito:
 					if(!global.create_amostras[2])
 					{
 					
-						amostra_create  = instance_create_layer(110,304,layer,obj_amostra);
+						amostra_create  = instance_create_layer(110,284,layer,obj_amostra);
 						amostra_create.index_amostra = 2;
 					}
 					if(!global.create_amostras[3])
@@ -916,5 +982,4 @@ break;
 }
 
 #endregion
-
 

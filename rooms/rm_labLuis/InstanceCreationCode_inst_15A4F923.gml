@@ -21,7 +21,18 @@ break;
 case 8:
 case 9:
 case 10:
+case 11:
+case 12:
+case 13:
+case 14:
+case 15:
 	texto = "Olá persona! Como vai o projeto de vocês ?";
 	respostas[0] ="Estamos progredindo. Estou em uma missão agora, até mais professor!";
+break;
+
+case 16:
+	texto = "Ah, você chegou! Vamos iniciar nossa reunião ?";
+	respostas[0] ="Agora tenho que resolver algumas coisas. Pode ser depois ?";
+	respostas[1] ="Sim! Vamos começar.";
 break;
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_LeoParado",
-    "path": "sprites/spr_LeoParado/spr_LeoParado.yy",
+    "name": "spr_ErasmoRaiva",
+    "path": "sprites/spr_ErasmoRaiva/spr_ErasmoRaiva.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
     "path": "folders/Objects/Cutscene.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_roldao",
+  "name": "obj_ErasmoBravo",
   "tags": [],
   "resourceType": "GMObject",
 }
