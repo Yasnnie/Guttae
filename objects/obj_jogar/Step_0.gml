@@ -1,4 +1,4 @@
-var mouse_sobre = position_meeting(mouse_x,mouse_y,self);
+ var mouse_sobre = position_meeting(mouse_x,mouse_y,self);
 
 if(mouse_sobre)
 {
@@ -14,6 +14,6 @@ key_skip = keyboard_check_released(ord("A"));
 
 if(key_skip)
 {
-global.quest = 11;
+global.quest = 12;
 room_goto(rm_biblioteca);
 }

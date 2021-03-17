@@ -91,7 +91,7 @@ if(global.quest>=0 && global.quest<8)
 #endregion
 
 #region YASMIN
-if(global.quest>=8 && global.quest<13)
+if(global.quest>=8 && global.quest<14)
 {
 	sprite_index = spr_YasminParado;
 	if( key_up || key_down || key_right || key_left)
@@ -172,7 +172,7 @@ if(global.quest>=8 && global.quest<13)
 #endregion
 
 #region LEO
-if(global.quest>=13)
+if(global.quest>=14)
 {
 	sprite_index = spr_LeoParado;
 	if( key_up || key_down || key_right || key_left)

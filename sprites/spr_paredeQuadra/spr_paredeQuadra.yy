@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 31,
-  "bbox_top": 6,
-  "bbox_bottom": 31,
+  "bbox_right": 63,
+  "bbox_top": 0,
+  "bbox_bottom": 95,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 32,
-  "height": 32,
+  "width": 64,
+  "height": 96,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"67283753-beb0-4cda-bfd6-4aa5df615194","path":"sprites/spr_poco/spr_poco.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"67283753-beb0-4cda-bfd6-4aa5df615194","path":"sprites/spr_poco/spr_poco.yy",},"LayerId":{"name":"053cafca-ef63-4dd1-ae8e-9a668da5da54","path":"sprites/spr_poco/spr_poco.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_poco","path":"sprites/spr_poco/spr_poco.yy",},"resourceVersion":"1.0","name":"67283753-beb0-4cda-bfd6-4aa5df615194","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d4145200-215a-4688-9cdf-54cf241723ae","path":"sprites/spr_paredeQuadra/spr_paredeQuadra.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d4145200-215a-4688-9cdf-54cf241723ae","path":"sprites/spr_paredeQuadra/spr_paredeQuadra.yy",},"LayerId":{"name":"e1b9c70a-536a-47cd-94a2-3d4f43bee89f","path":"sprites/spr_paredeQuadra/spr_paredeQuadra.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_paredeQuadra","path":"sprites/spr_paredeQuadra/spr_paredeQuadra.yy",},"resourceVersion":"1.0","name":"d4145200-215a-4688-9cdf-54cf241723ae","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_poco","path":"sprites/spr_poco/spr_poco.yy",},
+    "spriteId": {"name":"spr_paredeQuadra","path":"sprites/spr_paredeQuadra/spr_paredeQuadra.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"00715354-6d15-4e4e-b54c-1e99ac37f235","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"67283753-beb0-4cda-bfd6-4aa5df615194","path":"sprites/spr_poco/spr_poco.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3bc175f2-148a-40d4-94e6-ef6f6d7c2765","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d4145200-215a-4688-9cdf-54cf241723ae","path":"sprites/spr_paredeQuadra/spr_paredeQuadra.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_poco","path":"sprites/spr_poco/spr_poco.yy",},
+    "parent": {"name":"spr_paredeQuadra","path":"sprites/spr_paredeQuadra/spr_paredeQuadra.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_poco",
+    "name": "spr_paredeQuadra",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"053cafca-ef63-4dd1-ae8e-9a668da5da54","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e1b9c70a-536a-47cd-94a2-3d4f43bee89f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Elementos",
     "path": "folders/Sprites/Elementos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_poco",
+  "name": "spr_paredeQuadra",
   "tags": [],
   "resourceType": "GMSprite",
 }

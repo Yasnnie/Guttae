@@ -177,7 +177,7 @@ break;
 break;
 #endregion
 
-#region 7 a 13
+#region 7 a 14
 	case 7:
 	case 8:
 	case 9:
@@ -185,6 +185,7 @@ break;
 	case 11:
 	case 12:
 	case 13:
+	case 14:
 
 		if(global.map_aux)
 		{
@@ -266,6 +267,8 @@ switch (global.quest)
 	case 10:
 	case 11:
 	case 12:
+	
+
 		if(global.map_aux)
 		{
 	
@@ -351,8 +354,8 @@ case 8:
 break;
 #endregion
 
-#region 13
-case 13:
+#region 14
+case 14:
 	if(global.map_aux)
 		{
 	
@@ -473,6 +476,7 @@ case rm_horta:
 		case 8:
 		case 11:
 		case 12:
+		case 13:
 			if(global.map_aux)
 			{
 	
@@ -553,7 +557,7 @@ case rm_horta:
 		#endregion
 		
 		#region 13
-		case 13:
+		case 14:
 		if(global.map_aux)
 			{
 	
@@ -710,8 +714,8 @@ case rm_biblioteca:
 		case 7:
 		case 8: 
 		case 9:
-		case 13:
-				if(global.map_aux)
+		case 11:
+			if(global.map_aux)
 			{
 	
 				if(!global.create_aux)
@@ -733,7 +737,7 @@ case rm_biblioteca:
 			}
 		break;
 		
-		case 11:
+		case 12:
 			if(global.map_aux)
 			{
 	
@@ -766,7 +770,7 @@ case rm_biblioteca:
 			}
 		break;
 		
-		case 12:
+		case 13:
 			if(global.map_aux)
 			{
 	
@@ -776,7 +780,7 @@ case rm_biblioteca:
 					matheuszinho = instance_create_layer(334,128,layer,obj_NPC);
 					matheuszinho.npc_spr = spr_MatheusParado;
 					matheuszinho.texto = "Os outros foram para o laboratório de Kaiser. Vamos! eles devem estar só nos esperando.";
-					matheuszinho.respostas[0] = "Ok";
+					matheuszinho.respostas[0] = "Ok.";
 					global.create_aux = true;
 	
 				}
@@ -789,7 +793,7 @@ case rm_biblioteca:
 					matheuszinho = instance_create_layer(334,128,layer,obj_NPC);
 					matheuszinho.npc_spr = spr_MatheusParado;
 					matheuszinho.texto = "Os outros foram para o laboratório de Kaiser. Vamos! eles devem estar só nos esperando.";
-					matheuszinho.respostas[0] = "Ok";
+					matheuszinho.respostas[0] = "Ok.";
 					player = instance_create_layer(126,166,layer,obj_player);
 					global.create_aux = true;
 				}
@@ -826,15 +830,91 @@ case rm_biblioteca:
 		#endregion
 	#endregion
 break;
+
+case rm_deposito:
+	#region DEPOSITO
+	switch(global.quest)
+	{
+	case 5:
+	case 6:
+	case 7:
+	case 8:
+	case 9:
+	case 10:
+	case 11:
+	case 12:
+	case 13:
+		if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(24,126,layer,obj_player);
+					global.create_aux = true;
+				}
+
+			}
+	break;
+	case 14:
+		if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					if(!global.create_amostras[2])
+					{
+					
+						amostra_create  = instance_create_layer(110,304,layer,obj_amostra);
+						amostra_create.index_amostra = 2;
+					}
+					if(!global.create_amostras[3])
+					{
+						amostra2_create  = instance_create_layer(300,304,layer,obj_amostra);
+						amostra2_create.index_amostra = 3;
+					}
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(24,124,layer,obj_player);
+					if(!global.create_amostras[2])
+					{
+					
+						amostra_create  = instance_create_layer(110,304,layer,obj_amostra);
+						amostra_create.index_amostra = 2;
+					}
+					if(!global.create_amostras[3])
+					{
+						amostra2_create  = instance_create_layer(300,304,layer,obj_amostra);
+						amostra_create.index_amostra = 3;
+						
+					global.create_aux = true;
+					}
+
+				}
+			}
+	break;
+	}
+	#endregion
+break;
 }
 
 #endregion
 
 
-#region MISSÃO 04
-
-if(global.quest == 13 &&  global.create_amostras[0] == true && global.create_amostras[1] = true  )
-{
-show_debug_message("TERMINAMOS A QUEST 04");
-}
-#endregion

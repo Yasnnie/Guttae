@@ -128,7 +128,7 @@ break;
 case rm_biblioteca:
 	switch(global.quest)
 	{
-		case 12:
+		case 13:
 			global.click_resposta = true;
 		break;
 	}

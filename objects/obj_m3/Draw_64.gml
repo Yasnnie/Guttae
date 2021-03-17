@@ -60,7 +60,7 @@ if(resposta1)
 		break;
 		
 		case 2:
-			global.quest = 12;
+			global.quest = 13;
 			room_goto(rm_biblioteca);
 			
 		break;

@@ -29,7 +29,7 @@ if(direita || esquerda ||cima || baixo){
 	}
 	break;
 	
-	case 11:
+	case 12:
 	if(!aux_setas_enter){
 	e_enter = instance_create_depth(112,82,-200,obj_animadas);
 	e_enter.sprites = spr_setaE;
