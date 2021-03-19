@@ -201,7 +201,7 @@ case 16:
 
 				yasminzinha = instance_create_layer(114,176,layer_get_id("luix"),obj_cutYasmin);
 				matheuszinho = instance_create_layer(320,144,layer_get_id("luix"),obj_cutMatheus);
-				guilherminho = instance_create_layer(128,192,layer_get_id("luix"),obj_cutGuilherme);
+				guilherminho = instance_create_layer(112,144,layer_get_id("enter_e_seta"),obj_cutGuilherme);
 				
 				player = instance_create_layer(22,335,layer,obj_player);
 				global.create_aux = true;

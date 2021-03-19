@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Missão 1",
-    "path": "folders/Objects/Missão 1.yy",
+    "path": "folders/Objects/Missões/Missão 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_canoA",

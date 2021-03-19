@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Missão 3",
-    "path": "folders/Objects/Missão 3.yy",
+    "path": "folders/Objects/Missões/Missão 3.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_m3",

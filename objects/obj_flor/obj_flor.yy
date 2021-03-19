@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Missão 2",
-    "path": "folders/Objects/Missão 2.yy",
+    "path": "folders/Objects/Missões/Missão 2.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_flor",

@@ -14,6 +14,6 @@ key_skip = keyboard_check_released(ord("A"));
 
 if(key_skip)
 {
-global.quest = 12;
-room_goto(rm_biblioteca);
+
+room_goto(rm_qst06);
 }

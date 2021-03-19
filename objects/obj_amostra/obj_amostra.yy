@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Missão 4",
-    "path": "folders/Objects/Missão 4.yy",
+    "path": "folders/Objects/Missões/Missão 4.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_amostra",
