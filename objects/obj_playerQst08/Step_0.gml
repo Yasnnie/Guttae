@@ -65,8 +65,8 @@ if place_meeting(x,y,obj_parada)
 		if(global.frente)
 			{
 				if(!create_setas){
-				seta1= instance_create_layer(x+10, y+34, layer_get_id("setas"),obj_animadas);
-				seta1.sprites = spr_setaRightS;
+				seta1= instance_create_layer(x-14, y+30, layer_get_id("setas"),obj_animadas);
+				seta1.sprites = spr_setaDownS;
 				create_setas = true;
 				}
 		
@@ -112,8 +112,8 @@ if place_meeting(x,y,obj_parada)
 		if(global.frente)
 			{
 				if(!create_setas){
-				seta1= instance_create_layer(x+10, y+34, layer_get_id("setas"),obj_animadas);
-				seta1.sprites = spr_setaRightS;
+				seta1= instance_create_layer(x-62, y-32, layer_get_id("setas"),obj_animadas);
+				seta1.sprites = spr_setaLeftS;
 				create_setas = true;
 				}
 		
@@ -132,8 +132,8 @@ if place_meeting(x,y,obj_parada)
 			if(global.direita)
 			{
 				if(!create_setas2){
-				seta2= instance_create_layer(x-40, y, layer_get_id("setas"),obj_animadas);
-				seta2.sprites = spr_setaLeftS;
+				seta2= instance_create_layer(x-44, y-64, layer_get_id("setas"),obj_animadas);
+				seta2.sprites = spr_setaUpS;
 				create_setas2 = true;
 				}
 				if(direita)
@@ -157,7 +157,11 @@ if place_meeting(x,y,obj_parada)
 		
 		if(global.frente)
 			{
-		
+				if(!create_setas){
+				seta1= instance_create_layer(x-15, y-88, layer_get_id("setas"),obj_animadas);
+				seta1.sprites = spr_setaUpS;
+				create_setas = true;
+				}
 				if(reto)
 				{ 
 					instance_destroy(seta1);
@@ -172,6 +176,11 @@ if place_meeting(x,y,obj_parada)
 			}
 			if(global.direita)
 			{
+				if(!create_setas2){
+				seta2= instance_create_layer(x+20, y-64, layer_get_id("setas"),obj_animadas);
+				seta2.sprites = spr_setaRightS;
+				create_setas2 = true;
+				}
 				if(direita)
 				{
 					instance_destroy(seta1);
@@ -444,7 +453,14 @@ if(andar2 == true)
 #endregion
 
 
-if(reset)
+if(reset) room_restart();
+
+
+if place_meeting(x-1,y,obj_block) room_restart();
+
+
+if place_meeting(x-1,y,obj_fimQst08) 
 {
-	room_restart();
+show_message("VOCÊ TERMINOU");
+
 }
