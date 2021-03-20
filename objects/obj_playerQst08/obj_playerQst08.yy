@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_MatheusParado",
-    "path": "sprites/spr_MatheusParado/spr_MatheusParado.yy",
+    "name": "spr_cabecaMatheus",
+    "path": "sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",
   },
   "solid": false,
   "visible": true,

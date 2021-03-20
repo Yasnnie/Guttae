@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},"LayerId":{"name":"7d3a9851-a18a-4364-a4eb-caed533afa69","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cabecaMatheus","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},"resourceVersion":"1.0","name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","path":"sprites/spr_cabecaMatheus3/spr_cabecaMatheus3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","path":"sprites/spr_cabecaMatheus3/spr_cabecaMatheus3.yy",},"LayerId":{"name":"7d3a9851-a18a-4364-a4eb-caed533afa69","path":"sprites/spr_cabecaMatheus3/spr_cabecaMatheus3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cabecaMatheus3","path":"sprites/spr_cabecaMatheus3/spr_cabecaMatheus3.yy",},"resourceVersion":"1.0","name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cabecaMatheus","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},
+    "spriteId": {"name":"spr_cabecaMatheus3","path":"sprites/spr_cabecaMatheus3/spr_cabecaMatheus3.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e42d99d9-d9c1-404f-a0b0-ee1a1a9075d2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f2e5966c-9206-4610-ba10-85091abc9d83","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","path":"sprites/spr_cabecaMatheus3/spr_cabecaMatheus3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cabecaMatheus","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},
+    "parent": {"name":"spr_cabecaMatheus3","path":"sprites/spr_cabecaMatheus3/spr_cabecaMatheus3.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_cabecaMatheus",
+    "name": "spr_cabecaMatheus3",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Sprites/Personagens/Cabeças/cabeça Matheus.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_cabecaMatheus",
+  "name": "spr_cabecaMatheus3",
   "tags": [],
   "resourceType": "GMSprite",
 }

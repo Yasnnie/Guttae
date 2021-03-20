@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 7,
+  "origin": 0,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},"LayerId":{"name":"7d3a9851-a18a-4364-a4eb-caed533afa69","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cabecaMatheus","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},"resourceVersion":"1.0","name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"68ab53bd-06ba-44e4-b036-6644d12fef88","path":"sprites/spr_cabecaYasmin/spr_cabecaYasmin.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"68ab53bd-06ba-44e4-b036-6644d12fef88","path":"sprites/spr_cabecaYasmin/spr_cabecaYasmin.yy",},"LayerId":{"name":"db93c032-8f5a-41bb-a15c-ef2ef26bd66d","path":"sprites/spr_cabecaYasmin/spr_cabecaYasmin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cabecaYasmin","path":"sprites/spr_cabecaYasmin/spr_cabecaYasmin.yy",},"resourceVersion":"1.0","name":"68ab53bd-06ba-44e4-b036-6644d12fef88","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cabecaMatheus","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},
+    "spriteId": {"name":"spr_cabecaYasmin","path":"sprites/spr_cabecaYasmin/spr_cabecaYasmin.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e42d99d9-d9c1-404f-a0b0-ee1a1a9075d2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5115ed98-a58a-46f4-ad11-e26b85a1890e","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e1dbb0dd-51a8-4643-a6c0-a91e1e1fa102","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68ab53bd-06ba-44e4-b036-6644d12fef88","path":"sprites/spr_cabecaYasmin/spr_cabecaYasmin.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,25 +54,25 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 8,
-    "yorigin": 16,
+    "xorigin": 0,
+    "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cabecaMatheus","path":"sprites/spr_cabecaMatheus/spr_cabecaMatheus.yy",},
+    "parent": {"name":"spr_cabecaYasmin","path":"sprites/spr_cabecaYasmin/spr_cabecaYasmin.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_cabecaMatheus",
+    "name": "spr_cabecaYasmin",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7d3a9851-a18a-4364-a4eb-caed533afa69","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"db93c032-8f5a-41bb-a15c-ef2ef26bd66d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "cabeça Matheus",
-    "path": "folders/Sprites/Personagens/Cabeças/cabeça Matheus.yy",
+    "name": "Cabeças",
+    "path": "folders/Sprites/Personagens/Cabeças.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_cabecaMatheus",
+  "name": "spr_cabecaYasmin",
   "tags": [],
   "resourceType": "GMSprite",
 }
