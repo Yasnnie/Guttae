@@ -2,6 +2,11 @@ x_anterior = 0;
 y_anterior = 0;
 
 
+create_setas = false;
+create_setas2 = false;
+
+seta1 = noone;
+seta2 = noone;
 
 andar = false;
 

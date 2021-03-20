@@ -1,8 +1,9 @@
 
 var reto = keyboard_check_released(ord("A"))
 var direita = keyboard_check_released(ord("S"))
+var reset= keyboard_check_released(ord("R"))
 
-
+#region MOVIMENTAÇÃO
 if place_meeting(x,y,obj_parada) 
 {
 	if(!click_on)
@@ -16,9 +17,15 @@ if place_meeting(x,y,obj_parada)
 		
 			if(global.frente)
 			{
-		
+				if(!create_setas){
+				seta1= instance_create_layer(x+40, y-34, layer_get_id("setas"),obj_animadas);
+				seta1.sprites = spr_setaRightS;
+				create_setas = true;
+				}
 				if(reto)
 				{ 
+					instance_destroy(seta1);
+					instance_destroy(seta2);
 					x_anterior = x;
 					y_anterior = y;
 					andar = true; 
@@ -29,8 +36,15 @@ if place_meeting(x,y,obj_parada)
 			}
 			if(global.direita)
 			{
+				if(!create_setas2){
+				seta2= instance_create_layer(x+14, y, layer_get_id("setas"),obj_animadas);
+				seta2.sprites = spr_setaDownS;
+				create_setas2 = true;
+				}
 				if(direita)
 				{
+					instance_destroy(seta1);
+					instance_destroy(seta2);
 					x_anterior = x;
 					y_anterior = y;
 					click_on = true;
@@ -50,9 +64,16 @@ if place_meeting(x,y,obj_parada)
 		
 		if(global.frente)
 			{
+				if(!create_setas){
+				seta1= instance_create_layer(x+10, y+34, layer_get_id("setas"),obj_animadas);
+				seta1.sprites = spr_setaRightS;
+				create_setas = true;
+				}
 		
 				if(reto)
 				{ 
+					instance_destroy(seta1);
+					instance_destroy(seta2);
 					x_anterior = x;
 					y_anterior = y;
 					click_on = true;
@@ -63,8 +84,15 @@ if place_meeting(x,y,obj_parada)
 			}
 			if(global.direita)
 			{
+				if(!create_setas2){
+				seta2= instance_create_layer(x-40, y, layer_get_id("setas"),obj_animadas);
+				seta2.sprites = spr_setaLeftS;
+				create_setas2 = true;
+				}
 				if(direita)
 				{
+					instance_destroy(seta1);
+					instance_destroy(seta2);
 					x_anterior = x;
 					y_anterior = y;
 					click_on = true;
@@ -83,9 +111,16 @@ if place_meeting(x,y,obj_parada)
 		
 		if(global.frente)
 			{
+				if(!create_setas){
+				seta1= instance_create_layer(x+10, y+34, layer_get_id("setas"),obj_animadas);
+				seta1.sprites = spr_setaRightS;
+				create_setas = true;
+				}
 		
 				if(reto)
 				{ 
+					instance_destroy(seta1);
+					instance_destroy(seta2);
 					x_anterior = x;
 					y_anterior = y;
 					click_on = true;
@@ -96,8 +131,15 @@ if place_meeting(x,y,obj_parada)
 			}
 			if(global.direita)
 			{
+				if(!create_setas2){
+				seta2= instance_create_layer(x-40, y, layer_get_id("setas"),obj_animadas);
+				seta2.sprites = spr_setaLeftS;
+				create_setas2 = true;
+				}
 				if(direita)
 				{
+					instance_destroy(seta1);
+					instance_destroy(seta2);
 					x_anterior = x;
 					y_anterior = y;
 					click_on = true;
@@ -118,6 +160,8 @@ if place_meeting(x,y,obj_parada)
 		
 				if(reto)
 				{ 
+					instance_destroy(seta1);
+					instance_destroy(seta2);
 					x_anterior = x;
 					y_anterior = y;
 					click_on = true;
@@ -130,6 +174,8 @@ if place_meeting(x,y,obj_parada)
 			{
 				if(direita)
 				{
+					instance_destroy(seta1);
+					instance_destroy(seta2);
 					x_anterior = x;
 					y_anterior = y;
 					click_on = true;
@@ -147,12 +193,12 @@ if place_meeting(x,y,obj_parada)
 	switch (sprite_index)
 	{
 	case spr_cabecaMatheus:
-
+	
 		x+= 2;
 	 break;
  
 	case spr_cabecaMatheus1:
-
+	
 		y+= 2;
 	break;
  
@@ -176,19 +222,22 @@ if(andar == true)
 	switch (sprite_index)
 	{
 	case spr_cabecaMatheus:
-		if(x_anterior+64>x)
+		if(x_anterior+62>x)
 		{
 			x+=2;
 		}
 	
-		if(x_anterior+64==x)
+		if(x_anterior+62==x)
 		{
+			
 			x_anterior = x;
 			y_anterior = y;
 			global.direita = false;
 			global.frente=false;
 			click_on = false;
 			global.request = false;
+			create_setas = false;
+			create_setas2 = false;
 			andar = false;
 	
 			
@@ -197,12 +246,13 @@ if(andar == true)
 	 
 	 case spr_cabecaMatheus1:
 	 
-		if(y_anterior+64>y)
+		if(y_anterior+62>y)
 		{
+		
 			y+=2;
 		}
 		
-		if(y_anterior+64==y)
+		if(y_anterior+62==y)
 		{
 			x_anterior = x;
 			y_anterior = y;
@@ -210,25 +260,30 @@ if(andar == true)
 			global.frente=false;
 			click_on = false;
 			global.request1 = false;
+			create_setas = false;
+			create_setas2 = false;
 			andar = false;		
 	
 		} 
 	 break;
 	 case spr_cabecaMatheus2:
-	 
-		if(y_anterior-64<x)
+		
+		if(x_anterior-62<x)
 		{
 			x-=2;
 		}
 		
-		if(y_anterior-64==x)
+		if(x_anterior-62==x)
 		{
+			
 			x_anterior = x;
 			y_anterior = y;
 			global.direita = false;
 			global.frente=false;
 			click_on = false;
 			global.request2 = false;
+			create_setas = false;
+			create_setas2 = false;
 			andar = false;
 		
 	
@@ -237,12 +292,12 @@ if(andar == true)
 	 
 	 case spr_cabecaMatheus3:
 		
-		if(y_anterior-64<y)
+		if(y_anterior-62<y)
 		{
 			y-=2;
 		}
 		
-		if(y_anterior-64==y)
+		if(y_anterior-62==y)
 		{
 			x_anterior = x;
 			y_anterior = y;
@@ -250,6 +305,8 @@ if(andar == true)
 			global.frente=false;
 			click_on = false;
 			global.request1 = false;
+			create_setas = false;
+			create_setas2 = false;
 			andar = false;
 		
 	
@@ -289,6 +346,8 @@ if(andar2 == true)
 			click_on = false;
 			case_1 = false;
 			global.request = false;
+			create_setas = false;
+			create_setas2 = false;
 			andar2 = false;
 
 		}
@@ -315,11 +374,14 @@ if(andar2 == true)
 			click_on = false;
 			case_2 = false;
 			global.request1 = false;
+			create_setas = false;
+			create_setas2 = false;
 			andar2 = false;
 			
 		}
 	}else if(case_3)
 	{
+	
 		if(x_anterior-30<x)
 		{
 			x-=2;
@@ -341,6 +403,8 @@ if(andar2 == true)
 			global.request2 = false;
 			case_3 = false;
 			click_on = false;
+			create_setas = false;
+			create_setas2 = false;
 			andar2 = false;
 		}
 	
@@ -367,10 +431,20 @@ if(andar2 == true)
 			global.frente=false;
 			click_on = false;
 			case_4 = false;
+			create_setas = false;
+			create_setas2 = false;
 			andar2 = false;
 			
 		}
 	}
 	
 	
+}
+
+#endregion
+
+
+if(reset)
+{
+	room_restart();
 }
