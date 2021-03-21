@@ -1,3 +1,4 @@
+randomize();
 //PERMISSÃO PARA INICIAR
 if(global.qst02Start)
 {
