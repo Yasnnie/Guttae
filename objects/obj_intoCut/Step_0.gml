@@ -106,7 +106,7 @@ if(key_skip)
 if(global.next < array_length_1d(strings))
 {
 	texto_cutscene = strings[global.next];
-	img_dialog = senq_img_dialog[global.next];
+	
 	nome_personagem = eu_dialogo[global.next];
 }
 

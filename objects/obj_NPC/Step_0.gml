@@ -35,13 +35,13 @@ switch(npc_spr)
 					while(array_length_1d(respostas) > i)
 					{
 						
-						e_resposta[i] = instance_create_layer(0,room_height-15-(15*i),layer-5,obj_respostas);
+						e_resposta[i] = instance_create_depth(0,room_height-15-(15*i),-400,obj_respostas);
 						e_resposta[i].resposta = respostas[i];
 						i++;
 						
 					}
 			
-				meu_texto = instance_create_layer(x,y,layer-2, obj_texto);
+				meu_texto = instance_create_depth(x,y,-350, obj_texto);
 				meu_texto.texto = texto;
 			}
 			else

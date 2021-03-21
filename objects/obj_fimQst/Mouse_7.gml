@@ -1,6 +1,6 @@
 switch(global.quest)
 {
-case 6: 
+case 7: 
 
 room_goto(rm_labLuis);
 break;

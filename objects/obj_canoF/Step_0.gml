@@ -8,7 +8,7 @@ timer3++;
 if(timer3 == 80){
 	global.create_aux = false;
 global.quest = 6;
-room_goto(rm_comemoracao);
+room_goto(rm_labLuis);
 timer3 =0;
 }
 }

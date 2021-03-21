@@ -10,12 +10,7 @@ strings[5] = "Certo. Vamos!";
 
 
 
-senq_img_dialog[0] = spr_cut_face_Matheus;
-senq_img_dialog[1] = spr_cut_face_Roldao;
-senq_img_dialog[2] = spr_cut_face_Guilherme;
-senq_img_dialog[3] = spr_cut_face_Roldao;
-senq_img_dialog[4] = spr_cut_face_Yasmin;
-senq_img_dialog[5] = spr_cut_face_Leo;
+
 
 
 

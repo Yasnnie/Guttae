@@ -7,10 +7,7 @@ strings[3] = "Eu acho que sei por onde podemos começar, vejam isso..."
 
 
 
-senq_img_dialog[0] = spr_cut_face_Coordenador;
-senq_img_dialog[1] = spr_cut_face_Coordenador;
-senq_img_dialog[2] = spr_cut_face_Yasmin;
-senq_img_dialog[3] = spr_cut_face_Guilherme;
+
 
 eu_dialogo[0] ="Elenilson";
 eu_dialogo[1] ="Elenilson";

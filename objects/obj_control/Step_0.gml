@@ -44,7 +44,7 @@ if(global.quest01_aux == true)
 			
 			butao_intro = instance_create_layer(220,room_height-80,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
-			box_intro.texto_explicacao = "Vamos lá, visando aproveitar a água gerada pelo ar condicionado você deve construir o encanamento que a leva até o reservatório. É muito fácil, você só precisa girar os canos até que forme o caminho certo para levar a água até o depósito. Você consegue!";
+			box_intro.texto_explicacao = "Vamos lá, visando aproveitar a água gerada pelo ar condicionado você deve construir o encanamento que a leva até o reservatório. É muito fácil, você só precisa girar os canos até que forme o caminho certo para levar a água até o depósito. Você consegue!\n\nPara isso basta você clickar com o botão do lado esquerdo do mouse nos canos brancos para gira-los. \n\n\n\nQuando eles encontrarem um cano com água eles vão se encher também!";
 			global.create_expli[1] = true;
 			}
 		}
@@ -279,6 +279,18 @@ var id_cadeira = layer_get_id("cadeira");
 var id_cadeira2 = layer_get_id("cadeira2");
 var id_cadeira3 = layer_get_id("cadeira3");
 var id_mesa_luix = layer_get_id("mesa_luix");
+var id_armario = layer_get_id("armario");
+var id_armario2 = layer_get_id("armario2");
+
+if(player.y>258)
+{
+ layer_depth(id_armario,400);
+ layer_depth(id_armario2,420);
+}else if(player.y<258)
+{
+	layer_depth(id_armario,50);
+	layer_depth(id_armario2,150);
+}
 
 if(player.y<132)
 {

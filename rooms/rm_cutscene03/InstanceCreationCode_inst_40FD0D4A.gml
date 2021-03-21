@@ -14,18 +14,6 @@ strings[10] = "Tem alguém com quem devemos conversar, vamos amanhã ao laborat�
 
 
 
-senq_img_dialog[0] = spr_cut_face_Yasmin;
-senq_img_dialog[1] = spr_cut_face_Keiser;
-senq_img_dialog[2] = spr_cut_face_Leo;
-senq_img_dialog[3] = spr_cut_face_Keiser;
-senq_img_dialog[4] = spr_cut_face_Matheus;
-senq_img_dialog[5] = spr_cut_face_Yasmin;
-senq_img_dialog[6] = spr_cut_face_Leo;
-senq_img_dialog[7] = spr_cut_face_Keiser;
-senq_img_dialog[8] = spr_cut_face_Yasmin;
-senq_img_dialog[9] = spr_cut_face_Keiser;
-senq_img_dialog[10] = spr_cut_face_Guilherme;
-
 eu_dialogo[0] ="Yasmin";
 eu_dialogo[1] ="Prof. Kaiser";
 eu_dialogo[2] ="Leonardo";

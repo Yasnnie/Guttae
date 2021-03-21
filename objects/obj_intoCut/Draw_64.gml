@@ -25,30 +25,6 @@ draw_text(room_width+720,room_height+360,"Espaço");
 #endregion
 
 
-#region por fase
-
-
-switch (global.quest)
-{
-case 0:
-	draw_sprite(img_dialog,-1,room_width+575, room_height+155);
-break;
-
-case 1:
-	draw_sprite(img_dialog,-1,50, room_height+155);
-	draw_sprite_ext(spr_monitor,-1, -160, -10, 0.5,0.5,0,c_white,1);
-break;
-
-case 4:
-case 5:
-case 8:
-case 9:
-	draw_sprite(img_dialog,-1,50, room_height+155);
-break;
-
-
 }
 
-#endregion
 
-}

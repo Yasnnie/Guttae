@@ -9,15 +9,6 @@ strings[5] = "Não é um material tão simples de se achar aqui no campus, mas e
 strings[6] = "Então vamos lá, pessoal!";
 
 
-senq_img_dialog[0] = spr_cut_face_Luix;
-senq_img_dialog[1] = spr_cut_face_Guilherme;
-senq_img_dialog[2] = spr_cut_face_Yasmin;
-senq_img_dialog[3] = spr_cut_face_Luix;
-senq_img_dialog[4] = spr_cut_face_Matheus;
-senq_img_dialog[5] = spr_cut_face_Luix;
-senq_img_dialog[6] = spr_cut_face_Leo;
-
-
 
 eu_dialogo[0] ="Prof. Luis";
 eu_dialogo[1] ="Guilherme";

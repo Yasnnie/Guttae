@@ -9,11 +9,6 @@ strings[3] = "Existe um poço próximo do depósito da quadra e também na horta
 
 
 
-senq_img_dialog[0] = spr_cut_face_Yasmin;
-senq_img_dialog[1] = spr_cut_face_Keiser;
-senq_img_dialog[2] = spr_cut_face_Leo;
-senq_img_dialog[3] = spr_cut_face_Keiser;
-
 
 
 

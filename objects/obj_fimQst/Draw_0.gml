@@ -1,6 +1,11 @@
 draw_sprite(spr_tituloMissao,0,96,32);
 
-
+switch (global.quest)
+{
+case 7:
+	draw_sprite(spr_arduino,0,222,90);
+break;
+}
 
 var mouse_sobre = position_meeting(mouse_x,mouse_y,self);
 
