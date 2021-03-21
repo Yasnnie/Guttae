@@ -1,4 +1,4 @@
-vida = 3;
+vidas = 3;
 
 comida = 0;
 

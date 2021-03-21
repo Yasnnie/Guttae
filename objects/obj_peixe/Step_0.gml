@@ -17,13 +17,13 @@ if !place_meeting(x,y+1.5,obj_block) vel_peixe2 = 1.5;
 #endregion
 
 
-if (place_meeting(x+1.5,y,obj_comida)|| place_meeting(x-1.5,y,obj_comida)|| place_meeting(x,y-1.5,obj_comida) || place_meeting(x,y+1.5,obj_comida)|| place_meeting(x,y,obj_comida)) comida +=1;
+if (place_meeting(x+1.5,y,obj_comida)|| place_meeting(x-1.5,y,obj_comida)|| place_meeting(x,y-1.5,obj_comida) || place_meeting(x,y+1.5,obj_comida)|| place_meeting(x,y,obj_comida)) global.comida +=1;
 
-if (comida == 10) show_message("TERMINOU");
+if (global.comida == 10) show_message("TERMINOU");
 
 
 	
-if (place_meeting(x+1.5,y,obj_lixo)|| place_meeting(x-1.5,y,obj_lixo)|| place_meeting(x,y-1.5,obj_lixo) || place_meeting(x,y+1.5,obj_lixo)|| place_meeting(x,y,obj_lixo)){ vida-=1; }
 
-show_debug_message(vida);
-if (vida == 0 ) room_restart();
+
+show_debug_message(global.vidas);
+if (global.vidas == 0 ) room_restart();
