@@ -638,16 +638,16 @@ case rm_horta:
 				if(!global.create_aux)
 				{
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
-					if(!global.create_amostras[0])
+					if(!global.create_amostras0)
 					{
 					
 						amostra_create  = instance_create_layer(126,128,layer,obj_amostra);
-						amostra_create.index_amostra = 0;
+						amostra_create.index_amostra = 1;
 					}
-					if(!global.create_amostras[1])
+					if(!global.create_amostras1)
 					{
 						amostra2_create  = instance_create_layer(382,332,layer,obj_amostra);
-						amostra2_create.index_amostra = 1;
+						amostra2_create.index_amostra = 2;
 					}
 					global.create_aux = true;
 	
@@ -659,16 +659,16 @@ case rm_horta:
 				if(!global.create_aux)
 				{
 					player = instance_create_layer(22,332,layer,obj_player);
-					if(!global.create_amostras[0])
+					if(!global.create_amostras0)
 					{
 					
 						amostra_create  = instance_create_layer(126,128,layer,obj_amostra);
-						amostra_create.index_amostra = 0;
+						amostra_create.index_amostra = 1;
 					}
-					if(!global.create_amostras[1])
+					if(!global.create_amostras1)
 					{
 						amostra2_create  = instance_create_layer(382,352,layer,obj_amostra);
-						amostra2_create.index_amostra = 1;
+						amostra2_create.index_amostra = 2;
 					}
 					
 					global.create_aux = true;
@@ -961,7 +961,7 @@ case rm_deposito:
 	
 				if(!global.create_aux)
 				{
-					player = instance_create_layer(24,126,layer,obj_player);
+					player = instance_create_layer(440,126,layer,obj_player);
 					global.create_aux = true;
 				}
 
@@ -974,16 +974,16 @@ case rm_deposito:
 				if(!global.create_aux)
 				{
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
-					if(!global.create_amostras[2])
+					if(!global.create_amostras2)
 					{
 					
 						amostra_create  = instance_create_layer(110,284,layer,obj_amostra);
-						amostra_create.index_amostra = 2;
+						amostra_create.index_amostra = 3;
 					}
-					if(!global.create_amostras[3])
+					if(!global.create_amostras3)
 					{
 						amostra2_create  = instance_create_layer(300,304,layer,obj_amostra);
-						amostra2_create.index_amostra = 3;
+						amostra2_create.index_amostra = 4;
 					}
 					global.create_aux = true;
 	
@@ -994,20 +994,20 @@ case rm_deposito:
 	
 				if(!global.create_aux)
 				{
-					player = instance_create_layer(24,124,layer,obj_player);
-					if(!global.create_amostras[2])
+					player = instance_create_layer(440,126,layer,obj_player);
+					if(!global.create_amostras2)
 					{
 					
 						amostra_create  = instance_create_layer(110,304,layer,obj_amostra);
-						amostra_create.index_amostra = 2;
+						amostra_create.index_amostra = 3;
 					}
-					if(!global.create_amostras[3])
+					if(!global.create_amostras3)
 					{
 						amostra2_create  = instance_create_layer(300,304,layer,obj_amostra);
-						amostra_create.index_amostra = 3;
+						amostra2_create.index_amostra = 4;
 						
-					global.create_aux = true;
 					}
+					global.create_aux = true;
 
 				}
 			}

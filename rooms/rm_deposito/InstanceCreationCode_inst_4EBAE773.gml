@@ -1,1 +1,1 @@
-sprites = spr_setaLeftS;
+sprites = spr_setaRightS;

@@ -1,11 +1,12 @@
-next_room = rm_labKaiser;
+next_room = rm_comemoracao;
 
 
 
-strings[0] = "Professor, Nós Conseguimos o gotejador! e também sabemos o processo de dessalinização que vamos usar, só precisamos de algo como uma resistência de chuveiro elétrico para evaporar a água salobra e alguns canos também para a parte de resfriamento e armazenamento da água.";
-strings[1] = "Um momento, eu acho que é interessante analisar as fontes de água daqui do campos primeiro, para que depois do processo possamos analisar se o processo funcionou ou não, comparar as duas amostras e assim concluir se o projeto deu certo.";
-strings[2] = "onde nós encontramos essas amostras?";
-strings[3] = "Existe um poço próximo do depósito da quadra e também na horta, vocês podem pegar lá, vocês devem pegar alguns frascos de polietileno, lembrem-se de lavarem as mãos e vedar bem os fracos, deixem eles abertos somente pelo tempo suficiente de fazer a coleta, se vocês tiverem máscaras também seria interessante usar.";
+strings[0] = "Kaiser trouxemos as amostras.";
+strings[1] = "Muito bom pessoal, agora nós vamos analisar o pH e a salinidade dessas amostras, para isso usaremos um pHmetro tecnal e um condutivímetro tecnal.";
+strings[2] = "Esses são os resultados.";
+strings[3] = "Realmente existem várias amostras com níveis severos de Salinidade, acima de 2000 mg/L e também do pH mais de 10, então vamos fazer o nosso sistema e vamos dar um jeito nisso!";
+strings[4] = "Sim! Agora nós precisamos daquela resistência!";
 
 
 
@@ -15,8 +16,9 @@ strings[3] = "Existe um poço próximo do depósito da quadra e também na horta
 
 eu_dialogo[0] ="Yasmin";
 eu_dialogo[1] ="Prof. Kaiser";
-eu_dialogo[2] ="Leonardo";
-eu_dialogo[3] ="Prof. Kaiser";
+eu_dialogo[2] ="Prof. Kaiser";
+eu_dialogo[3] ="Yasmin";
+eu_dialogo[5] ="Leonardo";
 
 
 

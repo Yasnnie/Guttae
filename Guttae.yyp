@@ -140,6 +140,7 @@
     {"id":{"name":"spr_pSolar4","path":"sprites/spr_pSolar4/spr_pSolar4.yy",},"order":3,},
     {"id":{"name":"spr_maskColision","path":"sprites/spr_maskColision/spr_maskColision.yy",},"order":3,},
     {"id":{"name":"spr_jasminV","path":"sprites/spr_jasminV/spr_jasminV.yy",},"order":1,},
+    {"id":{"name":"obj_amostra2","path":"objects/obj_amostra2/obj_amostra2.yy",},"order":1,},
     {"id":{"name":"spr_LeoAndandoE","path":"sprites/spr_LeoAndandoE/spr_LeoAndandoE.yy",},"order":3,},
     {"id":{"name":"spr_buttonCome","path":"sprites/spr_buttonCome/spr_buttonCome.yy",},"order":3,},
     {"id":{"name":"spr_botaoVoltarS_pressed","path":"sprites/spr_botaoVoltarS_pressed/spr_botaoVoltarS_pressed.yy",},"order":10,},
