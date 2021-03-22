@@ -581,8 +581,8 @@ case rm_horta:
 				if(!global.create_aux)
 				{
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
-					quest[0] = instance_create_layer(462,206,layer_get_id("seta"), obj_enter);
-					quest[1] = instance_create_layer(462,238,layer_get_id("seta"), obj_enter);
+					quest[0] = instance_create_layer(464,208,layer_get_id("seta"), obj_enter);
+					quest[1] = instance_create_layer(464,240,layer_get_id("seta"), obj_enter);
 					quest[0].my_enter = 2;
 					quest[1].my_enter = 2;
 					global.create_aux = true;
@@ -594,8 +594,8 @@ case rm_horta:
 	
 				if(!global.create_aux)
 				{
-					quest[0] = instance_create_layer(462,206,layer_get_id("seta"), obj_enter);
-					quest[1] = instance_create_layer(462,238,layer_get_id("seta"), obj_enter);
+					quest[0] = instance_create_layer(464,208,layer_get_id("seta"), obj_enter);
+					quest[1] = instance_create_layer(464,240,layer_get_id("seta"), obj_enter);
 					quest[0].my_enter = 2;
 					quest[1].my_enter = 2;
 					player = instance_create_layer(288,160,layer,obj_player);
@@ -622,7 +622,7 @@ case rm_horta:
 	
 				if(!global.create_aux)
 				{
-					player = instance_create_layer(462,238,layer,obj_player);
+					player = instance_create_layer(430,238,layer,obj_player);
 					global.create_aux = true;
 				}
 
@@ -692,6 +692,8 @@ case rm_horta:
 	var id_graminha8 = layer_get_id("graminha8");
 	var id_graminha9 = layer_get_id("graminha9");
 	
+	var id_vaso = layer_get_id("elementos");
+	
 
 	
 
@@ -700,77 +702,81 @@ if(player.y<128)
 {
 	
     layer_depth(id_graminha,1000);
-    layer_depth(id_graminha2,1300);
+	layer_depth(id_vaso,1500);
+    layer_depth(id_graminha2,1600);
   
    
 }else if(128<player.y && player.y<160)
 {
-	 layer_depth(id_graminha,1300);
+	layer_depth(id_vaso,1500);
+	 layer_depth(id_graminha,1600);
 	 layer_depth(id_graminha2,1000);
  
 }else if(160<player.y && player.y<192)
 {
-	 layer_depth(id_graminha,1300);
-	 layer_depth(id_graminha2,1300);
+	 layer_depth(id_graminha,1600);
+	 layer_depth(id_graminha2,1600);
 	 layer_depth(id_graminha3,1000);
 	
 }else if(192<player.y && player.y<224)
 {
-	 layer_depth(id_graminha,1300);
-	 layer_depth(id_graminha2,1300);
-	 layer_depth(id_graminha3,1300);
+	 layer_depth(id_graminha,1600);
+	 layer_depth(id_graminha2,1600);
+	 layer_depth(id_graminha3,1600);
 	 layer_depth(id_graminha4,1000);
 
 }else if(224<player.y && player.y<256)
 {
-	 layer_depth(id_graminha,1300);
-	 layer_depth(id_graminha2,1300);
-	 layer_depth(id_graminha3,1300);
-	 layer_depth(id_graminha4,1300);
+	 layer_depth(id_graminha,1600);
+	 layer_depth(id_graminha2,1600);
+	 layer_depth(id_graminha3,1600);
+	 layer_depth(id_graminha4,1600);
 	 layer_depth(id_graminha5,1000);
 
 }else if(256<player.y && player.y<288)
 {
-	 layer_depth(id_graminha,1300);
-	 layer_depth(id_graminha2,1300);
-	 layer_depth(id_graminha3,1300);
-	 layer_depth(id_graminha4,1300);
-	 layer_depth(id_graminha5,1300);
+	 layer_depth(id_graminha,1600);
+	 layer_depth(id_graminha2,1600);
+	 layer_depth(id_graminha3,1600);
+	 layer_depth(id_graminha4,1600);
+	 layer_depth(id_graminha5,1600);
 	 layer_depth(id_graminha6,1000);
 
 }
 else if(288<player.y && player.y<320)
 {
-	 layer_depth(id_graminha,1300);
-	 layer_depth(id_graminha2,1300);
-	 layer_depth(id_graminha3,1300);
-	 layer_depth(id_graminha4,1300);
-	 layer_depth(id_graminha5,1300);
-	 layer_depth(id_graminha6,1300);
+	 layer_depth(id_graminha,1600);
+	 layer_depth(id_graminha2,1600);
+	 layer_depth(id_graminha3,1600);
+	 layer_depth(id_graminha4,1600);
+	 layer_depth(id_graminha5,1600);
+	 layer_depth(id_graminha6,1600);
 	 layer_depth(id_graminha7,1000);
 
 }else if(320<player.y && player.y<352)
 {
-	 layer_depth(id_graminha,1300);
-	 layer_depth(id_graminha2,1300);
-	 layer_depth(id_graminha3,1300);
-	 layer_depth(id_graminha4,1300);
-	 layer_depth(id_graminha5,1300);
-	 layer_depth(id_graminha6,1300);
-	 layer_depth(id_graminha7,1300);
+	 layer_depth(id_graminha,1600);
+	 layer_depth(id_graminha2,1600);
+	 layer_depth(id_graminha3,1600);
+	 layer_depth(id_graminha4,1600);
+	 layer_depth(id_graminha5,1600);
+	 layer_depth(id_graminha6,1600);
+	 layer_depth(id_graminha7,1600);
 	 layer_depth(id_graminha8,1000);
 
 }else if(352<player.y)
 {
-	 layer_depth(id_graminha,1300);
-	 layer_depth(id_graminha2,1300);
-	 layer_depth(id_graminha3,1300);
-	 layer_depth(id_graminha4,1300);
-	 layer_depth(id_graminha5,1300);
-	 layer_depth(id_graminha6,1300);
-	 layer_depth(id_graminha7,1300);
-	 layer_depth(id_graminha8,1300);
+	 layer_depth(id_graminha,1600);
+	 layer_depth(id_graminha2,1600);
+	 layer_depth(id_graminha3,1600);
+	 layer_depth(id_graminha4,1600);
+	 layer_depth(id_graminha5,1600);
+	 layer_depth(id_graminha6,1600);
+	 layer_depth(id_graminha7,1600);
+	 layer_depth(id_graminha8,1600);
 	 layer_depth(id_graminha9,1000);
+	 layer_depth(id_vaso,1000);
+	 
 
 }
 	
@@ -821,7 +827,7 @@ case rm_biblioteca:
 				{
 					matheuszinho = instance_create_layer(334,128,layer,obj_cutMatheus);
 					leozinho = instance_create_layer(360,128,layer,obj_cutLeo);
-					guilherminho = instance_create_layer(46,352,layer,obj_cutGuilherme);
+					guilherminho = instance_create_layer(14,320,layer,obj_cutGuilherme);
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 					quest[0] = instance_create_layer(112,132,layer,obj_enter);
 					quest[0].my_enter = 3;
@@ -836,7 +842,7 @@ case rm_biblioteca:
 				{
 					matheuszinho = instance_create_layer(334,128,layer,obj_cutMatheus);
 					leozinho = instance_create_layer(360,128,layer,obj_cutLeo);
-					guilherminho = instance_create_layer(46,352,layer,obj_cutGuilherme);
+					guilherminho = instance_create_layer(14,320,layer,obj_cutGuilherme);
 					quest[0] = instance_create_depth(112,132,500,obj_enter);
 					quest[0].my_enter = 3;
 					player = instance_create_layer(448,320,layer,obj_player);
@@ -886,6 +892,8 @@ case rm_biblioteca:
 		#region	DEPTH
 		var id_estante = layer_get_id("estante");
 		var id_estante2 = layer_get_id("estante1");
+		var id_mesa = layer_get_id("mesa_baixo");
+		var id_mesa2 = layer_get_id("mesa_baixo_1");
 	
 		
 
@@ -899,6 +907,22 @@ case rm_biblioteca:
 	 
 			layer_depth(id_estante,-50);
 			layer_depth(id_estante2,300);
+		}
+		
+		if(player.y<332)
+		{
+			layer_depth(id_mesa,-50);
+		}else if(player.y>332)
+		{
+			layer_depth(id_mesa,500);
+		}
+		
+		if(player.y<190)
+		{
+			layer_depth(id_mesa2,-50);
+		}else if(player.y>190)
+		{
+			layer_depth(id_mesa2,500);
 		}
 
 		

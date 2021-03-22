@@ -103,6 +103,7 @@ case rm_horta:
 		case 6:
 		case 7:
 		case 9:
+		case 11:
 			global.click_resposta = true;
 		break;
 
@@ -127,9 +128,10 @@ case rm_horta:
 		case 10:
 			switch(resposta)
 			{
-				case "De nada!! Poxa… nós viemos aqui a procura de um gotejador, tem algum por aqui?":
+				case "De nada!! Nós viemos aqui a procura de um gotejador, tem algum por aqui?":
 				
 				global.quest = 11;
+				room_goto(rm_cutscene07);
 				global.click_resposta = true;
 				
 				break;

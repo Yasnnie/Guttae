@@ -19,9 +19,10 @@ if(ds_list_find_value(global.numList, global.click_count) == index_peca)
 
 		if(global.nRound  == 5 )
 		{
-			room_goto(rm_comemoracao);
+			room_goto(rm_horta);
+			global.quest = 10;
 		}else{
-		show_debug_message("mesmo round e false");
+		
 		
 	
 		timer_peca2 = 0;

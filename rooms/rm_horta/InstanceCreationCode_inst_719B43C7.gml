@@ -36,7 +36,7 @@ break;
 case 10:
 	texto = "Obrigado pela ajuda! Sem vocês elas iriam morrer! O que você precisava ?";
 	respostas[0] = "Não era nada...";
-	respostas[1] ="De nada!! Poxa… nós viemos aqui a procura de um gotejador, tem algum por aqui?";
+	respostas[1] ="De nada!! Nós viemos aqui a procura de um gotejador, tem algum por aqui?";
 break;
 
 case 11:

@@ -324,7 +324,8 @@ if (key_map){
 		
 	}else if(place_meeting(x+velh,y,obj_exitRoom) && global.quest == 11)
 	{
-		room_goto(rm_cutscene07);
+		
+		room_goto(rm_cutscene08);
 		
 	}else if place_meeting(x+velh,y,obj_exitRoom)
 	{
@@ -340,7 +341,7 @@ if (key_map){
 	
 #endregion
 
-#endregion
+
 
 // NÃO CONSEGUIR ANDAR NOS MAPAS (OBS: COLOCAR A CABEÇA DO PERSONAGEM)
 if (room == rm_mapa)
@@ -412,7 +413,7 @@ if (key_map){
 		
 	}else if(place_meeting(x+velh,y,obj_exitRoom) && global.quest == 11)
 	{
-		room_goto(rm_cutscene07);
+		room_goto(rm_cutscene08);
 		
 	}else if place_meeting(x+velh,y,obj_exitRoom)
 	{

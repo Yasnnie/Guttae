@@ -12,6 +12,7 @@ strings[3] = "Existe um poço próximo do depósito da quadra e também na horta
 
 
 
+
 eu_dialogo[0] ="Yasmin";
 eu_dialogo[1] ="Prof. Kaiser";
 eu_dialogo[2] ="Leonardo";
