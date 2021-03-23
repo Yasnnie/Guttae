@@ -1,10 +1,12 @@
-if(timer_spawn<200) timer_spawn++;
+if(!global.quest03_aux){
+if(timer_spawn<170) timer_spawn++;
 
-if(timer_spawn == 200)
+if(timer_spawn == 170)
 {
 randomize();
 
 instance_create_layer(x, random_range(50,328),layer, choose(obj_lixo,obj_lixo,obj_lixo,obj_comida));
 
 timer_spawn = 0;
+}
 }

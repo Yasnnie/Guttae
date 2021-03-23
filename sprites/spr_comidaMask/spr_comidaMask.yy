@@ -1,6 +1,6 @@
 {
-  "bboxMode": 1,
-  "collisionKind": 1,
+  "bboxMode": 2,
+  "collisionKind": 2,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 31,
-  "bbox_top": 0,
+  "bbox_top": 1,
   "bbox_bottom": 31,
   "HTile": false,
   "VTile": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e9b761d2-7c63-41a6-be75-93187b8e50e9","path":"sprites/spr_comidaMask/spr_comidaMask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e9b761d2-7c63-41a6-be75-93187b8e50e9","path":"sprites/spr_comidaMask/spr_comidaMask.yy",},"LayerId":{"name":"5db963f1-a26d-43d6-8c5c-950800849293","path":"sprites/spr_comidaMask/spr_comidaMask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_comidaMask","path":"sprites/spr_comidaMask/spr_comidaMask.yy",},"resourceVersion":"1.0","name":"e9b761d2-7c63-41a6-be75-93187b8e50e9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"38d37763-5c26-45ac-bf78-4c1961c921c0","path":"sprites/spr_comidaMask/spr_comidaMask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"38d37763-5c26-45ac-bf78-4c1961c921c0","path":"sprites/spr_comidaMask/spr_comidaMask.yy",},"LayerId":{"name":"abc513fe-75b1-4026-be90-252674883dbf","path":"sprites/spr_comidaMask/spr_comidaMask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_comidaMask","path":"sprites/spr_comidaMask/spr_comidaMask.yy",},"resourceVersion":"1.0","name":"38d37763-5c26-45ac-bf78-4c1961c921c0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_comidaMask","path":"sprites/spr_comidaMask/spr_comidaMask.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"78892bac-fe92-4959-9b44-b3344430d7d8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e9b761d2-7c63-41a6-be75-93187b8e50e9","path":"sprites/spr_comidaMask/spr_comidaMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5af01173-6f85-471f-9be1-b02791a30aa0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"38d37763-5c26-45ac-bf78-4c1961c921c0","path":"sprites/spr_comidaMask/spr_comidaMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5db963f1-a26d-43d6-8c5c-950800849293","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"abc513fe-75b1-4026-be90-252674883dbf","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Missão 5",

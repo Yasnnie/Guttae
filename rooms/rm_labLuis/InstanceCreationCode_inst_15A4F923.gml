@@ -37,6 +37,8 @@ case 16:
 break;
 
 case 17:
+case 18:
+case 19:
 	texto = "Fale com o Enfermeiro sobre a resistência.";
 	respostas[0] ="Certo, até mais professor!";
 break;

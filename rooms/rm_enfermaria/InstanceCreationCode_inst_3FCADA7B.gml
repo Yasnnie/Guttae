@@ -23,4 +23,15 @@ case 17:
 	respostas[0] ="Olá, eu estou bem. Estou só de passagem.";
 	respostas[1] ="Olá, nós vinhemos aqui porque precisamos de algo para o nosso projeto, você poderia nos ajudar ?";
 break;
+
+case 18:
+	texto = "Já terminou de dar comida para o Bob ?";
+	respostas[0] ="Ainda não.";
+break;
+
+case 19:
+	texto = "Já terminou de dar comida para o Bob ?";
+	respostas[0] ="Ainda não.";
+	respostas[1] ="Sim, acabei! Ele parece muito feliz.";
+break;
 }

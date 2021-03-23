@@ -232,6 +232,7 @@
     {"id":{"name":"ts_hahaha","path":"tilesets/ts_hahaha/ts_hahaha.yy",},"order":17,},
     {"id":{"name":"spr_GuilhermeParado","path":"sprites/spr_GuilhermeParado/spr_GuilhermeParado.yy",},"order":2,},
     {"id":{"name":"spr_qst2_2","path":"sprites/spr_qst2_2/spr_qst2_2.yy",},"order":1,},
+    {"id":{"name":"rm_cutscene13","path":"rooms/rm_cutscene13/rm_cutscene13.yy",},"order":12,},
     {"id":{"name":"spr_ElenilsonParado","path":"sprites/spr_ElenilsonParado/spr_ElenilsonParado.yy",},"order":0,},
     {"id":{"name":"ts_cerca","path":"tilesets/ts_cerca/ts_cerca.yy",},"order":18,},
     {"id":{"name":"spr_opqst03","path":"sprites/spr_opqst03/spr_opqst03.yy",},"order":7,},
@@ -354,6 +355,7 @@
     {"name":"rm_cutscene07","path":"rooms/rm_cutscene07/rm_cutscene07.yy",},
     {"name":"rm_cutscene08","path":"rooms/rm_cutscene08/rm_cutscene08.yy",},
     {"name":"rm_cutscene12","path":"rooms/rm_cutscene12/rm_cutscene12.yy",},
+    {"name":"rm_cutscene13","path":"rooms/rm_cutscene13/rm_cutscene13.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":13,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

@@ -14,6 +14,9 @@ case rm_labLuis:
 		case 13:
 		case 14:
 		case 15:
+		case 17:
+		case 18:
+		case 19:
 		
 		global.click_resposta = true;
 	
@@ -71,6 +74,9 @@ case rm_labKaiser:
 		case 16:
 		case 17:
 		case 18:
+		case 19:
+		case 20:
+		case 21:
 		global.click_resposta = true;
 		
 		break;
@@ -116,6 +122,9 @@ case rm_horta:
 		case 16:
 		case 17:
 		case 18:
+		case 19:
+		case 20:
+		case 21:
 			global.click_resposta = true;
 		break;
 
@@ -184,6 +193,7 @@ case 13:
 case 14:
 case 15:
 case 16:
+case 18:
 	global.click_resposta = true;
 break;
 
@@ -199,6 +209,24 @@ case 17:
 				break;
 		
 				case "Olá, eu estou bem. Estou só de passagem.":
+				
+				global.click_resposta = true;
+				break;
+			}
+break;
+
+case 19:
+	switch(resposta)
+			{
+				case "Sim, acabei! Ele parece muito feliz.":
+				
+				
+				global.click_resposta = true;
+				room_goto(rm_comemoracao);
+				
+				break;
+		
+				case "Ainda não.":
 				
 				global.click_resposta = true;
 				break;

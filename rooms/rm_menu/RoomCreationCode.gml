@@ -21,14 +21,17 @@ global.canRead = true;
 
 // INSTANCIA DE CRIAÇÃO
 global.create_aux = false;
-global.create_expli[0] = false;
-global.create_expli[1] = false;
-global.create_expli[2] = false;
+global.create_expli0 = false;
+global.create_expli1 = false;
+global.create_expli2 = false;
+global.create_expli3 = false;
 
 
 //QUEST:
 global.quest01_aux = false;
 global.quest02_aux = false;
+global.quest03_aux = false;
+
 //ARRAY LIST
 global.canos = ds_list_create(); //QST01
 

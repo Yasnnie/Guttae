@@ -15,6 +15,7 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_peixe","path":"objects/obj_peixe/obj_peixe.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":48.0,"y":176.0,"resourceVersion":"1.0","name":"inst_27068829","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":560.0,"y":16.0,"resourceVersion":"1.0","name":"inst_7EB0AF09","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_spaw_lixo","path":"objects/obj_spaw_lixo/obj_spaw_lixo.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":160.0,"resourceVersion":"1.0","name":"inst_74177235","tags":[],"resourceType":"GMRInstance",},
@@ -33,6 +34,7 @@
     {"name":"inst_74177235","path":"rooms/rm_qst05/rm_qst05.yy",},
     {"name":"inst_37480593","path":"rooms/rm_qst05/rm_qst05.yy",},
     {"name":"inst_307A2D5B","path":"rooms/rm_qst05/rm_qst05.yy",},
+    {"name":"inst_7EB0AF09","path":"rooms/rm_qst05/rm_qst05.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

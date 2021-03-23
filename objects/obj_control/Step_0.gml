@@ -7,13 +7,13 @@ if(global.map_aux == true)
 
 		if(butao_intro == noone && box_intro == noone){
 				
-			if(global.create_expli[0]==false)
+			if(global.create_expli0==false)
 			{
 		
 			butao_intro = instance_create_layer(576,570,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(317,60,layer,obj_explicacoes);
 			box_intro.texto_explicacao = "Olá amiguinho(a)!!! Ao apertar a tecla M você vai ser direcionado para o mapa, esse mapa ele é estável, ele só ira mostrar onde está as suas missões, que sera representado por um ponto de exclamação(!), e onde está cada personagem, incluindo você.\n\n\n\n\nCaso você queira se locomover procure a seta no chão de sua sala, ela estará indicando a saída, ao sair da sala você entrará no mapa onde você poderá se locomover.";
-			global.create_expli[0] = true;
+			global.create_expli0 = true;
 			}
 		}
 		else
@@ -39,13 +39,13 @@ if(global.quest01_aux == true)
 	
 		if(butao_intro == noone && box_intro == noone){
 		
-			if(global.create_expli[1]==false)
+			if(global.create_expli1==false)
 			{
 			
 			butao_intro = instance_create_layer(220,room_height-80,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
 			box_intro.texto_explicacao = "Vamos lá, visando aproveitar a água gerada pelo ar condicionado você deve construir o encanamento que a leva até o reservatório. É muito fácil, você só precisa girar os canos até que forme o caminho certo para levar a água até o depósito. Você consegue!\n\nPara isso basta você clickar com o botão do lado esquerdo do mouse nos canos brancos para gira-los. \n\n\n\nQuando eles encontrarem um cano com água eles vão se encher também!";
-			global.create_expli[1] = true;
+			global.create_expli1 = true;
 			}
 		}
 		else
@@ -72,13 +72,13 @@ if(global.quest02_aux == true)
 		if(butao_intro == noone && box_intro == noone)
 		{
 		
-		if(global.create_expli[2]==false)
+		if(global.create_expli2==false)
 			{
 				show_debug_message("oi");
 			butao_intro = instance_create_layer(220,room_height-90,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
 			box_intro.texto_explicacao = "Ah não! As plantinhas da horta do Roldão irão morrer! Não o deixe na mão, ajude-o a regar as divisões, siga a sequência correta da irrigação que irá aparecer em sua tela, caso erre você deverá iniciar tudo de novo, então seja rápido(a) e boa sorte!";
-			global.create_expli[2] = true;
+			global.create_expli2 = true;
 			}
 		}
 		else
@@ -97,6 +97,38 @@ if(global.quest02_aux == true)
 }
 #endregion
 
+
+#region QUEST 05
+if(global.quest03_aux == true)
+{
+	
+		if(butao_intro == noone && box_intro == noone)
+		{
+		
+		if(global.create_expli3==false)
+			{
+			
+			butao_intro = instance_create_depth(280,room_height-80,-400,obj_botaoEntendi);
+			box_intro = instance_create_depth(150,40,-300,obj_explicacoes);
+			box_intro.texto_explicacao = "O Enfermeiro Alan está pedindo ajuda para alimentar o Bob o peixe que vive dentro do aquário, para isso basta você pegar as bolinhas de comida:\n\n\n\nPorém tome cuidado, existem algumas sujeiras dentro do aquário que podem fazer mal o Bob, existem pesquisas que preveem que até 2050 haverá mais plástico no mar do que peixes, além de que a poluição dos ambientes aquáticos leva e sérias perdas a esses ecossistemas.";
+			global.create_expli3 = true;
+			}
+		}
+		else
+		{
+			if(global.click_expli==true)
+			{
+		
+			instance_destroy(butao_intro);
+			instance_destroy(box_intro);
+			butao_intro = noone;
+			box_intro = noone;
+			global.quest03_aux = false;
+			
+			}
+		}
+}
+#endregion
 
 #endregion
 
@@ -179,6 +211,7 @@ break;
 
 #region 16
 case 16:
+case 20:
 	if(global.map_aux)
 		{
 	
@@ -248,6 +281,7 @@ break;
 	case 14:
 	case 15:
 	case 18:
+	case 19:
 
 		if(global.map_aux)
 		{
@@ -344,6 +378,9 @@ switch (global.quest)
 	case 16:
 	case 17:
 	case 18:
+	case 19:
+	case 20:
+	case 21:
 	
 
 		if(global.map_aux)
@@ -558,6 +595,9 @@ case rm_horta:
 		case 16:
 		case 17:
 		case 18:
+		case 19:
+		case 20:
+		case 21:
 			if(global.map_aux)
 			{
 	
@@ -956,6 +996,9 @@ case rm_deposito:
 	case 16:
 	case 17:
 	case 18:
+	case 19:
+	case 20:
+	case 21:
 		if(global.map_aux)
 			{
 	
@@ -1039,6 +1082,8 @@ case rm_enfermaria:
 		case 11:
 		case 15:
 		case 16:
+		case 20:
+		case 21:
 			if(global.map_aux)
 			{
 	
@@ -1119,6 +1164,36 @@ case rm_enfermaria:
 					player = instance_create_layer(286,160,layer,obj_player);
 					quest[0] = instance_create_layer(78,340,layer_get_id("block"),obj_enter);
 					quest[0].my_enter = 4;
+					global.create_aux = true;
+				}
+
+			}
+		break;
+		
+		case 19:
+			if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(76,330,layer,obj_player);
+					matheuszinho = instance_create_layer(204,150,layer_get_id("meninos"),obj_cutMatheus);
+					yasminzinha = instance_create_layer(236,150,layer_get_id("meninos"),obj_cutYasmin);
+					guilherminho = instance_create_layer(172,150,layer_get_id("meninos"),obj_cutGuilherme);
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					matheuszinho = instance_create_layer(204,150,layer_get_id("meninos"),obj_cutMatheus);
+					yasminzinha = instance_create_layer(236,150,layer_get_id("meninos"),obj_cutYasmin);
+					guilherminho = instance_create_layer(172,150,layer_get_id("meninos"),obj_cutGuilherme);
+					player = instance_create_layer(76,330,layer,obj_player);
+					
 					global.create_aux = true;
 				}
 

@@ -15,4 +15,9 @@ case 16:
 room_goto(rm_labKaiser);
 break;
 
+case 19:
+global.quest = 20;
+room_goto(rm_enfermaria);
+break;
+
 }

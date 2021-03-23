@@ -30,6 +30,9 @@ break;
 case 11:
 case 12:
 case 18:
+case 19:
+case 20:
+case 21:
 	texto = "Olá criança!";
 	respostas[0] ="Olá professor!";
 break;

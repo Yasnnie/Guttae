@@ -12,6 +12,7 @@ break;
 
 #region QUEST 02
 case rm_qst02:
+case rm_qst05:
 	draw_set_font(fnt_dialogoNPC);
 	draw_set_color(c_white);
 	draw_sprite_ext(spr_explicacaoFundo,0,x,y,0.5,0.5,0,c_white,1);
