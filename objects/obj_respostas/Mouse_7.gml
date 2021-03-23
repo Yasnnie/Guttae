@@ -41,7 +41,7 @@ case rm_labLuis:
 			{
 				case "Sim! Vamos começar.":
 
-				room_goto(rm_cutscene10);
+				room_goto(rm_cutscene11);
 				global.click_resposta = true;
 				break;
 		
@@ -66,6 +66,11 @@ case rm_labKaiser:
 		case 9:
 		case 10:
 		case 11:
+		case 12:
+		case 13:
+		case 16:
+		case 17:
+		case 18:
 		global.click_resposta = true;
 		
 		break;
@@ -104,6 +109,13 @@ case rm_horta:
 		case 7:
 		case 9:
 		case 11:
+		case 12:
+		case 13:
+		case 14:
+		case 15:
+		case 16:
+		case 17:
+		case 18:
 			global.click_resposta = true;
 		break;
 
@@ -153,6 +165,29 @@ case rm_biblioteca:
 			global.click_resposta = true;
 		break;
 	}
+break;
+
+case rm_enfermaria:
+#region
+
+switch(global.quest)
+{
+case 5:
+case 6:
+case 7:
+case 8:
+case 9:
+case 10:
+case 11:
+case 12:
+case 13:
+case 14:
+case 15:
+case 16:
+	global.click_resposta = true;
+break;
+}
+#endregion
 break;
 }
 

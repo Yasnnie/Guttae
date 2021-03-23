@@ -35,4 +35,9 @@ case 16:
 	respostas[0] ="Agora tenho que resolver algumas coisas. Pode ser depois ?";
 	respostas[1] ="Sim! Vamos começar.";
 break;
+
+case 17:
+	texto = "Fale com o Enfermeiro Alan sobre a resistência.";
+	respostas[0] ="Certo, até mais professor!";
+break;
 }

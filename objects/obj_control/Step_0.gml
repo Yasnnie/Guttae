@@ -247,6 +247,7 @@ break;
 	case 13:
 	case 14:
 	case 15:
+	case 18:
 
 		if(global.map_aux)
 		{
@@ -341,6 +342,8 @@ switch (global.quest)
 	case 11:
 	case 12:
 	case 16:
+	case 17:
+	case 18:
 	
 
 		if(global.map_aux)
@@ -551,6 +554,10 @@ case rm_horta:
 		case 11:
 		case 12:
 		case 13:
+		case 15:
+		case 16:
+		case 17:
+		case 18:
 			if(global.map_aux)
 			{
 	
@@ -581,8 +588,8 @@ case rm_horta:
 				if(!global.create_aux)
 				{
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
-					quest[0] = instance_create_layer(464,208,layer_get_id("seta"), obj_enter);
-					quest[1] = instance_create_layer(464,240,layer_get_id("seta"), obj_enter);
+					quest[0] = instance_create_layer(462,208,layer_get_id("block"), obj_enter);
+					quest[1] = instance_create_layer(462,240,layer_get_id("block"), obj_enter);
 					quest[0].my_enter = 2;
 					quest[1].my_enter = 2;
 					global.create_aux = true;
@@ -594,8 +601,8 @@ case rm_horta:
 	
 				if(!global.create_aux)
 				{
-					quest[0] = instance_create_layer(464,208,layer_get_id("seta"), obj_enter);
-					quest[1] = instance_create_layer(464,240,layer_get_id("seta"), obj_enter);
+					quest[0] = instance_create_layer(462,208,layer_get_id("block"), obj_enter);
+					quest[1] = instance_create_layer(462,240,layer_get_id("block"), obj_enter);
 					quest[0].my_enter = 2;
 					quest[1].my_enter = 2;
 					player = instance_create_layer(288,160,layer,obj_player);
@@ -797,6 +804,7 @@ case rm_biblioteca:
 		case 11:
 		case 15:
 		case 16:
+		case 17:
 			if(global.map_aux)
 			{
 	
@@ -829,7 +837,7 @@ case rm_biblioteca:
 					leozinho = instance_create_layer(360,128,layer,obj_cutLeo);
 					guilherminho = instance_create_layer(14,320,layer,obj_cutGuilherme);
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
-					quest[0] = instance_create_layer(112,132,layer,obj_enter);
+					quest[0] = instance_create_layer(112,132,layer_get_id("block"),obj_enter);
 					quest[0].my_enter = 3;
 					global.create_aux = true;
 	
@@ -843,7 +851,7 @@ case rm_biblioteca:
 					matheuszinho = instance_create_layer(334,128,layer,obj_cutMatheus);
 					leozinho = instance_create_layer(360,128,layer,obj_cutLeo);
 					guilherminho = instance_create_layer(14,320,layer,obj_cutGuilherme);
-					quest[0] = instance_create_depth(112,132,500,obj_enter);
+					quest[0] = instance_create_layer(112,132,layer_get_id("block"),obj_enter);
 					quest[0].my_enter = 3;
 					player = instance_create_layer(448,320,layer,obj_player);
 					global.create_aux = true;
@@ -946,6 +954,8 @@ case rm_deposito:
 	case 13:
 	case 15:
 	case 16:
+	case 17:
+	case 18:
 		if(global.map_aux)
 			{
 	
@@ -1014,6 +1024,64 @@ case rm_deposito:
 	break;
 	}
 	#endregion
+break;
+
+case rm_enfermaria:
+#region	ENFERMARIA
+	#region QST
+	switch (global.quest)
+	{
+		case 5:
+		case 6:
+		case 7:
+		case 8: 
+		case 9:
+		case 11:
+		case 15:
+		case 16:
+			if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(448,224,layer,obj_player);
+					global.create_aux = true;
+				}
+
+			}
+		break;
+	}
+	#endregion
+	
+	#region DEPTH
+	
+		var id_mesa = layer_get_id("elementos");
+	
+
+		
+
+		if(player.y>144)
+		{
+	
+			layer_depth(id_mesa,150);
+			
+		}else if(player.y<144)
+		{
+			layer_depth(id_mesa,50);
+		
+		}
+	#endregion
+#endregion
 break;
 }
 

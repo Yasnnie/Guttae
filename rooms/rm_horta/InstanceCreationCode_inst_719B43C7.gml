@@ -17,6 +17,8 @@ case 13:
 case 14:
 case 15:
 case 16:
+case 17:
+case 18:
 texto = "Olá! Tudo bem?";
 respostas[0] ="Olá Erasmo, estou bem e você?";
 break;
