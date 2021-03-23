@@ -186,6 +186,24 @@ case 15:
 case 16:
 	global.click_resposta = true;
 break;
+
+case 17:
+	switch(resposta)
+			{
+				case "Olá, nós vinhemos aqui porque precisamos de algo para o nosso projeto, você poderia nos ajudar ?":
+				
+				
+				global.click_resposta = true;
+				room_goto(rm_cutscene12);
+				
+				break;
+		
+				case "Olá, eu estou bem. Estou só de passagem.":
+				
+				global.click_resposta = true;
+				break;
+			}
+break;
 }
 #endregion
 break;

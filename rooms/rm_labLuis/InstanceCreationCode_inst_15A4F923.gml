@@ -37,7 +37,7 @@ case 16:
 break;
 
 case 17:
-	texto = "Fale com o Enfermeiro Alan sobre a resistência.";
+	texto = "Fale com o Enfermeiro sobre a resistência.";
 	respostas[0] ="Certo, até mais professor!";
 break;
 }

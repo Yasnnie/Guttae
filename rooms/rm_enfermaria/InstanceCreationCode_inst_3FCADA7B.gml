@@ -17,4 +17,10 @@ case 16:
 	texto = "Olá, você está se sintindo bem?  Como posso ajuda-lo?";
 	respostas[0] ="Olá, eu estou bem. Estou só de passagem.";
 break;
+
+case 17:
+	texto = "Olá, você está se sintindo bem?  Como posso ajuda-lo?";
+	respostas[0] ="Olá, eu estou bem. Estou só de passagem.";
+	respostas[1] ="Olá, nós vinhemos aqui porque precisamos de algo para o nosso projeto, você poderia nos ajudar ?";
+break;
 }
