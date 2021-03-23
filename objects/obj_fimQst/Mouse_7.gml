@@ -11,4 +11,8 @@ room_goto(rm_horta);
 
 break;
 
+case 16:
+room_goto(rm_labKaiser);
+break;
+
 }

@@ -28,12 +28,14 @@ if(resposta)
 			draw_sprite_ext(spr_boxDialog,-1, 0,room_height-130,2,2,0,c_white,1);
 			draw_text_ext(15,620,"Mas, cara… esse processo é meio complicado, não acho que nós conseguiríamos as membranas aqui no campus, por exemplo.",30,1290);
 			draw_text_ext(116,592,"Yasmin",30,1290);
+			 
 		break;
 		
 		case 1:
 			draw_sprite_ext(spr_boxDialog,-1, 0,room_height-130,2,2,0,c_white,1);
 			draw_text_ext(15,620,"Sim, e também tem a questão do gasto muito grande de energia para fazer a separação do soluto salobro e a água. É uma boa solução para grande escala, mas demanda mais recursos que a Evaporação.",30,1290);
 			draw_text_ext(116,592,"Guilherme",30,1290);
+			draw_text(room_width-120,room_height,"Pular Diálogo (Espaço)");
 		break;
 		
 		case 2:
@@ -52,12 +54,14 @@ if(resposta1)
 			draw_sprite_ext(spr_boxDialog,-1, 0,room_height-130,2,2,0,c_white,1);
 			draw_text_ext(15,620,"Em alguns casos pode gerar bem menos que a Osmose Reversa, mas é o suficiente para o que a gente quer fazer. ",30,1290);
 			draw_text_ext(116,592,"Guilherme",30,1290);
+			draw_text(room_width-120,room_height,"Pular Diálogo (Espaço)");
 		break;
 		
 		case 1:
 			draw_sprite_ext(spr_boxDialog,-1, 0,room_height-130,2,2,0,c_white,1);
 			draw_text_ext(15,620,"Eu acho mais simples, pois precisa de menos recursos e nós podemos usar formas limpas de energia sem muitas dificuldades.",30,1290);
 			draw_text_ext(116,592,"Yasmin",30,1290);
+			draw_text(room_width-120,room_height,"Pular Diálogo (Espaço)");
 		break;
 		
 		case 2:

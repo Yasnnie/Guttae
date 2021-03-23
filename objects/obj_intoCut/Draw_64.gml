@@ -15,15 +15,27 @@ draw_set_color(c_black);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_text_ext(15,620,print,30,1290);
-draw_text_ext(116,582,nome_personagem,30,1290);
+draw_text_ext(118,582,nome_personagem,30,1290);
 
-draw_text(room_width+720,room_height+360,"Espaço");
-
-//FADE:
+draw_text(room_width+670,room_height+378,"Pular Diálogo (Espaço)");
 
 
 #endregion
 
+
+switch (global.quest)
+{
+case 1:
+	draw_sprite_ext(spr_monitor,-1, -160, -10, 0.5,0.5,0,c_white,1);
+break;
+
+case 16:
+	if(global.next ==3)
+	{
+	draw_sprite_ext(spr_tabela,-1, 16, 0, 1,1,0,c_white,1);
+	}
+break;
+}
 
 }
 

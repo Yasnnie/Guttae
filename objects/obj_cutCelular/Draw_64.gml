@@ -1,5 +1,6 @@
 draw_sprite_ext(spr_whiteBloc,0,0,0,1280,720,0,c_black,alpha);
-
+draw_set_halign(fa_left);
+draw_text(room_width-120,room_height,"Pular Diálogo (Espaço)");
 if(time1){
 switch (count)
 {

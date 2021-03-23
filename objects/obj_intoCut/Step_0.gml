@@ -48,6 +48,22 @@ if (global.quest==4 && global.next == 0)
 
 }
 
+if(global.quest == 16 && global.next == 2)
+{
+	global.canRead = false;
+	
+		if (timer<370)
+		{
+			timer ++;
+		}
+	
+		if (timer == 370)
+		{
+			global.canRead = true;
+
+		}
+}
+
 if(global.quest == 8)
 {
 	global.canRead = false;

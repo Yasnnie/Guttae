@@ -18,7 +18,7 @@ eu_dialogo[0] ="Yasmin";
 eu_dialogo[1] ="Prof. Kaiser";
 eu_dialogo[2] ="Prof. Kaiser";
 eu_dialogo[3] ="Yasmin";
-eu_dialogo[5] ="Leonardo";
+eu_dialogo[4] ="Leonardo";
 
 
 
