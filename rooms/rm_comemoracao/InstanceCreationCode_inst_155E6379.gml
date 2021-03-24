@@ -1,1 +1,0 @@
-sprites = spr_rojao;

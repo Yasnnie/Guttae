@@ -25,4 +25,9 @@ case 22:
 room_goto(rm_cutscene14);
 break;
 
+case 25:
+	global.quest = 26;
+	room_goto(rm_deposito);
+break;
+
 }

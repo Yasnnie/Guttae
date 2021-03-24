@@ -225,13 +225,21 @@ switch(npc_spr)
  case spr_ErasmoRaiva:
 	if ( colid_up || colid_right || colid_left)
 	{
-		
+		if(room == rm_horta)
+		{
 		if(!aux_setas){
 		e_cabeca = instance_create_layer(300,45,layer-3, obj_animadas);
 		e_cabeca.sprites = spr_setaE;
 		aux_setas = true;
 		}
-		
+		}else if(room == rm_deposito)
+		{
+		if(!aux_setas){
+		e_cabeca = instance_create_layer(220,34,layer-1, obj_animadas);
+		e_cabeca.sprites = spr_setaE;
+		aux_setas = true;
+		}
+		}
 		
 		if(!global.click_resposta){
 		if(key_e)

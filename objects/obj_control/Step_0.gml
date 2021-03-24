@@ -376,6 +376,41 @@ case 22:
 break;
 #endregion
 
+#region 24
+case 24:
+if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				if(!global.cano2)
+				{
+				var cano = instance_create_layer(382,128,layer,obj_canoQst7);
+				cano.index_cano = 2;
+				}
+				global.create_aux = true;
+				
+			}
+
+		}else if (!global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+				player = instance_create_layer(22,335,layer,obj_player);
+				if(!global.cano2)
+				{
+				var cano = instance_create_layer(382,128,layer,obj_canoQst7);
+				cano.index_cano = 2;
+				}
+				global.create_aux = true;
+			}
+
+		}
+break;
+#endregion
+
 #region 7 a 14
 	case 7:
 	case 8:
@@ -388,6 +423,8 @@ break;
 	case 15:
 	case 18:
 	case 19:
+	case 25:
+	case 26:
 
 
 		if(global.map_aux)
@@ -490,8 +527,8 @@ switch (global.quest)
 	case 21:
 	case 22:
 	case 23:
-	case 24:
-	
+	case 25:
+		
 
 		if(global.map_aux)
 		{
@@ -516,6 +553,43 @@ switch (global.quest)
 
 		}
 break; 
+#endregion
+
+#region 24
+case 24:
+	if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+		
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				if(!global.cano3)
+				{
+				var cano = instance_create_layer(414,336,layer,obj_canoQst7);
+				cano.index_cano = 3;
+				}
+				global.create_aux = true;
+			
+			}
+
+		}else if (!global.map_aux)
+		{
+			if(!global.create_aux)
+			{
+
+				player = instance_create_layer (30,335,layer,obj_player);
+				if(!global.cano3)
+				{
+				var cano = instance_create_layer(414,336,layer,obj_canoQst7);
+				cano.index_cano = 3;
+				}
+				global.create_aux = true;
+		
+			}
+
+		}
+break;
 #endregion
 
 #region 7
@@ -710,7 +784,6 @@ case rm_horta:
 		case 21:
 		case 22:
 		case 23:
-		case 24:
 		case 25:
 			if(global.map_aux)
 			{
@@ -734,6 +807,42 @@ case rm_horta:
 			}
 		break;
 		#endregion
+		
+		#region 24
+		case 24:
+			if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					if(!global.cano4)
+					{
+						var cano = instance_create_layer(62,158,layer,obj_canoQst7);
+						cano.index_cano = 4;
+					}
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(22,332,layer,obj_player);
+					if(!global.cano4)
+					{
+						var cano = instance_create_layer(62,158,layer,obj_canoQst7);
+						cano.index_cano = 4;
+					}
+					global.create_aux = true;
+				}
+
+			}
+		break;
+		#endregion
+		
 		#region 9
 		case 9:
 		if(global.map_aux)
@@ -965,7 +1074,6 @@ case rm_biblioteca:
 		case 21:
 		case 22:
 		case 23:
-		case 24:
 		case 25:
 		case 26:
 		case 27:
@@ -985,6 +1093,39 @@ case rm_biblioteca:
 				if(!global.create_aux)
 				{
 					player = instance_create_layer(448,320,layer,obj_player);
+					global.create_aux = true;
+				}
+
+			}
+		break;
+		
+		case 24:
+			if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					if(!global.cano5)
+					{
+						var cano = instance_create_layer(142,320,layer,obj_canoQst7);
+						cano.index_cano = 5;
+					}
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(448,320,layer,obj_player);
+					if(!global.cano5)
+					{
+						var cano = instance_create_layer(142,320,layer,obj_canoQst7);
+						cano.index_cano = 5;
+					}
 					global.create_aux = true;
 				}
 
@@ -1192,6 +1333,7 @@ case rm_deposito:
 	break;
 	
 	case 23:
+	case 25:
 		if(global.map_aux)
 		{
 	
@@ -1223,6 +1365,49 @@ case rm_deposito:
 
 		}
 	break;
+	
+	case 24:
+		if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+		
+				yasminzinha = instance_create_layer(192,192,layer_get_id("grupo"),obj_cutYasmin);
+				leozinho = instance_create_layer(256,192,layer_get_id("grupo"),obj_cutLeo);
+				guilherminho = instance_create_layer(160,160,layer_get_id("grupo"),obj_cutGuilherme);
+				
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				if(!global.cano1)
+				{
+				var cano = instance_create_layer(20,138,layer,obj_canoQst7);
+				cano.index_cano = 1;
+				}
+				global.create_aux = true;
+			
+			}
+
+		}else if (!global.map_aux)
+		{
+			if(!global.create_aux)
+			{
+
+				yasminzinha = instance_create_layer(192,192,layer_get_id("grupo"),obj_cutYasmin);
+				leozinho = instance_create_layer(256,192,layer_get_id("grupo"),obj_cutLeo);
+				guilherminho = instance_create_layer(160,160,layer_get_id("grupo"),obj_cutGuilherme);
+				
+				player = instance_create_layer(280,126,layer,obj_player);
+				if(!global.cano1)
+				{
+				var cano = instance_create_layer(20,138,layer,obj_canoQst7);
+				cano.index_cano = 1;
+				}
+				global.create_aux = true;
+		
+			}
+
+		}
+	break
 	}
 	#endregion
 break;
@@ -1244,7 +1429,6 @@ case rm_enfermaria:
 		case 21:
 		case 22:
 		case 23:
-		case 24:
 		case 25:
 		case 26:
 		case 27:
@@ -1264,6 +1448,39 @@ case rm_enfermaria:
 				if(!global.create_aux)
 				{
 					player = instance_create_layer(448,224,layer,obj_player);
+					global.create_aux = true;
+				}
+
+			}
+		break;
+		
+		case 24:
+			if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					if(!global.cano6)
+					{
+						var cano = instance_create_layer(28,32,layer,obj_canoQst7);
+						cano.index_cano = 6;
+					}
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(448,224,layer,obj_player);
+					if(!global.cano6)
+					{
+						var cano = instance_create_layer(28,32,layer,obj_canoQst7);
+						cano.index_cano = 6;
+					}
 					global.create_aux = true;
 				}
 

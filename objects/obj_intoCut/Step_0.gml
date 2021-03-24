@@ -96,6 +96,22 @@ if(global.quest == 9)
 		}
 }
 
+if(global.quest ==24 && global.next == 2 )
+{
+	global.canRead = false;
+	
+		if (timer<110)
+		{
+			timer ++;
+		}
+	
+		if (timer == 110)
+		{
+			global.canRead = true;
+
+		}
+}
+
 #endregion
 
 

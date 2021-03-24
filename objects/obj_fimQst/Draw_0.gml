@@ -21,6 +21,10 @@ break;
 case 22:
 	draw_sprite(spr_placaSolar,0,222,90);
 break;
+
+case 25:
+	draw_sprite(spr_canos,0,222,90);
+break;
 }
 
 var mouse_sobre = position_meeting(mouse_x,mouse_y,self);

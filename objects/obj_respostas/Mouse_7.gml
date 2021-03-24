@@ -298,6 +298,27 @@ case rm_deposito:
 				break;
 			}
 	break;
+	
+	case 24:
+		global.click_resposta = true;
+	break;
+	
+	case 25:
+		switch(resposta)
+			{
+				case "Nós conseguimos!":
+
+				global.click_resposta = true;
+				room_goto(rm_comemoracao);
+				
+				break;
+		
+				case "Ainda não!":
+				
+				global.click_resposta = true;
+				break;
+			}
+	break;
 	}
 break;
 }
