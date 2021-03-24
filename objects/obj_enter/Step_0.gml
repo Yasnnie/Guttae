@@ -46,6 +46,15 @@ if(direita || esquerda ||cima || baixo){
 	aux_setas_enter= true;
 	}
 	break;
+	
+	case 21:
+	if(!aux_setas_enter){
+	e_enter = instance_create_depth(8,180,-400,obj_animadas);
+	e_enter.sprites = spr_setaE;
+	
+	aux_setas_enter= true;
+	}
+	break;
 	}
 	if(key_enter)
 	{
@@ -66,6 +75,10 @@ if(direita || esquerda ||cima || baixo){
 		
 		case 4:
 			room_goto(rm_qst05);
+		break;
+		
+		case 5:
+			room_goto(rm_qst06);
 		break;
 		}
 

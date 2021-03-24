@@ -172,7 +172,7 @@ if(global.quest>=8 && global.quest<14)
 #endregion
 
 #region LEO
-if(global.quest>=14)
+if(global.quest>=14 && global.quest<21)
 {
 	sprite_index = spr_LeoParado;
 	if( key_up || key_down || key_right || key_left)
@@ -250,6 +250,86 @@ if(global.quest>=14)
 
 }
 
+#endregion
+
+#region GUILHERME
+	if(global.quest>=21)
+	{
+	sprite_index = spr_GuilhermeParado;
+	if( key_up || key_down || key_right || key_left)
+	{
+		xaxis = (key_right-key_left);
+		yaxis = (key_down-key_up);
+		dir = point_direction(0, 0, xaxis, yaxis);
+	
+		if (xaxis == 0) and (yaxis == 0)
+		{
+			len = 0;
+		}
+		else
+		{
+				len = vel;
+		}
+	
+		velh = lengthdir_x(len, dir);
+		velv = lengthdir_y(len, dir);
+
+	
+		//MUDANÇA DE SPRITE HORIZONTAL
+		if (velh < 0){
+			sprite_index = spr_GuilhermeAndandoE;
+			aux = true;
+		} else if (velh > 0){
+			sprite_index = spr_GuilhermeAndando;
+			aux = false;
+		}
+	
+		//MUDANÇA DE SPRITE VERTICAL
+		if (velv!=0 && aux == true)
+		{
+			sprite_index = spr_GuilhermeAndandoE;
+		}else if (velv!=0 && aux == false){
+			sprite_index = spr_GuilhermeAndando;
+		}
+	
+		//Colisão Horizontal block
+		if place_meeting(x+velh,y,obj_block)
+		{
+			while !place_meeting(x+velh,y,obj_block)
+			{
+				x+= sign(velh); 
+			}
+			velh = 0;
+		}
+	
+		x+= velh;
+
+//Colisão Vertical	block
+	if place_meeting(x,y+velv,obj_block)
+	{
+		while !place_meeting(x,y+velv,obj_block)
+		{
+			y+= sing(velv);
+		}
+		
+		velv = 0; 
+	}
+
+	y+= velv;
+
+}else {
+	
+	if(aux == false)
+	{
+		sprite_index = spr_GuilhermeParado;
+	}else if(aux == true)
+	{
+		sprite_index = spr_GuilhermeParadoE;
+	}
+
+	}
+
+}
 #endregion
 
 #endregion

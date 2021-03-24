@@ -1,18 +1,12 @@
 
 switch(room)
 {
-#region QUEST 01
-case rm_qst01:
-	draw_set_font(fnt_dialogoNPC);
-	draw_set_color(c_white);
-	draw_sprite_ext(spr_explicacaoFundo,0,x,y,0.5,0.5,0,c_white,1);
-	draw_text_ext(x+15,y+15,texto_explicacao,15,300);
-break;
-#endregion
 
-#region QUEST 02
+#region QUESTS
+case rm_qst01:
 case rm_qst02:
 case rm_qst05:
+case rm_qst06:
 	draw_set_font(fnt_dialogoNPC);
 	draw_set_color(c_white);
 	draw_sprite_ext(spr_explicacaoFundo,0,x,y,0.5,0.5,0,c_white,1);

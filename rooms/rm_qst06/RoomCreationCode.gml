@@ -1,4 +1,8 @@
 //AUXILIAR ESPAÇO
+global.quest04_aux = true;
+global.click_expli=false;
+
+global.quest = 22;
 global.selecionado = false;
 global.space_count = false;
 

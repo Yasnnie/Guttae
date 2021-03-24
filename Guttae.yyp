@@ -236,6 +236,7 @@
     {"id":{"name":"spr_ElenilsonParado","path":"sprites/spr_ElenilsonParado/spr_ElenilsonParado.yy",},"order":0,},
     {"id":{"name":"ts_cerca","path":"tilesets/ts_cerca/ts_cerca.yy",},"order":18,},
     {"id":{"name":"spr_opqst03","path":"sprites/spr_opqst03/spr_opqst03.yy",},"order":7,},
+    {"id":{"name":"spr_fundoQst06","path":"sprites/spr_fundoQst06/spr_fundoQst06.yy",},"order":25,},
     {"id":{"name":"spr_pSolar1C","path":"sprites/spr_pSolar1C/spr_pSolar1C.yy",},"order":9,},
     {"id":{"name":"spr_fundo_livro","path":"sprites/spr_fundo_livro/spr_fundo_livro.yy",},"order":1,},
     {"id":{"name":"obj_cutEnfermeiro","path":"objects/obj_cutEnfermeiro/obj_cutEnfermeiro.yy",},"order":11,},

@@ -42,4 +42,22 @@ case 19:
 	texto = "Fale com o Enfermeiro sobre a resistência.";
 	respostas[0] ="Certo, até mais professor!";
 break;
+
+case 20:
+	texto = "Conseguiram a resistência ?";
+	respostas[0] ="Ainda não.";
+	respostas[1] ="Sim, mas precisamos conversar com o senhor.";
+
+break;
+
+case 21:
+	texto = "Acharam a placa ?";
+	respostas[0] ="Ainda não.";
+break;
+
+case 22:
+	texto = "Acharam a placa ?";
+	respostas[0] ="Ainda não.";
+	respostas[1] ="Achamos!";
+break;
 }

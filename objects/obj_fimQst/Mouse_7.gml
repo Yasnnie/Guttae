@@ -20,4 +20,9 @@ global.quest = 20;
 room_goto(rm_enfermaria);
 break;
 
+case 22:
+global.quest = 23;
+room_goto(rm_labLuis);
+break;
+
 }

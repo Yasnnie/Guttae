@@ -130,6 +130,38 @@ if(global.quest03_aux == true)
 }
 #endregion
 
+#region	QUEST 06
+if(global.quest04_aux == true)
+{
+	
+		if(butao_intro == noone && box_intro == noone)
+		{
+		
+		if(global.create_expli4==false)
+			{
+			
+			butao_intro = instance_create_depth(220,room_height-80,-400,obj_botaoEntendi);
+			box_intro = instance_create_depth(90,40,-300,obj_explicacoes);
+			box_intro.texto_explicacao = "Já brincou de quebra-cabeça antes? Espero que sim! Você vai precisar reorganizar as partes da placa solar, organize elas de acordo com suas numerações. Para isso arraste uma peça para o espaço vazio até eles ficarem a ordem! Boa Sorte!";
+			global.create_expli4 = true;
+			}
+		}
+		else
+		{
+			if(global.click_expli==true)
+			{
+		
+			instance_destroy(butao_intro);
+			instance_destroy(box_intro);
+			butao_intro = noone;
+			box_intro = noone;
+			global.quest04_aux = false;
+			
+			}
+		}
+}
+#endregion
+
 #endregion
 
 #region CONTROL
@@ -267,6 +299,79 @@ if(global.map_aux)
 		}
 
 	}
+break;
+#endregion
+
+#region	21
+case 21:
+	if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+		
+				yasminzinha = instance_create_layer(128,368,layer_get_id("luix"),obj_cutYasmin);
+				matheuszinho = instance_create_layer(432,320,layer_get_id("luix"),obj_cutMatheus);
+				leozinho = instance_create_layer(432,112,layer_get_id("luix"),obj_cutLeo);
+				quest[0] = instance_create_layer(10,206,layer_get_id("enter"), obj_enter);
+				quest[1] = instance_create_layer(10,238,layer_get_id("enter"), obj_enter);
+				quest[0].my_enter = 5;
+				quest[1].my_enter = 5;
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				global.create_aux = true;
+			
+			}
+
+		}else if (!global.map_aux)
+		{
+			if(!global.create_aux)
+			{
+
+				yasminzinha = instance_create_layer(128,368,layer_get_id("luix"),obj_cutYasmin);
+				matheuszinho = instance_create_layer(432,320,layer_get_id("luix"),obj_cutMatheus);
+				leozinho = instance_create_layer(432,112,layer_get_id("luix"),obj_cutLeo);
+				quest[0] = instance_create_layer(10,206,layer_get_id("enter"), obj_enter);
+				quest[1] = instance_create_layer(10,238,layer_get_id("enter"), obj_enter);
+				quest[0].my_enter = 5;
+				quest[1].my_enter = 5;
+				player = instance_create_layer(112,144,layer,obj_player);
+				global.create_aux = true;
+		
+			}
+
+		}
+break;
+
+
+case 22:
+	if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+		
+				yasminzinha = instance_create_layer(128,368,layer_get_id("luix"),obj_cutYasmin);
+				matheuszinho = instance_create_layer(432,320,layer_get_id("luix"),obj_cutMatheus);
+				leozinho = instance_create_layer(432,112,layer_get_id("luix"),obj_cutLeo);
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				global.create_aux = true;
+			
+			}
+
+		}else if (!global.map_aux)
+		{
+			if(!global.create_aux)
+			{
+
+				yasminzinha = instance_create_layer(128,368,layer_get_id("luix"),obj_cutYasmin);
+				matheuszinho = instance_create_layer(432,320,layer_get_id("luix"),obj_cutMatheus);
+				leozinho = instance_create_layer(432,112,layer_get_id("luix"),obj_cutLeo);
+				player = instance_create_layer(52,240,layer,obj_player);
+				global.create_aux = true;
+		
+			}
+
+		}
 break;
 #endregion
 

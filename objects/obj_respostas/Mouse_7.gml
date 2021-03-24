@@ -17,6 +17,7 @@ case rm_labLuis:
 		case 17:
 		case 18:
 		case 19:
+		case 21:
 		
 		global.click_resposta = true;
 	
@@ -49,6 +50,38 @@ case rm_labLuis:
 				break;
 		
 				case "Agora tenho que resolver algumas coisas. Pode ser depois ?":
+			
+				global.click_resposta = true;
+				break;
+			}
+		break;
+		
+		case 20:
+			switch(resposta)
+			{
+				case "Sim, mas precisamos conversar com o senhor.":
+
+				room_goto(rm_cutscene13);
+				global.click_resposta = true;
+				break;
+		
+				case "Ainda não.":
+			
+				global.click_resposta = true;
+				break;
+			}
+		break;
+		
+		case 22:
+			switch(resposta)
+			{
+				case "Achamos!":
+
+				room_goto(rm_comemoracao);
+				global.click_resposta = true;
+				break;
+		
+				case "Ainda não.":
 			
 				global.click_resposta = true;
 				break;
@@ -177,7 +210,7 @@ case rm_biblioteca:
 break;
 
 case rm_enfermaria:
-#region
+#region ENFERMARIA
 
 switch(global.quest)
 {
@@ -194,6 +227,14 @@ case 14:
 case 15:
 case 16:
 case 18:
+case 20:
+case 21:
+case 22:
+case 23:
+case 24:
+case 25:
+case 26:
+case 27:
 	global.click_resposta = true;
 break;
 

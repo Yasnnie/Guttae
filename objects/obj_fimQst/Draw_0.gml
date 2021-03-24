@@ -17,6 +17,10 @@ break;
 case 19:
 	draw_sprite(spr_resistencia,0,222,90);
 break;
+
+case 22:
+	draw_sprite(spr_placaSolar,0,222,90);
+break;
 }
 
 var mouse_sobre = position_meeting(mouse_x,mouse_y,self);

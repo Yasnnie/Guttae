@@ -14,6 +14,14 @@ case 13:
 case 14:
 case 15:
 case 16:
+case 20:
+case 21:
+case 22:
+case 23:
+case 24:
+case 25:
+case 26:
+case 27:
 	texto = "Olá, você está se sintindo bem?  Como posso ajuda-lo?";
 	respostas[0] ="Olá, eu estou bem. Estou só de passagem.";
 break;

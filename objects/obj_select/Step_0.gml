@@ -54,5 +54,5 @@ if(!global.selecionado)
 
 if(global.pSolar_confirm1 && global.pSolar_confirm2 && global.pSolar_confirm3 &&  global.pSolar_confirm4 && global.pSolar_confirm5 && global.pSolar_confirm6 && global.pSolar_confirm7 && global.pSolar_confirm8)
 {
-	show_message("TERMINOU MISSÃO");
+	room_goto(rm_labLuis);
 }
