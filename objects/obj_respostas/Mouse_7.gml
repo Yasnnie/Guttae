@@ -112,6 +112,17 @@ case rm_labKaiser:
 		case 19:
 		case 20:
 		case 21:
+		case 22:
+		case 23:
+		case 24:
+		case 25:
+		case 26:
+		case 27:
+		case 28:
+		case 29:
+		case 30:
+		case 31:
+	
 		global.click_resposta = true;
 		
 		break;
@@ -160,6 +171,16 @@ case rm_horta:
 		case 19:
 		case 20:
 		case 21:
+		case 22:
+		case 23:
+		case 24:
+		case 25:
+		case 26:
+		case 27:
+		case 28:
+		case 29:
+		case 30:
+		case 31:
 			global.click_resposta = true;
 		break;
 
@@ -237,6 +258,10 @@ case 24:
 case 25:
 case 26:
 case 27:
+case 28:
+case 29:
+case 30:
+case 31:
 	global.click_resposta = true;
 break;
 

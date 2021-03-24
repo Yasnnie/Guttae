@@ -28,6 +28,13 @@ case 21:
 case 22:
 case 23:
 case 24:
+case 25:
+case 26:
+case 27:
+case 28:
+case 29:
+case 30:
+case 31:
 texto = "Olá! Tudo bem?";
 respostas[0] ="Olá Erasmo, estou bem e você?";
 break;

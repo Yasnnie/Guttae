@@ -63,7 +63,15 @@ break;
 
 case 23:
 case 24:
+case 25:
 	texto = "Fale com Erasmo no depósito atrás da quadra. Ele lhe ajudara com os canos.";
 	respostas[0] ="Ok! Estou indo.";
+break;
+
+
+case 26:
+	texto = "Como foi lá no deposito? Conseguiram os canos ?";
+	respostas[0] ="Ainda não! Estamos procurando eles ainda.";
+	respostas[1] ="Sim, conseguimos! Acho que estamos na reta final.";
 break;
 }

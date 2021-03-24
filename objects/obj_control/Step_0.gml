@@ -252,7 +252,7 @@ case 20:
 		
 				yasminzinha = instance_create_layer(144,176,layer_get_id("luix"),obj_cutYasmin);
 				matheuszinho = instance_create_layer(320,144,layer_get_id("luix"),obj_cutMatheus);
-				guilherminho = instance_create_layer(128,192,layer_get_id("luix"),obj_cutGuilherme);
+				guilherminho = instance_create_layer(112,144,layer_get_id("enter_e_seta"),obj_cutGuilherme);
 				
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
@@ -411,6 +411,41 @@ if(global.map_aux)
 break;
 #endregion
 
+#region 26
+case 26:
+	if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+		
+				yasminzinha = instance_create_layer(144,176,layer_get_id("luix"),obj_cutYasmin);
+				leozinho = instance_create_layer(320,144,layer_get_id("luix"),obj_cutLeo);
+				guilherminho = instance_create_layer(112,144,layer_get_id("enter_e_seta"),obj_cutGuilherme);
+				
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				global.create_aux = true;
+			
+			}
+
+		}else if (!global.map_aux)
+		{
+			if(!global.create_aux)
+			{
+
+				yasminzinha = instance_create_layer(114,176,layer_get_id("luix"),obj_cutYasmin);
+				leozinho = instance_create_layer(320,144,layer_get_id("luix"),obj_cutLeo);
+				guilherminho = instance_create_layer(112,144,layer_get_id("enter_e_seta"),obj_cutGuilherme);
+				
+				player = instance_create_layer(22,335,layer,obj_player);
+				global.create_aux = true;
+		
+			}
+
+		}
+break;
+#endregion
+
 #region 7 a 14
 	case 7:
 	case 8:
@@ -424,7 +459,7 @@ break;
 	case 18:
 	case 19:
 	case 25:
-	case 26:
+
 
 
 		if(global.map_aux)
@@ -512,7 +547,7 @@ case rm_labKaiser:
 #region LAB KAISER
 switch (global.quest)
 {
-#region 5 a 12
+#region 5 a 32
 	case 5: 
 	case 6:
 	case 9:
@@ -528,6 +563,12 @@ switch (global.quest)
 	case 22:
 	case 23:
 	case 25:
+	case 26:
+	case 27:
+	case 28:
+	case 29:
+	case 30:
+	case 31:
 		
 
 		if(global.map_aux)
@@ -785,6 +826,13 @@ case rm_horta:
 		case 22:
 		case 23:
 		case 25:
+		case 26:
+		case 27:
+		case 28:
+		case 29:
+		case 30:
+		case 31:
+		case 32:
 			if(global.map_aux)
 			{
 	
@@ -1077,6 +1125,11 @@ case rm_biblioteca:
 		case 25:
 		case 26:
 		case 27:
+		case 28:
+		case 29:
+		case 30:
+		case 31:
+		case 32:
 			if(global.map_aux)
 			{
 	
@@ -1265,6 +1318,13 @@ case rm_deposito:
 	case 20:
 	case 21:
 	case 22:
+	case 26:
+	case 27:
+	case 28:
+	case 29:
+	case 30:
+	case 31:
+	case 32:
 		if(global.map_aux)
 			{
 	
@@ -1432,6 +1492,11 @@ case rm_enfermaria:
 		case 25:
 		case 26:
 		case 27:
+		case 28:
+		case 29:
+		case 30:
+		case 31:
+		case 32:
 			if(global.map_aux)
 			{
 	
