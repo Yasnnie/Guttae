@@ -279,6 +279,7 @@ break;
 
 #region 17
 case 17:
+case 23:
 if(global.map_aux)
 	{
 	
@@ -388,6 +389,7 @@ break;
 	case 18:
 	case 19:
 
+
 		if(global.map_aux)
 		{
 	
@@ -486,6 +488,9 @@ switch (global.quest)
 	case 19:
 	case 20:
 	case 21:
+	case 22:
+	case 23:
+	case 24:
 	
 
 		if(global.map_aux)
@@ -703,6 +708,10 @@ case rm_horta:
 		case 19:
 		case 20:
 		case 21:
+		case 22:
+		case 23:
+		case 24:
+		case 25:
 			if(global.map_aux)
 			{
 	
@@ -950,6 +959,16 @@ case rm_biblioteca:
 		case 15:
 		case 16:
 		case 17:
+		case 18:
+		case 19:
+		case 20:
+		case 21:
+		case 22:
+		case 23:
+		case 24:
+		case 25:
+		case 26:
+		case 27:
 			if(global.map_aux)
 			{
 	
@@ -1104,6 +1123,7 @@ case rm_deposito:
 	case 19:
 	case 20:
 	case 21:
+	case 22:
 		if(global.map_aux)
 			{
 	
@@ -1170,6 +1190,39 @@ case rm_deposito:
 				}
 			}
 	break;
+	
+	case 23:
+		if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+		
+				yasminzinha = instance_create_layer(192,192,layer_get_id("grupo"),obj_cutYasmin);
+				leozinho = instance_create_layer(256,192,layer_get_id("grupo"),obj_cutLeo);
+				guilherminho = instance_create_layer(160,160,layer_get_id("grupo"),obj_cutGuilherme);
+			
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				global.create_aux = true;
+			
+			}
+
+		}else if (!global.map_aux)
+		{
+			if(!global.create_aux)
+			{
+
+				yasminzinha = instance_create_layer(192,192,layer_get_id("grupo"),obj_cutYasmin);
+				leozinho = instance_create_layer(256,192,layer_get_id("grupo"),obj_cutLeo);
+				guilherminho = instance_create_layer(160,160,layer_get_id("grupo"),obj_cutGuilherme);
+				
+				player = instance_create_layer(440,126,layer,obj_player);
+				global.create_aux = true;
+		
+			}
+
+		}
+	break;
 	}
 	#endregion
 break;
@@ -1189,6 +1242,12 @@ case rm_enfermaria:
 		case 16:
 		case 20:
 		case 21:
+		case 22:
+		case 23:
+		case 24:
+		case 25:
+		case 26:
+		case 27:
 			if(global.map_aux)
 			{
 	

@@ -21,8 +21,8 @@ room_goto(rm_enfermaria);
 break;
 
 case 22:
-global.quest = 23;
-room_goto(rm_labLuis);
+
+room_goto(rm_cutscene14);
 break;
 
 }

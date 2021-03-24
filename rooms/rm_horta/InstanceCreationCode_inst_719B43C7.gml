@@ -1,6 +1,9 @@
 if(global.quest == 8 || global.quest == 9)
 {
 npc_spr = spr_ErasmoRaiva;
+}else if( global.quest == 23  )
+{
+	npc_spr =noone;
 }else
 {
 npc_spr = spr_Erasmo;

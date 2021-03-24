@@ -60,4 +60,10 @@ case 22:
 	respostas[0] ="Ainda não.";
 	respostas[1] ="Achamos!";
 break;
+
+case 23:
+case 24:
+	texto = "Fale com Erasmo no depósito atrás da quadra. Ele lhe ajudara com os canos.";
+	respostas[0] ="Ok! Estou indo.";
+break;
 }

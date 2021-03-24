@@ -18,6 +18,8 @@ case rm_labLuis:
 		case 18:
 		case 19:
 		case 21:
+		case 23:
+		case 24:
 		
 		global.click_resposta = true;
 	
@@ -275,6 +277,28 @@ case 19:
 break;
 }
 #endregion
+break;
+
+case rm_deposito:
+	switch (global.quest)
+	{
+	case 23:
+		switch(resposta)
+			{
+				case "Erasmo? Erasmo acorda!":
+
+				global.click_resposta = true;
+				room_goto(rm_cutscene15);
+				
+				break;
+		
+				case "Ele está dormindo, volto mais tarde.":
+				
+				global.click_resposta = true;
+				break;
+			}
+	break;
+	}
 break;
 }
 
