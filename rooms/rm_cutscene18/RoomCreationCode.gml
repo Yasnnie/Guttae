@@ -1,0 +1,1 @@
+global.quest = 11;

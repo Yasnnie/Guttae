@@ -25,9 +25,7 @@ draw_text(room_width+670,room_height+378,"Pular Diálogo (Espaço)");
 
 switch (global.quest)
 {
-case 1:
-	draw_sprite_ext(spr_monitor,-1, -160, -10, 0.5,0.5,0,c_white,1);
-break;
+
 
 case 16:
 	if(global.next ==3)

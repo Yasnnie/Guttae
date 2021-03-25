@@ -340,26 +340,53 @@ if (room == rm_mapa)
 	vel=0;
 	switch(global.salaAnterior)
 	{
-	case 1:
+	case rm_tutorial:
 		x= 574;
 		y= 498;
+		if((global.quest>=0 && global.quest<8) || (global.quest>=23 && global.quest<27))
+		{
 		sprite_index = spr_cabecaMatheus;
+		}else if((global.quest>=8 && global.quest<14) || global.quest>=27)
+		{
+			sprite_index = spr_cabecaYasmin;
+		}else if(global.quest>=14 && global.quest<21)
+		{
+			
+		}else if(global.quest>=21 && global.quest<23)
+		{
+			sprite_index = spr_cabecaGuilherme;
+		}
+		
 		image_xscale = 2;
 		image_yscale = 2;
 	break;
 	
-	case 2:
+	case rm_labLuis:
 		x= 574;
 		y= 498;
+		if((global.quest>=0 && global.quest<8) || (global.quest>=23 && global.quest<27))
+		{
 		sprite_index = spr_cabecaMatheus;
+		}else
+		{
+			sprite_index = spr_cabecaYasmin;
+		}
+		
 		image_xscale = 2;
 		image_yscale = 2;
 	break;
 	
-	case 5:
+	case rm_labKaiser:
 		x= 436;
 		y= 648;
+		if((global.quest>=0 && global.quest<8) || (global.quest>=23 && global.quest<27))
+		{
 		sprite_index = spr_cabecaMatheus;
+		}else
+		{
+			sprite_index = spr_cabecaYasmin;
+		}
+	
 		image_xscale = 2;
 		image_yscale = 2;
 	break;
@@ -423,90 +450,3 @@ if (key_map){
 
 
 
-// NÃO CONSEGUIR ANDAR NOS MAPAS (OBS: COLOCAR A CABEÇA DO PERSONAGEM)
-if (room == rm_mapa)
-{
-	vel=0;
-	switch(global.salaAnterior)
-	{
-	case 1:
-		x= 574;
-		y= 498;
-		sprite_index = spr_cabecaMatheus;
-		image_xscale = 2;
-		image_yscale = 2;
-	break;
-	
-	case 2:
-		x= 574;
-		y= 498;
-		sprite_index = spr_cabecaMatheus;
-		image_xscale = 2;
-		image_yscale = 2;
-	break;
-	
-	case 5:
-		x= 436;
-		y= 648;
-		sprite_index = spr_cabecaMatheus;
-		image_xscale = 2;
-		image_yscale = 2;
-	break;
-	}
-	// Colocar no if para aparecer em lugares especificos de acordo com a sala no mapa!!
-	
-
-}else {
-	
-	vel = 2;
-}
-
- #region Mapa
-if(key_map2)
-{
-show_debug_message(room)
-}
-
-
-if (key_map){
-	if(room == rm_mapa) {
-		global.create_aux = false;
-		room_goto(global.salaAnterior);
-		
-	} else {
-		global.map_aux = true;
-		global.map_x = x;
-		global.map_y = y;
-		global.salaAnterior = room;
-		room_goto(rm_mapa);	
-	}
-} 
-
-#endregion
-
-#region Colisão Exit Room
-	
-	
-	if (place_meeting(x+velh,y,obj_exitRoom) && global.quest == 3)
-	{
-		room_goto(rm_cutscene03);
-		
-	}else if(place_meeting(x+velh,y,obj_exitRoom) && global.quest == 11)
-	{
-		room_goto(rm_cutscene08);
-		
-	}else if place_meeting(x+velh,y,obj_exitRoom)
-	{
-		//Sair Horizontal
-		global.salaAnterior = room;
-		room_goto(rm_mapaexecutavel);	 
-	}else if place_meeting(x,y+velv,obj_exitRoom)
-	{
-			//Sair Vertical
-		global.salaAnterior = room;
-		room_goto(rm_mapaexecutavel);
-	}
-	
-
-	
-#endregion
