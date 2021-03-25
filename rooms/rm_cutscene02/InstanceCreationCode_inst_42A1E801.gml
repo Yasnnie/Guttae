@@ -1,6 +1,6 @@
 next_room = rm_tutorial;
 
-strings[0] = "Hmmm, isso é realmente um grande problema, perto de onde moro chega a faltar abastecimento de água por semanas ou até meses, mas será que podemos fazer algo pra ajudar a resolver isso? Não é como se a gente pudesse tirar água potável do nada…";
+strings[0] = "Hmmm, isso é realmente um grande problema, perto de onde moro chega a faltar abastecimento por semanas ou até meses, mas será que podemos fazer algo pra ajudar a resolver isso? Não é como se a gente pudesse tirar água potável do nada…";
 strings[1] = "Na verdade nós podemos!!!";
 strings[2] = "Como assim cara, você tá maluco?";
 strings[3] = "É claro que não vai ser literalmente do nada, mas vejam bem… na nossa região a porcentagem dos poços com água potável é consideravelmente baixa, pois a formação rochosa da nossa região é cristalina o que eleva bastante a quantidade de sais presentes na água.";

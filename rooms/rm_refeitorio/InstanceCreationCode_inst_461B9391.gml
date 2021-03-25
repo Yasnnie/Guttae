@@ -29,6 +29,8 @@ case 23:
 case 24:
 case 25:
 case 26:
+case 30:
+case 31:
 	texto = "Bom dia, você está com fome?";
 	respostas[0] ="Bom dia. Não, obrigado.";
 break;

@@ -23,6 +23,8 @@ case rm_labLuis:
 		case 25:
 		case 27:
 		case 28:
+		case 29:
+		case 31:
 		
 		
 		global.click_resposta = true;
@@ -104,6 +106,22 @@ case rm_labLuis:
 				break;
 		
 				case "Ainda não! Estamos procurando eles ainda.":
+			
+				global.click_resposta = true;
+				break;
+			}
+		break;
+		
+		case 30:
+			switch(resposta)
+			{
+				case "Sim, conseguimos! Acho que esta tudo pronto! Finalmente.":
+
+				room_goto(rm_comemoracao);
+				global.click_resposta = true;
+				break;
+		
+				case "Ainda não.":
 			
 				global.click_resposta = true;
 				break;
@@ -288,7 +306,7 @@ break;
 case 17:
 	switch(resposta)
 			{
-				case "Olá, nós vinhemos aqui porque precisamos de algo para o nosso projeto, você poderia nos ajudar ?":
+				case "Olá, nós estamos aqui porque precisamos de algo para o nosso projeto, você poderia nos ajudar ?":
 				
 				
 				global.click_resposta = true;
@@ -394,6 +412,8 @@ case rm_refeitorio:
 	case 25:
 	case 26:
 	case 28:
+	case 30:
+	case 31:
 		global.click_resposta = true;
 	break;
 	
@@ -411,7 +431,7 @@ case rm_refeitorio:
 		}
 	break;
 	
-	case 28:
+	case 29:
 		switch (resposta)
 		{
 			case"Ainda não.":

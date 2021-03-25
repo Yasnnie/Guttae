@@ -1,4 +1,4 @@
-if(!global.quest03_aux){
+if(global.qst05_start){
 if(timer_spawn<170) timer_spawn++;
 
 if(timer_spawn == 170)

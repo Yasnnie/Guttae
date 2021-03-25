@@ -569,7 +569,7 @@ break;
 	if (colid_left || colid_up || colid_right)
 	{
 		if(!aux_setas){
-		e_cabeca = instance_create_depth(214,182,-100, obj_animadas);
+		e_cabeca = instance_create_depth(204,172,-100, obj_animadas);
 		e_cabeca.sprites = spr_setaE;
 		aux_setas = true;
 		}

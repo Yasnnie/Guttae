@@ -26,6 +26,9 @@ global.create_expli1 = false;
 global.create_expli2 = false;
 global.create_expli3 = false;
 global.create_expli4 = false;
+global.create_expli5 = false;
+global.create_expli6 = false;
+global.create_expli7 = false;
 
 
 //QUEST:
@@ -33,7 +36,12 @@ global.quest01_aux = false;
 global.quest02_aux = false;
 global.quest03_aux = false;
 global.quest04_aux = false;
+global.quest05_aux = false;
+global.quest06_aux = false;
+global.quest07_aux = false;
 
+
+global.qst05_start = false;
 //ARRAY LIST
 global.canos = ds_list_create(); //QST01
 

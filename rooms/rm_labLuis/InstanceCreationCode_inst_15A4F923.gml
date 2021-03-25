@@ -74,4 +74,22 @@ case 26:
 	respostas[0] ="Ainda não! Estamos procurando eles ainda.";
 	respostas[1] ="Sim, conseguimos! Acho que estamos na reta final.";
 break;
+
+case 27:
+case 28:
+case 29:
+	texto = "Fale com Joana no refeitório. Ela lhe ajudara com o sensor.";
+	respostas[0] ="Ok! Estou indo.";
+break;
+
+case 30:
+	texto = "Eae personas? conseguiram o sensor?";
+	respostas[0] ="Ainda não.";
+	respostas[1] ="Sim, conseguimos! Acho que esta tudo pronto! Finalmente.";
+break;
+
+case 31:
+	texto = "Teste o projeto na horta.";
+	respostas[0] ="Certo, estou indo.";
+break;
 }

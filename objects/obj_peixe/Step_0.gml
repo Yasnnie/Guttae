@@ -1,7 +1,7 @@
 var up = keyboard_check(vk_up);
 var down = keyboard_check(vk_down);
 
-if(!global.quest03_aux)
+if(global.qst05_start)
 {
 #region MOVIMENTAÇÃO
 

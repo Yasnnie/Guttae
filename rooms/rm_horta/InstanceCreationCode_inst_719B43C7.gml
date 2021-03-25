@@ -47,7 +47,7 @@ respostas[1] ="Olá Erasmo, está tudo bem?";
 break;
 
 case 9:
-	texto = "Terminou de aguar as plantas?";
+	texto = "Terminou de regar as plantas?";
 	respostas[0] ="Ainda não.";
 break;
 

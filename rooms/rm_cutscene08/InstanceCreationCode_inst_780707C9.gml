@@ -1,6 +1,6 @@
- mensagens[0]= "Então nós temos o gotejador, acho queprecisamos de canos e também temos que pensar em uma forma de dessalinizar a água.";
+ mensagens[0]= "Então nós temos o gotejador, acho que precisamos de canos e também temos que pensar em uma forma de dessalinizar a água.";
 mensagens[1]= "Mas Kaiser deve estar dando aula agora.";
-mensagens[2]= "Tá, então vamos pra biblioteca, lá a gente pode dar uma pesquisada melhor sobre o assunto e encontrar uma forma de resolver isso.";
+mensagens[2]= "Tá, então vamos pra biblioteca, lá a gente pode dar uma pesquisada melhor sobre o assunto e encontrar uma forma de resolver isso. Devemos procurar algum livro lá.";
 mensagens[3]= "Então tá, vamos lá!";
 
 yasmins[0] = true;

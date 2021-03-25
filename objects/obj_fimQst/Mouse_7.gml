@@ -35,4 +35,9 @@ case 29:
 	room_goto(rm_refeitorio);
 break;
 
+case 30:
+	global.quest = 31;
+	room_goto(rm_labLuis);
+break;
+
 }

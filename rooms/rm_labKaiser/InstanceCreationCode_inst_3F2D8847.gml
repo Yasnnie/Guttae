@@ -51,6 +51,12 @@ case 13:
 	texto = "Traga as amostras quando terminar de coleta-las!";
 	respostas[0] ="Ok!";
 break;
+
+case 14:
+	texto = "Já coletaram as amostras?";
+	respostas[0] = "Ainda não.";
+break;
+
 case 16:
 case 17:
 	texto = "Falem com o Professor Luís sobre a resistência.";

@@ -29,6 +29,10 @@ break;
 case 29:
 	draw_sprite(spr_sensor,0,222,90);
 break;
+
+case 30:
+	draw_sprite(spr_guttae,0,222,110);
+break;
 }
 
 var mouse_sobre = position_meeting(mouse_x,mouse_y,self);

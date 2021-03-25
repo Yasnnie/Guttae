@@ -64,7 +64,6 @@ if(global.quest01_aux == true)
 }
 #endregion
 
-
 #region QUEST 02
 if(global.quest02_aux == true)
 {
@@ -97,6 +96,37 @@ if(global.quest02_aux == true)
 }
 #endregion
 
+#region QUEST 04
+if(global.quest06_aux == true)
+{
+	
+		if(butao_intro == noone && box_intro == noone)
+		{
+		
+		if(global.create_expli6==false)
+			{
+			
+			butao_intro = instance_create_depth(220,room_height-70,-500,obj_botaoEntendi);
+			box_intro = instance_create_depth(90,40,-400,obj_explicacoes);
+			box_intro.texto_explicacao = "Vá até o depósito da quadra e na Horta, colete as amostras necessárias para a análise físico-química da água dos poços do campus.\n\nPara coletá-las basta clicar em cima dos poços com o botão direito do mouse. ";
+			global.create_expli6 = true;
+			}
+		}
+		else
+		{
+			if(global.click_expli==true)
+			{
+		
+			instance_destroy(butao_intro);
+			instance_destroy(box_intro);
+			butao_intro = noone;
+			box_intro = noone;
+			global.quest06_aux = false;
+			
+			}
+		}
+}
+#endregion
 
 #region QUEST 05
 if(global.quest03_aux == true)
@@ -110,8 +140,8 @@ if(global.quest03_aux == true)
 			
 			butao_intro = instance_create_depth(280,room_height-80,-400,obj_botaoEntendi);
 			box_intro = instance_create_depth(150,40,-300,obj_explicacoes);
-			box_intro.texto_explicacao = "O Enfermeiro Alan está pedindo ajuda para alimentar o Bob o peixe que vive dentro do aquário, para isso basta você pegar as bolinhas de comida:\n\n\n\nPorém tome cuidado, existem algumas sujeiras dentro do aquário que podem fazer mal o Bob, existem pesquisas que preveem que até 2050 haverá mais plástico no mar do que peixes, além de que a poluição dos ambientes aquáticos leva e sérias perdas a esses ecossistemas.";
-			global.create_expli3 = true;
+			box_intro.texto_explicacao = "O Enfermeiro está pedindo ajuda para alimentar o Bob o peixe que vive dentro do aquário, para isso basta você pegar as bolinhas de comida:\n\n\n\nPorém tome cuidado, existem algumas sujeiras dentro do aquário que podem fazer mal o Bob, Utilize as teclas W e S para movimentar o Bob a desviar das sujeiras, existem pesquisas que preveem que até 2050 haverá mais plástico no mar do que peixes, além de que a poluição dos ambientes aquáticos leva e sérias perdas a esses ecossistemas.";
+			global.create_expli3 = true; 
 			}
 		}
 		else
@@ -156,6 +186,69 @@ if(global.quest04_aux == true)
 			butao_intro = noone;
 			box_intro = noone;
 			global.quest04_aux = false;
+			
+			}
+		}
+}
+#endregion
+
+#region QUEST 07
+if(global.quest07_aux == true)
+{
+	
+		if(butao_intro == noone && box_intro == noone)
+		{
+		
+		if(global.create_expli7==false)
+			{
+			
+			butao_intro = instance_create_depth(220,room_height-70,-500,obj_botaoEntendi);
+			box_intro = instance_create_depth(90,40,-400,obj_explicacoes);
+			box_intro.texto_explicacao = "Você deverá procurar os 5 canos que estão espalhados em todo o mapa, quando achá-los basta pegá-los clicando com o botão esquerdo do mouse neles!!! Boa sorte amiguinho(a), pois o nosso campus é bem grande. ";
+			global.create_expli7 = true;
+			}
+		}
+		else
+		{
+			if(global.click_expli==true)
+			{
+		
+			instance_destroy(butao_intro);
+			instance_destroy(box_intro);
+			butao_intro = noone;
+			box_intro = noone;
+			global.quest07_aux = false;
+			
+			}
+		}
+}
+#endregion;
+
+#region QUEST 08
+if(global.quest05_aux == true)
+{
+		if(butao_intro == noone && box_intro == noone)
+		{
+		
+		if(global.create_expli5==false)
+			{
+			
+			butao_intro = instance_create_depth(440,550,-400,obj_botaoEntendi);
+			box_intro = instance_create_depth(190,40,-300,obj_explicacoes);
+			box_intro.texto_explicacao = "O último componente do projeto está em uma dispensa que mais parece o labirinto de Dédalo, você tem que entrar e encontrá-lo! Mas para sua segurança só poderá andar para frente (Tecla A) e para a direita (Tecla S) ou terá que voltar desde o início (Tecla R), tome cuidado pode ter um minotauro lá!";
+			global.create_expli5 = true;
+			}
+		}
+		else
+		{
+			if(global.click_expli==true)
+			{
+		
+			instance_destroy(butao_intro);
+			instance_destroy(box_intro);
+			butao_intro = noone;
+			box_intro = noone;
+			global.quest05_aux = false;
 			
 			}
 		}
@@ -472,6 +565,41 @@ break;
 
 #endregion
 
+#region 30
+case 30:
+if(global.map_aux)
+		{
+	
+			if(!global.create_aux)
+			{
+		
+				matheuszinho = instance_create_layer(144,176,layer_get_id("luix"),obj_cutMatheus);
+				leozinho = instance_create_layer(320,144,layer_get_id("luix"),obj_cutLeo);
+				guilherminho = instance_create_layer(112,144,layer_get_id("enter_e_seta"),obj_cutGuilherme);
+				
+				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				global.create_aux = true;
+			
+			}
+
+		}else if (!global.map_aux)
+		{
+			if(!global.create_aux)
+			{
+
+				matheuszinho = instance_create_layer(144,176,layer_get_id("luix"),obj_cutMatheus);
+				leozinho = instance_create_layer(320,144,layer_get_id("luix"),obj_cutLeo);
+				guilherminho = instance_create_layer(112,144,layer_get_id("enter_e_seta"),obj_cutGuilherme);
+				
+				player = instance_create_layer(22,335,layer,obj_player);
+				global.create_aux = true;
+		
+			}
+
+		}
+break;
+#endregion
+
 #region 7 a 14
 	case 7:
 	case 8:
@@ -487,8 +615,7 @@ break;
 	case 25:
 	case 28:
 	case 29:
-
-
+	case 31:
 
 		if(global.map_aux)
 		{
@@ -859,8 +986,7 @@ case rm_horta:
 		case 28:
 		case 29:
 		case 30:
-		case 31:
-		case 32:
+	
 			if(global.map_aux)
 			{
 	
@@ -1017,6 +1143,29 @@ case rm_horta:
 						amostra2_create.index_amostra = 2;
 					}
 					
+					global.create_aux = true;
+				}
+
+			}
+		break;
+		
+		case 31:
+			if(global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+					global.create_aux = true;
+	
+				}
+	
+			}else if (!global.map_aux)
+			{
+	
+				if(!global.create_aux)
+				{
+					player = instance_create_layer(22,332,layer,obj_player);
 					global.create_aux = true;
 				}
 
@@ -1736,6 +1885,7 @@ case rm_refeitorio:
 		case 24:
 		case 25:
 		case 26:
+		case 30:
 		if(global.map_aux)
 		{
 	
@@ -1850,7 +2000,7 @@ case rm_refeitorio:
 					matheuszinho = instance_create_layer(148,350,layer,obj_cutMatheus);
 					leozinho = instance_create_layer(188,350,layer,obj_cutLeo);
 					guilherminho = instance_create_layer(228,350,layer,obj_cutGuilherme);
-					player = instance_create_layer (46,240,layer,obj_player);
+					player = instance_create_layer (46,250,layer,obj_player);
 				
 					global.create_aux = true;
 				}
