@@ -12,7 +12,7 @@ key_map2 = keyboard_check_released(ord("H"));
 #region Movimentação
 
 #region MATHEUS
-if((global.quest>=0 && global.quest<8) || global.quest>=23)
+if((global.quest>=0 && global.quest<8) || (global.quest>=23 && global.quest<27))
 {
 	sprite_index = spr_MatheusParado;
 	if( key_up || key_down || key_right || key_left)
@@ -91,7 +91,7 @@ if((global.quest>=0 && global.quest<8) || global.quest>=23)
 #endregion
 
 #region YASMIN
-if(global.quest>=8 && global.quest<14)
+if((global.quest>=8 && global.quest<14) || global.quest>=27)
 {
 	sprite_index = spr_YasminParado;
 	if( key_up || key_down || key_right || key_left)

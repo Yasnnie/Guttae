@@ -14,6 +14,6 @@ key_skip = keyboard_check_released(ord("A"));
 
 if(key_skip)
 {
-	
-	room_goto(rm_cutscene15);
+	global.quest = 26;
+	room_goto(rm_labLuis);
 }

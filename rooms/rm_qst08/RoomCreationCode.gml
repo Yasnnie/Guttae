@@ -6,3 +6,5 @@ global.request3 = false;
 
 global.direita = false;
 global.frente = false;
+
+global.quest = 29;

@@ -20,6 +20,10 @@ case rm_labLuis:
 		case 21:
 		case 23:
 		case 24:
+		case 25:
+		case 27:
+		case 28:
+		
 		
 		global.click_resposta = true;
 	
@@ -84,6 +88,22 @@ case rm_labLuis:
 				break;
 		
 				case "Ainda não.":
+			
+				global.click_resposta = true;
+				break;
+			}
+		break;
+		
+		case 26:
+			switch(resposta)
+			{
+				case "Sim, conseguimos! Acho que estamos na reta final.":
+
+				room_goto(rm_cutscene16);
+				global.click_resposta = true;
+				break;
+		
+				case "Ainda não! Estamos procurando eles ainda.":
 			
 				global.click_resposta = true;
 				break;
@@ -345,6 +365,67 @@ case rm_deposito:
 			}
 	break;
 	}
+break;
+
+case rm_refeitorio:
+#region	
+	switch (global.quest)
+	{
+	case 5:
+	case 6:
+	case 7:
+	case 8:
+	case 9:
+	case 10:
+	case 11:
+	case 12:
+	case 13:
+	case 14:
+	case 15:
+	case 16:
+	case 17:
+	case 18:
+	case 19:
+	case 20:
+	case 21:
+	case 22:
+	case 23:
+	case 24:
+	case 25:
+	case 26:
+	case 28:
+		global.click_resposta = true;
+	break;
+	
+	case 27:
+		switch (resposta)
+		{
+			case"Bom dia. Não preciso, obrigado.":
+				global.click_resposta = true;
+			break;
+			
+			case "Bom dia. Sim preciso, você pode me ajudar ?":
+				room_goto(rm_cutscene17);
+				global.click_resposta = true;
+			break;
+		}
+	break;
+	
+	case 28:
+		switch (resposta)
+		{
+			case"Ainda não.":
+				global.click_resposta = true;
+			break;
+			
+			case "Sim, consegui!":
+				room_goto(rm_comemoracao);
+				global.click_resposta = true;
+			break;
+		}
+	break;
+	}
+#endregion
 break;
 }
 

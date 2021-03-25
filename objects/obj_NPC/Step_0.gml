@@ -563,6 +563,89 @@ case spr_enfermeiroParado:
 	}
 break;
 #endregion
+ 
+ #region
+ case spr_catina:
+	if (colid_left || colid_up || colid_right)
+	{
+		if(!aux_setas){
+		e_cabeca = instance_create_depth(214,182,-100, obj_animadas);
+		e_cabeca.sprites = spr_setaE;
+		aux_setas = true;
+		}
+		if(!global.click_resposta){
+		if(key_e)
+		{
+		
+			
+		
+			instance_destroy(e_cabeca);
+			if (meu_texto == noone)
+			{
+				
+				var i = 0;
+					while(array_length_1d(respostas) > i)
+					{
+						
+						e_resposta[i] = instance_create_depth(0,room_height-15-(15*i),-400,obj_respostas);
+						e_resposta[i].resposta = respostas[i];
+						i++;
+						
+					}
+			
+				meu_texto = instance_create_depth(x,y,-350, obj_texto);
+				meu_texto.texto = texto;
+			}
+			else
+			{
+				var j = 0;
+				while(array_length_1d(respostas) > j)
+					{
+						instance_destroy(e_resposta[j]);
+						j++;
+					}
+				instance_destroy(meu_texto);
+				meu_texto = noone;
+				}          
+			}
+		}
+		else if(global.click_resposta)
+		{
+			instance_destroy(e_cabeca);
+			aux_setas = false;
+			if (meu_texto != noone)
+				{
+					var k = 0;
+					while(array_length_1d(respostas) > k)
+						{
+							instance_destroy(e_resposta[k]);
+							k++;
+						}
+					instance_destroy(meu_texto);
+					meu_texto = noone;
+					global.click_resposta = false;
+				}
+			
+		}
+	}else
+	{
+	instance_destroy(e_cabeca);
+			aux_setas = false;
+			if (meu_texto != noone)
+				{
+					var k = 0;
+					while(array_length_1d(respostas) > k)
+						{
+							instance_destroy(e_resposta[k]);
+							k++;
+						}
+					instance_destroy(meu_texto);
+					meu_texto = noone;
+					global.click_resposta = false;
+				}
+	}
+ break;
+ #endregion
 }
 
 

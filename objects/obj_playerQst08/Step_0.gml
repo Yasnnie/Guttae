@@ -461,6 +461,6 @@ if place_meeting(x-1,y,obj_block) room_restart();
 
 if place_meeting(x-1,y,obj_fimQst08) 
 {
-show_message("VOCÊ TERMINOU");
+room_goto (rm_refeitorio);
 
 }

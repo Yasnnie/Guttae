@@ -30,4 +30,9 @@ case 25:
 	room_goto(rm_deposito);
 break;
 
+case 29:
+	global.quest = 30;
+	room_goto(rm_refeitorio);
+break;
+
 }
