@@ -11,3 +11,7 @@ leozinho= noone;
 guilherminho= noone;
 matheuszinho = noone
 player= noone;
+
+
+animation = noone;
+animation2 = noone;

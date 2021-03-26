@@ -45,6 +45,11 @@ if(global.quest01_aux == true)
 			butao_intro = instance_create_layer(220,room_height-80,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
 			box_intro.texto_explicacao = "Vamos lá, visando aproveitar a água gerada pelo ar condicionado você deve construir o encanamento que a leva até o reservatório. É muito fácil, você só precisa girar os canos até que forme o caminho certo para levar a água até o depósito. Você consegue!\n\nPara isso basta você clickar com o botão do lado esquerdo do mouse nos canos brancos para gira-los. \n\n\n\nQuando eles encontrarem um cano com água eles vão se encher também!";
+			animation = instance_create_depth(256,160,-500,obj_animadas);
+			animation2 = instance_create_depth(256,240,-500,obj_animadas);
+			animation.sprites = spr_qst01_1;
+			animation2.sprites = spr_qst01_2;
+			
 			global.create_expli1 = true;
 			}
 		}
@@ -52,9 +57,11 @@ if(global.quest01_aux == true)
 		{
 			if(global.click_expli==true)
 			{
-		
+			
 			instance_destroy(butao_intro);
 			instance_destroy(box_intro);
+			instance_destroy(animation);
+			instance_destroy(animation2);
 			butao_intro = noone;
 			box_intro = noone;
 			global.quest01_aux = false;
@@ -73,10 +80,14 @@ if(global.quest02_aux == true)
 		
 		if(global.create_expli2==false)
 			{
-				show_debug_message("oi");
+			
 			butao_intro = instance_create_layer(220,room_height-90,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
 			box_intro.texto_explicacao = "Ah não! As plantinhas da horta do Roldão irão morrer! Não o deixe na mão, ajude-o a regar as divisões, siga a sequência correta da irrigação que irá aparecer em sua tela, caso erre você deverá iniciar tudo de novo, então seja rápido(a) e boa sorte!";
+			animation = instance_create_depth(256,160,-500,obj_animadas);
+			animation2 = instance_create_depth(189,160,-500,obj_animadas);
+			animation2.sprites = spr_qst02_02
+			animation.sprites = spr_qst02_1;
 			global.create_expli2 = true;
 			}
 		}
@@ -84,7 +95,8 @@ if(global.quest02_aux == true)
 		{
 			if(global.click_expli==true)
 			{
-		
+			instance_destroy(animation);
+			instance_destroy(animation2);
 			instance_destroy(butao_intro);
 			instance_destroy(box_intro);
 			butao_intro = noone;
@@ -141,6 +153,10 @@ if(global.quest03_aux == true)
 			butao_intro = instance_create_depth(280,room_height-80,-400,obj_botaoEntendi);
 			box_intro = instance_create_depth(150,40,-300,obj_explicacoes);
 			box_intro.texto_explicacao = "O Enfermeiro está pedindo ajuda para alimentar o Bob o peixe que vive dentro do aquário, para isso basta você pegar as bolinhas de comida:\n\n\n\nPorém tome cuidado, existem algumas sujeiras dentro do aquário que podem fazer mal o Bob, Utilize as teclas W e S para movimentar o Bob a desviar das sujeiras, existem pesquisas que preveem que até 2050 haverá mais plástico no mar do que peixes, além de que a poluição dos ambientes aquáticos leva e sérias perdas a esses ecossistemas.";
+			animation = instance_create_depth(256,102,-500,obj_animadas);
+			
+			animation.sprites = spr_qst04_01;
+			
 			global.create_expli3 = true; 
 			}
 		}
@@ -148,7 +164,7 @@ if(global.quest03_aux == true)
 		{
 			if(global.click_expli==true)
 			{
-		
+			instance_destroy(animation);
 			instance_destroy(butao_intro);
 			instance_destroy(box_intro);
 			butao_intro = noone;
