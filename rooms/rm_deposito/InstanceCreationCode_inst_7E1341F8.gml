@@ -1,12 +1,12 @@
 if(global.quest == 23 )
 {
 	npc_spr = spr_ErasmoDormindo;
+	
 
-}if(global.quest == 24 || global.quest == 25 )
+}else if(global.quest == 24 || global.quest == 25 )
 {
 	npc_spr = spr_Erasmo;
-}
-else
+}else
 {
 	npc_spr = noone;
 }

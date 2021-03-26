@@ -3,6 +3,7 @@
     {"id":{"name":"rm_mapaexecutavel","path":"rooms/rm_mapaexecutavel/rm_mapaexecutavel.yy",},"order":0,},
     {"id":{"name":"spr_pSolar5","path":"sprites/spr_pSolar5/spr_pSolar5.yy",},"order":4,},
     {"id":{"name":"spr_butaoEntendi","path":"sprites/spr_butaoEntendi/spr_butaoEntendi.yy",},"order":3,},
+    {"id":{"name":"spr_exclamacao","path":"sprites/spr_exclamacao/spr_exclamacao.yy",},"order":8,},
     {"id":{"name":"spr_MatheusAndandoE","path":"sprites/spr_MatheusAndandoE/spr_MatheusAndandoE.yy",},"order":1,},
     {"id":{"name":"spr_refeitorio","path":"sprites/spr_refeitorio/spr_refeitorio.yy",},"order":7,},
     {"id":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},"order":3,},

@@ -283,6 +283,7 @@ switch (global.quest)
 				quest[0].my_enter = 1;
 				quest[1].my_enter = 1;
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				global.map_aux = false;
 				global.create_aux = true;
 			
 			}
@@ -301,6 +302,7 @@ switch (global.quest)
 				quest[1].my_enter = 1;
 				player = instance_create_layer (256,192,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -318,6 +320,7 @@ break;
 		{
 			player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 			global.create_aux = true;
+			global.map_aux = false;
 	
 		}
 
@@ -328,6 +331,7 @@ break;
 		{
 			player = instance_create_layer(431,256,layer,obj_player);
 			global.create_aux = true;
+			global.map_aux = false;
 		}
 
 	}
@@ -349,6 +353,7 @@ case 20:
 				
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -363,6 +368,7 @@ case 20:
 				
 				player = instance_create_layer(22,335,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -380,6 +386,7 @@ if(global.map_aux)
 		{
 			player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 			global.create_aux = true;
+			global.map_aux = false;
 	
 		}
 
@@ -390,6 +397,7 @@ if(global.map_aux)
 		{
 			player = instance_create_layer(256,192,layer,obj_player);
 			global.create_aux = true;
+			global.map_aux = false;
 		}
 
 	}
@@ -413,6 +421,7 @@ case 21:
 				quest[1].my_enter = 5;
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -430,6 +439,7 @@ case 21:
 				quest[1].my_enter = 5;
 				player = instance_create_layer(112,144,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -449,6 +459,7 @@ case 22:
 				leozinho = instance_create_layer(432,112,layer_get_id("luix"),obj_cutLeo);
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -462,6 +473,7 @@ case 22:
 				leozinho = instance_create_layer(432,112,layer_get_id("luix"),obj_cutLeo);
 				player = instance_create_layer(52,240,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -483,6 +495,7 @@ if(global.map_aux)
 				cano.index_cano = 2;
 				}
 				global.create_aux = true;
+				global.map_aux = false;
 				
 			}
 
@@ -498,6 +511,7 @@ if(global.map_aux)
 				cano.index_cano = 2;
 				}
 				global.create_aux = true;
+				global.map_aux = false;
 			}
 
 		}
@@ -518,6 +532,7 @@ case 26:
 				
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -532,6 +547,7 @@ case 26:
 				
 				player = instance_create_layer(22,335,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -548,6 +564,7 @@ case 27:
 			{
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 	
 			}
 
@@ -558,6 +575,7 @@ case 27:
 			{
 				player = instance_create_layer(112,176,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			}
 
 		}
@@ -579,6 +597,7 @@ if(global.map_aux)
 				
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -593,6 +612,7 @@ if(global.map_aux)
 				
 				player = instance_create_layer(22,335,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -624,6 +644,7 @@ break;
 			{
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 	
 			}
 
@@ -634,6 +655,7 @@ break;
 			{
 				player = instance_create_layer(22,335,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			}
 
 		}
@@ -734,6 +756,7 @@ switch (global.quest)
 		
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -744,6 +767,7 @@ switch (global.quest)
 
 				player = instance_create_layer (30,335,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -766,6 +790,7 @@ case 24:
 				cano.index_cano = 3;
 				}
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -781,6 +806,7 @@ case 24:
 				cano.index_cano = 3;
 				}
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -801,6 +827,7 @@ break;
 				yasminzinha = instance_create_layer(414,190,layer,obj_cutYasmin);
 				guilherminho = instance_create_layer(414,224,layer-1,obj_cutGuilherme);
 				global.create_aux = true;
+				global.map_aux = false;
 	
 			}
 
@@ -814,6 +841,7 @@ break;
 				yasminzinha = instance_create_layer(414,190,layer,obj_cutYasmin);
 				guilherminho = instance_create_layer(414,224,layer-1,obj_cutGuilherme);
 				global.create_aux = true;
+				global.map_aux = false;
 			}
 
 		}
@@ -831,6 +859,7 @@ case 8:
 		
 				player = instance_create_layer (global.map_x,global.map_y,layer-1,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -841,6 +870,7 @@ case 8:
 
 				player = instance_create_layer (350,224,layer-1,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -858,6 +888,7 @@ case 14:
 		
 				player = instance_create_layer (global.map_x,global.map_y,layer-1,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -868,6 +899,7 @@ case 14:
 
 				player = instance_create_layer (208,224,layer-1,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -938,6 +970,7 @@ case rm_tutorial:
 			{
 				
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
+				global.map_aux = false;
 				global.create_aux = true;
 	
 			}
@@ -994,6 +1027,7 @@ case rm_horta:
 				{
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1004,6 +1038,7 @@ case rm_horta:
 				{
 					player = instance_create_layer(22,332,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1024,6 +1059,7 @@ case rm_horta:
 						cano.index_cano = 4;
 					}
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1039,6 +1075,7 @@ case rm_horta:
 						cano.index_cano = 4;
 					}
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1058,6 +1095,7 @@ case rm_horta:
 					quest[0].my_enter = 2;
 					quest[1].my_enter = 2;
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1072,6 +1110,7 @@ case rm_horta:
 					quest[1].my_enter = 2;
 					player = instance_create_layer(288,160,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1086,6 +1125,7 @@ case rm_horta:
 				{
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1096,6 +1136,7 @@ case rm_horta:
 				{
 					player = instance_create_layer(430,238,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1122,6 +1163,7 @@ case rm_horta:
 						amostra2_create.index_amostra = 2;
 					}
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1144,6 +1186,7 @@ case rm_horta:
 					}
 					
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1157,6 +1200,7 @@ case rm_horta:
 				{
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1167,6 +1211,7 @@ case rm_horta:
 				{
 					player = instance_create_layer(22,332,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1315,6 +1360,7 @@ case rm_biblioteca:
 				{
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1325,6 +1371,7 @@ case rm_biblioteca:
 				{
 					player = instance_create_layer(448,320,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1343,6 +1390,7 @@ case rm_biblioteca:
 						cano.index_cano = 5;
 					}
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1358,6 +1406,7 @@ case rm_biblioteca:
 						cano.index_cano = 5;
 					}
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1376,6 +1425,7 @@ case rm_biblioteca:
 					quest[0] = instance_create_layer(112,132,layer_get_id("block"),obj_enter);
 					quest[0].my_enter = 3;
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1391,6 +1441,7 @@ case rm_biblioteca:
 					quest[0].my_enter = 3;
 					player = instance_create_layer(448,320,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1408,6 +1459,7 @@ case rm_biblioteca:
 					matheuszinho.texto = "Os outros foram para o laboratório de Kaiser. Vamos! eles devem estar só nos esperando.";
 					matheuszinho.respostas[0] = "Ok.";
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1422,6 +1474,7 @@ case rm_biblioteca:
 					matheuszinho.respostas[0] = "Ok.";
 					player = instance_create_layer(126,166,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1510,6 +1563,7 @@ case rm_deposito:
 				{
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1520,6 +1574,7 @@ case rm_deposito:
 				{
 					player = instance_create_layer(440,126,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1543,6 +1598,7 @@ case rm_deposito:
 						amostra2_create.index_amostra = 4;
 					}
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1564,6 +1620,7 @@ case rm_deposito:
 						amostra2_create.index_amostra = 4;
 						
 					}
+					global.map_aux = false;
 					global.create_aux = true;
 
 				}
@@ -1584,6 +1641,7 @@ case rm_deposito:
 			
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -1598,6 +1656,7 @@ case rm_deposito:
 				
 				player = instance_create_layer(440,126,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -1622,6 +1681,7 @@ case rm_deposito:
 				cano.index_cano = 1;
 				}
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -1641,6 +1701,7 @@ case rm_deposito:
 				cano.index_cano = 1;
 				}
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -1686,6 +1747,7 @@ case rm_enfermaria:
 				{
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1696,6 +1758,7 @@ case rm_enfermaria:
 				{
 					player = instance_create_layer(448,224,layer,obj_player);
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1714,6 +1777,7 @@ case rm_enfermaria:
 						cano.index_cano = 6;
 					}
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1729,6 +1793,7 @@ case rm_enfermaria:
 						cano.index_cano = 6;
 					}
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1746,6 +1811,7 @@ case rm_enfermaria:
 					guilherminho = instance_create_layer(172,150,layer_get_id("meninos"),obj_cutGuilherme);
 					
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1760,6 +1826,7 @@ case rm_enfermaria:
 					player = instance_create_layer(448,224,layer,obj_player);
 					
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1778,6 +1845,7 @@ case rm_enfermaria:
 					quest[0] = instance_create_layer(78,340,layer_get_id("block"),obj_enter);
 					quest[0].my_enter = 4;
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1793,6 +1861,7 @@ case rm_enfermaria:
 					quest[0] = instance_create_layer(78,340,layer_get_id("block"),obj_enter);
 					quest[0].my_enter = 4;
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1809,6 +1878,7 @@ case rm_enfermaria:
 					yasminzinha = instance_create_layer(236,150,layer_get_id("meninos"),obj_cutYasmin);
 					guilherminho = instance_create_layer(172,150,layer_get_id("meninos"),obj_cutGuilherme);
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1823,6 +1893,7 @@ case rm_enfermaria:
 					player = instance_create_layer(76,330,layer,obj_player);
 					
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1894,6 +1965,7 @@ case rm_refeitorio:
 		
 				player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 			
 			}
 
@@ -1904,6 +1976,7 @@ case rm_refeitorio:
 
 				player = instance_create_layer (432,304,layer,obj_player);
 				global.create_aux = true;
+				global.map_aux = false;
 		
 			}
 
@@ -1924,6 +1997,7 @@ case rm_refeitorio:
 					guilherminho = instance_create_layer(228,350,layer,obj_cutGuilherme);
 					
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1938,6 +2012,7 @@ case rm_refeitorio:
 					player = instance_create_layer (432,304,layer,obj_player);
 					
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1957,6 +2032,7 @@ case rm_refeitorio:
 					quest[0] = instance_create_layer(46,224,layer_get_id("block"),obj_enter);
 					quest[0].my_enter = 6;
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -1972,6 +2048,7 @@ case rm_refeitorio:
 					quest[0] = instance_create_layer(46,224,layer_get_id("block"),obj_enter);
 					quest[0].my_enter = 6;
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}
@@ -1989,6 +2066,7 @@ case rm_refeitorio:
 					guilherminho = instance_create_layer(228,350,layer,obj_cutGuilherme);
 					
 					global.create_aux = true;
+					global.map_aux = false;
 	
 				}
 	
@@ -2003,6 +2081,7 @@ case rm_refeitorio:
 					player = instance_create_layer (46,250,layer,obj_player);
 				
 					global.create_aux = true;
+					global.map_aux = false;
 				}
 
 			}

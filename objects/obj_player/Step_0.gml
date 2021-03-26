@@ -522,7 +522,7 @@ if (room == rm_mapa)
  #region Mapa
 if(key_map2)
 {
-show_debug_message(room)
+show_debug_message(global.quest);
 }
 
 
