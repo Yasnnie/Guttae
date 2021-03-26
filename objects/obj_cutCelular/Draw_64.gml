@@ -66,9 +66,9 @@ case 2:
 	draw_set_font(fnt_dialogosCel);
 	draw_sprite_ext(cabeca[2],0,546,600,1.5,1.5,0,c_white,1);
 	draw_set_color(c_green);
-	draw_rectangle(810, 558, 560, 616, false);
+	draw_rectangle(810, 554, 560, 622, false);
 	draw_set_color(c_black);
-	draw_text_ext(566,560,mensagens[2],12,240);
+	draw_text_ext(566,556,mensagens[2],12,240);
 	#endregion
 	
 	
@@ -100,7 +100,7 @@ case 3:
 	draw_set_font(fnt_dialogosCel);
 	draw_sprite_ext(cabeca[2],0,546,540,1.5,1.5,0,c_white,1);
 	draw_set_color(c_green);
-	draw_rectangle(810, 502, 560, 556, false);
+	draw_rectangle(810, 502, 560, 570, false);
 	draw_set_color(c_black);
 	draw_text_ext(566,506,mensagens[2],12,240);
 	#endregion

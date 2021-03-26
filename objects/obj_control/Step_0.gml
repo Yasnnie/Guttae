@@ -1454,10 +1454,7 @@ case rm_biblioteca:
 				if(!global.create_aux)
 				{
 					player = instance_create_layer (global.map_x,global.map_y,layer,obj_player);
-					matheuszinho = instance_create_layer(334,128,layer,obj_NPC);
-					matheuszinho.npc_spr = spr_MatheusParado;
-					matheuszinho.texto = "Os outros foram para o laboratório de Kaiser. Vamos! eles devem estar só nos esperando.";
-					matheuszinho.respostas[0] = "Ok.";
+					
 					global.create_aux = true;
 					global.map_aux = false;
 	
@@ -1469,9 +1466,7 @@ case rm_biblioteca:
 				if(!global.create_aux)
 				{
 					matheuszinho = instance_create_layer(334,128,layer,obj_NPC);
-					matheuszinho.npc_spr = spr_MatheusParado;
-					matheuszinho.texto = "Os outros foram para o laboratório de Kaiser. Vamos! eles devem estar só nos esperando.";
-					matheuszinho.respostas[0] = "Ok.";
+					
 					player = instance_create_layer(126,166,layer,obj_player);
 					global.create_aux = true;
 					global.map_aux = false;
