@@ -1466,7 +1466,7 @@ case rm_biblioteca:
 				if(!global.create_aux)
 				{
 					matheuszinho = instance_create_layer(334,128,layer,obj_NPC);
-					
+				
 					player = instance_create_layer(126,166,layer,obj_player);
 					global.create_aux = true;
 					global.map_aux = false;

@@ -118,7 +118,7 @@ if(global.quest ==24 && global.next == 2 )
 
 #region DIALOGO
 if (global.canRead == true){ 
-l+=0.35;
+l+=0.5;
 print =  string_copy(texto_cutscene,1,l);
 
 

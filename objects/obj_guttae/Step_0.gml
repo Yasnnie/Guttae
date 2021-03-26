@@ -27,7 +27,7 @@ if(aux_fim && timer_fim<80)
 	sprite_index = spr_guttaeE;
 	}else if(timer_fim == 80)
 	{
-	show_message("Fim");
+	room_goto(rm_cutscene18);
 	}
 
 }else

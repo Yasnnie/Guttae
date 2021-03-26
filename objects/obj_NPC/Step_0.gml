@@ -98,11 +98,12 @@ switch(npc_spr)
  
  #region YASMIN
  case spr_YasminParado:
- if(room == rm_tutorial){
+
  if (colid_left || colid_up)
 	{
-		if(!aux_setas){
-		e_cabeca = instance_create_layer(360,42,layer-2, obj_animadas);
+		if(!aux_setas)
+		{
+		e_cabeca = instance_create_depth(360,42,-400, obj_animadas);
 		e_cabeca.sprites = spr_setaE;
 		aux_setas = true;
 		}
@@ -112,7 +113,7 @@ switch(npc_spr)
 			instance_destroy(e_cabeca);
 			if (meu_texto == noone)
 			{
-				meu_texto = instance_create_layer(x,y,layer-2, obj_texto);
+				meu_texto = instance_create_depth(x,y,-300, obj_texto);
 				meu_texto.texto = texto;
 			}
 			else
@@ -131,7 +132,7 @@ switch(npc_spr)
 				meu_texto = noone;
 			}
 	}
- }
+ 
  break;
 #endregion
  
