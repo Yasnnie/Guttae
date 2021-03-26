@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_cabecaGuilherme",
+    "path": "sprites/spr_cabecaGuilherme/spr_cabecaGuilherme.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -351,7 +351,7 @@ if (room == rm_mapa)
 			sprite_index = spr_cabecaYasmin;
 		}else if(global.quest>=14 && global.quest<21)
 		{
-			
+			sprite_index = spr_cabecaLeo;
 		}else if(global.quest>=21 && global.quest<23)
 		{
 			sprite_index = spr_cabecaGuilherme;
@@ -367,9 +367,15 @@ if (room == rm_mapa)
 		if((global.quest>=0 && global.quest<8) || (global.quest>=23 && global.quest<27))
 		{
 		sprite_index = spr_cabecaMatheus;
-		}else
+		}else if((global.quest>=8 && global.quest<14) || global.quest>=27)
 		{
 			sprite_index = spr_cabecaYasmin;
+		}else if(global.quest>=14 && global.quest<21)
+		{
+			sprite_index = spr_cabecaLeo;
+		}else if(global.quest>=21 && global.quest<23)
+		{
+			sprite_index = spr_cabecaGuilherme;
 		}
 		
 		image_xscale = 2;
@@ -382,15 +388,129 @@ if (room == rm_mapa)
 		if((global.quest>=0 && global.quest<8) || (global.quest>=23 && global.quest<27))
 		{
 		sprite_index = spr_cabecaMatheus;
-		}else
+		}else if((global.quest>=8 && global.quest<14) || global.quest>=27)
 		{
 			sprite_index = spr_cabecaYasmin;
+		}else if(global.quest>=14 && global.quest<21)
+		{
+			sprite_index = spr_cabecaLeo;
+		}else if(global.quest>=21 && global.quest<23)
+		{
+			sprite_index = spr_cabecaGuilherme;
 		}
 	
 		image_xscale = 2;
 		image_yscale = 2;
 	break;
+	
+	case rm_enfermaria:
+		x= 324;
+		y= 362;
+		if((global.quest>=0 && global.quest<8) || (global.quest>=23 && global.quest<27))
+		{
+		sprite_index = spr_cabecaMatheus;
+		}else if((global.quest>=8 && global.quest<14) || global.quest>=27)
+		{
+			sprite_index = spr_cabecaYasmin;
+		}else if(global.quest>=14 && global.quest<21)
+		{
+			sprite_index = spr_cabecaLeo;
+		}else if(global.quest>=21 && global.quest<23)
+		{
+			sprite_index = spr_cabecaGuilherme;
+		}
+	
+		image_xscale = 2;
+		image_yscale = 2;
+	break;
+	
+	case rm_horta:
+		x= 672;
+		y= 332;
+		if((global.quest>=0 && global.quest<8) || (global.quest>=23 && global.quest<27))
+		{
+		sprite_index = spr_cabecaMatheus;
+		}else if((global.quest>=8 && global.quest<14) || global.quest>=27)
+		{
+			sprite_index = spr_cabecaYasmin;
+		}else if(global.quest>=14 && global.quest<21)
+		{
+			sprite_index = spr_cabecaLeo;
+		}else if(global.quest>=21 && global.quest<23)
+		{
+			sprite_index = spr_cabecaGuilherme;
+		}
+	
+		image_xscale = 2;
+		image_yscale = 2;
+	break;
+	
+	case rm_refeitorio:
+		x= 472;
+		y= 284;
+		if((global.quest>=0 && global.quest<8) || (global.quest>=23 && global.quest<27))
+		{
+		sprite_index = spr_cabecaMatheus;
+		}else if((global.quest>=8 && global.quest<14) || global.quest>=27)
+		{
+			sprite_index = spr_cabecaYasmin;
+		}else if(global.quest>=14 && global.quest<21)
+		{
+			sprite_index = spr_cabecaLeo;
+		}else if(global.quest>=21 && global.quest<23)
+		{
+			sprite_index = spr_cabecaGuilherme;
+		}
+	
+		image_xscale = 2;
+		image_yscale = 2;
+	break;
+	
+	case rm_deposito:
+		x= 332;
+		y= 106;
+		if((global.quest>=0 && global.quest<8) || (global.quest>=23 && global.quest<27))
+		{
+		sprite_index = spr_cabecaMatheus;
+		}else if((global.quest>=8 && global.quest<14) || global.quest>=27)
+		{
+			sprite_index = spr_cabecaYasmin;
+		}else if(global.quest>=14 && global.quest<21)
+		{
+			sprite_index = spr_cabecaLeo;
+		}else if(global.quest>=21 && global.quest<23)
+		{
+			sprite_index = spr_cabecaGuilherme;
+		}
+	
+		image_xscale = 2;
+		image_yscale = 2;
+	break;
+	
+	case rm_biblioteca:
+		x= 452;
+		y= 238;
+		if((global.quest>=0 && global.quest<8) || (global.quest>=23 && global.quest<27))
+		{
+		sprite_index = spr_cabecaMatheus;
+		}else if((global.quest>=8 && global.quest<14) || global.quest>=27)
+		{
+			sprite_index = spr_cabecaYasmin;
+		}else if(global.quest>=14 && global.quest<21)
+		{
+			sprite_index = spr_cabecaLeo;
+		}else if(global.quest>=21 && global.quest<23)
+		{
+			sprite_index = spr_cabecaGuilherme;
+		}
+	
+		image_xscale = 2;
+		image_yscale = 2;
+	break;
+	
 	}
+	
+
 	// Colocar no if para aparecer em lugares especificos de acordo com a sala no mapa!!
 	
 
