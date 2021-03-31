@@ -83,7 +83,7 @@ if(global.quest02_aux == true)
 			
 			butao_intro = instance_create_layer(220,room_height-90,layer-1,obj_botaoEntendi);
 			box_intro = instance_create_layer(90,20,layer,obj_explicacoes);
-			box_intro.texto_explicacao = "Ah não! As plantinhas da horta do Roldão irão morrer! Não o deixe na mão, ajude-o a regar as divisões, siga a sequência correta da irrigação que irá aparecer em sua tela, caso erre você deverá iniciar tudo de novo, então seja rápido(a) e boa sorte!";
+			box_intro.texto_explicacao = "Ah não! As plantinhas da horta de Erasmo irão morrer! Não o deixe na mão, ajude-o a regar as divisões, siga a sequência correta da irrigação que irá aparecer em sua tela, caso erre você deverá iniciar tudo de novo, então seja rápido(a) e boa sorte!";
 			animation = instance_create_depth(256,160,-500,obj_animadas);
 			animation2 = instance_create_depth(189,160,-500,obj_animadas);
 			animation2.sprites = spr_qst02_02
@@ -189,6 +189,8 @@ if(global.quest04_aux == true)
 			butao_intro = instance_create_depth(220,room_height-80,-400,obj_botaoEntendi);
 			box_intro = instance_create_depth(90,40,-300,obj_explicacoes);
 			box_intro.texto_explicacao = "Já brincou de quebra-cabeça antes? Espero que sim! Você vai precisar reorganizar as partes da placa solar, organize elas de acordo com suas numerações. Para isso arraste uma peça para o espaço vazio até eles ficarem a ordem! Boa Sorte!";
+			animation = instance_create_depth(220,170,-500,obj_animadas);
+			animation.sprites = spr_qst06_01;
 			global.create_expli4 = true;
 			}
 		}
@@ -196,7 +198,7 @@ if(global.quest04_aux == true)
 		{
 			if(global.click_expli==true)
 			{
-		
+			instance_destroy(animation);
 			instance_destroy(butao_intro);
 			instance_destroy(box_intro);
 			butao_intro = noone;
